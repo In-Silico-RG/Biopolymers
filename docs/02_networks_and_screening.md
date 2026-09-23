@@ -221,14 +221,20 @@ the year on its own.
 
 ## Open questions
 
-- About 30% of the method-layer records carry no abstract. Recovering those from Crossref
-  would firm up every share in section 3. — AC to decide whether it is worth the pass.
+- ~~About 30% of the method-layer records carry no abstract.~~ **Done 2026-09-23.** Crossref
+  proved useless for this corpus, returning 2.1%, because Elsevier deposits no abstracts
+  there. A cascade led by Semantic Scholar and followed by Europe PMC recovered 4,113 of
+  9,433. The unreadable share fell from 29.9% to 20.2% and every figure here was rebuilt on
+  the larger base.
 - Should the screening be validated against a hand-coded sample? A few hundred works
   double-coded by Camila would give an agreement figure and make the method defensible to
   a referee. — AC.
-- Scopus and Web of Science access, still pending, which is what triangulation needs. — AC.
-- Spanish and Portuguese query variants for the regional slices. — AC.
-- GIFTEX, UNF and Wilson Castro: names and lines, to place them on the institution map. — AC.
+- ~~Scopus and Web of Science access.~~ **Closed 2026-09-23 (AC): there is none.**
+  Triangulation runs on OpenAlex against Lens; see `03_source_triangulation.md`.
+- Spanish and Portuguese query variants for the regional slices. — AC. Still open.
+- ~~GIFTEX, UNF and Wilson Castro.~~ **Resolved 2026-09-23.** Wilson Castro's two 2025
+  papers, terahertz spectroscopy with machine learning for starch and bioplastics, are
+  inside the corpus and sit on this phase's subject rather than Phase 1's.
 
 ## References
 
