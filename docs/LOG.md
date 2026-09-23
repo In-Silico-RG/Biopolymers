@@ -103,5 +103,6 @@ Language: English.
 - Figure fixed after looking at it. The first version of `F2_methods_share.png` plotted
   Colombia's annual method share, which swung between 0 and 9 percent on 0–3 papers a year.
   Rebuilt on three-year rolling sums with points suppressed below 50 works in the window.
+- Commit `10c8c01` 10:51 — Phase 1: bibliometric mapping of the biopolymers field on OpenAlex
 - Open for AC: an OpenAlex API key; Scopus and WoS access; whether to add Spanish and
   Portuguese query variants; the identities of GIFTEX, UNF and Wilson Castro.
