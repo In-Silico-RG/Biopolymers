@@ -32,6 +32,7 @@ Language: English.
   `data/processed/`, `scripts/{r,python}/`, `outputs/`, `refs/`, `Versiones/`);
   `docs/00_plan.md` written at revision r0 with the three phases.
 - `docs/00_plan.md` status set to **draft**.
+- Commit `da81921` 10:26 — Open Biopolymers project: repo scaffolding and route plan r0
 - Related material found elsewhere on disk, not yet pulled in: `../PHA/` holds a
   bibliometric protocol for polyhydroxyalkanoate R&D in .docx, which overlaps Phase 1 and
   should be read before writing the queries. `../Material_Proyectos_Amilosa/` holds three
