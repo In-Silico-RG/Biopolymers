@@ -1,0 +1,7 @@
+# Phase 1 — ANCHOR: polyhydroxyalkanoates (joint line)
+# Source: OpenAlex | Field: title_and_abstract.search
+# Run: 2026-09-23 | Count: 22,378
+# The bare acronyms PHA and PHB are excluded: PHA alone returns 56,015 records against
+# 8,422 when bound to the expanded form, so it is not specific.
+
+polyhydroxyalkanoate OR polyhydroxyalkanoates OR polyhydroxybutyrate OR "poly(3-hydroxybutyrate)" OR "poly-3-hydroxybutyrate" OR polyhydroxyvalerate OR "poly(hydroxybutyrate-co-hydroxyvalerate)" OR "polyhydroxyalkanoic acid"

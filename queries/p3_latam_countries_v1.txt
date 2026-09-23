@@ -1,0 +1,16 @@
+# Phase 3 — GEOGRAPHY: country filters, as OpenAlex ISO-3166-1 alpha-2 codes
+# Source: OpenAlex | Field: institutions.country_code
+# Seeded from the country list of the archived PHA protocol (docs/reviews/), corrected
+# against OpenAlex codes.
+
+# Latin America (20)
+LATAM = ar|bo|br|cl|co|cr|cu|do|ec|gt|hn|mx|ni|pa|pe|pr|py|sv|uy|ve
+
+# Ibero-America = Latin America + Spain + Portugal
+# Kept as a separate context, not folded into Latin America, because Spain and Portugal
+# are the dominant outside partners of Colombian groups and merging them would hide the
+# dependency the thesis needs to measure.
+IBERO = ar|bo|br|cl|co|cr|cu|do|ec|es|gt|hn|mx|ni|pa|pe|pr|pt|py|sv|uy|ve
+
+# Colombia
+COL = co

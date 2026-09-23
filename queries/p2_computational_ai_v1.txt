@@ -1,0 +1,7 @@
+# Phase 2 — METHODS: computational chemistry, chemoinformatics and AI
+# Source: OpenAlex | Field: title_and_abstract.search
+# Run: 2026-09-23 | Count: 5,480,382 standalone; 3,947 intersected with the Phase 1 CORE (frozen string, run 2026-09-23)
+# Used as: <p1_core_biopolymer_field_v1> AND <this string>
+# The bare acronym DFT is excluded (471 vs 295 bound, within the core).
+
+"molecular dynamics" OR "density functional theory" OR "ab initio" OR "quantum chemical" OR QSAR OR QSPR OR "molecular descriptor" OR "molecular descriptors" OR chemoinformatics OR cheminformatics OR "virtual screening" OR "molecular docking" OR "machine learning" OR "deep learning" OR "neural network" OR "artificial intelligence" OR "random forest" OR "gradient boosting" OR "generative model" OR "large language model" OR "graph neural network" OR "inverse design" OR "Hansen solubility" OR "solubility parameter" OR COSMO-RS OR "coarse-grained simulation" OR "molecular simulation" OR "computational screening"

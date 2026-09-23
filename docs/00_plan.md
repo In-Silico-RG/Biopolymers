@@ -9,8 +9,9 @@ chemoinformatics and artificial intelligence applied to biomaterials and biopoly
 narrows at the end to the Latin American and Colombian setting. The route is the backbone
 of Camila Argel's undergraduate thesis (proyecto de grado).
 
-**Status.** draft — 2026-09-22. Phases defined, queries not yet written, no data pulled.
-Blocking items are listed in *Open questions*.
+**Status.** in progress — 2026-09-23. Phase 1 executed on OpenAlex and written up in
+`01_bibliometric_mapping.md`. Record-level work is blocked on an OpenAlex API key. Phases 2
+and 3 not started. Blocking items are listed in *Open questions*.
 
 ---
 
@@ -158,6 +159,9 @@ Versiones/     dated copies of important PDFs before overwriting
 
 - **r0, 2026-09-22.** First version. Phases, sources, tools and scope set from the session
   of 2026-09-22.
+- **r1, 2026-09-23.** Status moved to in progress. No change to the phases. Phase 1 ran on
+  OpenAlex alone because the other three sources need credentials or a key; the
+  triangulation decision stands and is simply not yet executed.
 
 ## References
 

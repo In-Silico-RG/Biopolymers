@@ -1,0 +1,5 @@
+# Phase 1 — ANCHOR: lignin (joint line)
+# Source: OpenAlex | Field: title_and_abstract.search
+# Run: 2026-09-23 | Count: 181,260 (string includes lignocellulosic)
+
+lignin OR lignins OR lignosulfonate OR lignosulfonates OR "kraft lignin" OR "organosolv lignin" OR "lignin nanoparticle" OR lignocellulosic

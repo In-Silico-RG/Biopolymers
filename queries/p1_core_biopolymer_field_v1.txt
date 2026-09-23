@@ -1,0 +1,8 @@
+# Phase 1 — CORE: the field that identifies itself as biopolymers
+# Source: OpenAlex | Field: title_and_abstract.search
+# Run: 2026-09-23 | Count: 145,743 (no year filter)
+# Rationale: every family block intersected with a biopolymer framing turned out to be a
+# subset of this string, so this is the union, not a narrowing. Works that study cellulose
+# or collagen without framing them as polymer materials are deliberately outside.
+
+biopolymer OR biopolymers OR bioplastic OR bioplastics OR "bio-based polymer" OR "bio-based polymers" OR "biobased polymer" OR "biodegradable polymer" OR "biodegradable polymers" OR "renewable polymer" OR "natural polymer" OR "natural polymers" OR biomacromolecule OR biomacromolecules

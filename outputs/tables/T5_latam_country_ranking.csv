@@ -1,0 +1,31 @@
+country_code,country,core_count,methods_count,methods_share_pct
+BR,Brazil,4450,87,1.96
+MX,Mexico,1559,59,3.78
+AR,Argentina,794,11,1.39
+CO,Colombia,598,17,2.84
+ES,Spain,533,19,3.56
+CL,Chile,492,20,4.07
+US,United States,464,21,4.53
+PT,Portugal,252,10,3.97
+EC,Ecuador,232,14,6.03
+FR,France,226,6,2.65
+IN,India,214,13,6.07
+DE,Germany,194,14,7.22
+PE,Peru,180,14,7.78
+GB,United Kingdom,175,4,2.29
+IT,Italy,156,0,0.0
+CN,China,129,5,3.88
+CA,Canada,123,5,4.07
+PL,Poland,88,9,10.23
+CU,Cuba,66,9,13.64
+IR,Iran,65,3,4.62
+VE,Venezuela,63,2,3.17
+NL,Netherlands,59,0,0.0
+BE,Belgium,57,4,7.02
+CR,Costa Rica,55,1,1.82
+PR,Puerto Rico,54,1,1.85
+PY,Paraguay,54,0,0.0
+SE,Sweden,53,2,3.77
+KR,South Korea,48,2,4.17
+AU,Australia,47,0,0.0
+JP,Japan,43,2,4.65

@@ -40,3 +40,68 @@ Language: English.
 - Open for AC: identity and research lines of GIFTEX, UNF and Wilson Castro; Scopus and WoS
   access at UNISUCRE; Camila's programme, deadline and required document format; whether a
   journal article is a secondary target.
+
+---
+
+## 2026-09-23 — Session 2: Phase 1 executed on OpenAlex
+
+- AC: "adelante con la bibliometría", after the scoping questions were answered with every
+  option selected. Taken literally: all sources, all tool stacks, broad scope.
+- Read `../PHA/Protocolo bibliométrico polyhidroxialcanoatos R&D.docx`. It is an
+  AI-produced (Kimi) protocol for a PHA bibliometric study. Archived verbatim with an
+  adjudication at `docs/reviews/2026-09-22_protocolo_bibliometrico_PHA_Kimi.md`. Accepted
+  its four-context design, country list, indicator table and affiliation-variant warning;
+  rejected its bare acronyms, its 2014–2024 window, its Excel steps, its mandatory
+  applications block, and mixing patents into the scholarly counts.
+- Environment: no R and no `node` on this machine. Python venv at `.venv` with pandas,
+  requests, pyalex, matplotlib. Figures therefore use matplotlib, and the dataviz palette
+  validator could not be run, so the skill's pre-validated default palette was used
+  unmodified rather than inventing one.
+- Query design was empirical. Probed candidate blocks against OpenAlex before freezing
+  anything. Two results decided the wording: the bare acronym `PHA` returns 56,015 records
+  against 8,422 bound to its expanded form, and bare `DFT` 471 against 295 within the core.
+  Bare acronyms were excluded everywhere.
+- Second probe result changed the corpus definition: every family block intersected with a
+  biopolymer framing is a **subset** of the generic framing string, so the generic string
+  is the union, not a narrowing. Corpus defined as the field that self-identifies.
+- Built: `queries/` with six frozen query files; `scripts/python/{probe_counts,corpora,
+  harvest_aggregates,harvest_records,analyze_aggregates,make_figures,screen_abstracts}.py`.
+- Harvested OpenAlex aggregates for 23 corpora across 8 facets, 185 CSV files under
+  `data/raw/openalex/aggregates/`.
+- **Dead end, with its cause.** A `sed` using `|` as its delimiter hit the `|` inside the
+  text of `queries/p1_core_biopolymer_field_v1.txt`, failed, and left line 3 stripped of
+  its leading `#`. Because `corpora.load()` only skipped lines starting with `#`, the
+  broken header would have been concatenated into the search string and silently changed
+  every count. Caught by reading the file, not by any test. The record harvest running at
+  the time was killed and its partial output deleted. `corpora.load()` now raises when
+  header words appear in a search string. The aggregate harvest had finished *before* the
+  corruption and is unaffected; `core_world` = 145,743 matches the clean probe.
+- **Blocker found.** OpenAlex now meters the anonymous API against a daily budget shared by
+  everyone on the same IP, and the aggregate harvest exhausted it. Full-record downloads
+  return HTTP 429 with `retryAfter` about 8 hours. A free API key lifts this. Recorded as
+  an open question for AC; all record-level work is blocked until then.
+- Results written to `docs/01_bibliometric_mapping.md`, status **in progress**. Nine tables
+  in `outputs/tables/`, four figures in `outputs/figures/`.
+- Headline findings. The field holds 145,743 works and grows at 11.4% a year. Under 2.63%
+  of it uses any computational or AI method, roughly doubling over a decade. Latin America
+  sits at 2.20% and Colombia at 1.94%, so the **regional deficit is volume, not method
+  uptake** — which cuts against the expected narrative. Generative methods return 43 works
+  worldwide. Lignin is the most computational anchor at 2.08%, PHA the least at 1.30%.
+- **Caveat found in the data, not assumed.** The methods layer's largest topic is protein
+  structure and dynamics, ahead of biodegradable polymer synthesis. The framing terms
+  `biomacromolecule` and `natural polymer` drag structural biology into the corpus, so the
+  materials-side method share is *lower* than 2.63%. Separating the two needs abstracts.
+- AC, mid-session: "usa la API de deepseek si crees que nos ayuda a descargarte de tareas
+  mecanicas". Applied to exactly that contamination problem, which is the one genuinely
+  mechanical task at hand and which no keyword rule can solve. Built
+  `scripts/python/screen_abstracts.py`: DeepSeek classifies each abstract as biopolymer
+  materials or biological-function work, plus polymer family, method and whether
+  experiments are reported, with every call cached on a prompt hash for reproducibility.
+  Tested on two hand-written abstracts and it separated a cellulose-nanocrystal composite
+  simulation from a hemoglobin allostery simulation correctly. It cannot run on the corpus
+  until the OpenAlex records exist.
+- Figure fixed after looking at it. The first version of `F2_methods_share.png` plotted
+  Colombia's annual method share, which swung between 0 and 9 percent on 0–3 papers a year.
+  Rebuilt on three-year rolling sums with points suppressed below 50 works in the window.
+- Open for AC: an OpenAlex API key; Scopus and WoS access; whether to add Spanish and
+  Portuguese query variants; the identities of GIFTEX, UNF and Wilson Castro.
