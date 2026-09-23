@@ -1,0 +1,33 @@
+# WEB OF SCIENCE — Advanced Search, Core Collection.
+# Run date: ______  Records returned: ______   (fill both in before exporting)
+
+## W1 — CORE: the biopolymers field
+TS=(biopolymer* OR bioplastic* OR "bio-based polymer*" OR "biobased polymer*" OR "biodegradable polymer*" OR "renewable polymer*" OR "natural polymer*" OR biomacromolecule*)
+
+## W2 — METHODS: computational chemistry, chemoinformatics and AI
+TS=("molecular dynamics" OR "density functional theory" OR "ab initio" OR "quantum chemical" OR QSAR OR QSPR OR "molecular descriptor*" OR chemoinformatic* OR cheminformatic* OR "virtual screening" OR "molecular docking" OR "machine learning" OR "deep learning" OR "neural network*" OR "artificial intelligence" OR "random forest" OR "gradient boosting" OR "generative model*" OR "large language model*" OR "graph neural network*" OR "inverse design" OR "Hansen solubility" OR "solubility parameter*" OR "COSMO-RS" OR "coarse-grained simulation" OR "molecular simulation" OR "computational screening")
+
+## W3 — the method layer
+#1 AND #2          <- reference the two saved query numbers in the search history
+
+## W4 — ANCHOR: cellulose and nanocellulose
+TS=(cellulose OR nanocellulose OR "cellulose nanocrystal*" OR "cellulose nanofib*" OR "bacterial cellulose" OR "microfibrillated cellulose")
+
+## W5 — ANCHOR: polyhydroxyalkanoates  (bare PHA and PHB deliberately excluded)
+TS=(polyhydroxyalkanoate* OR polyhydroxybutyrate* OR "poly(3-hydroxybutyrate)" OR "poly-3-hydroxybutyrate" OR polyhydroxyvalerate* OR "polyhydroxyalkanoic acid*")
+
+## W6 — ANCHOR: lignin
+TS=(lignin* OR lignosulfonate* OR "kraft lignin" OR "organosolv lignin" OR "lignin nanoparticle*" OR lignocellulosic)
+
+## GEOGRAPHIC FILTERS — append with AND
+AND CU=(Argentina OR Bolivia OR Brazil OR Chile OR Colombia OR "Costa Rica" OR Cuba OR "Dominican Rep" OR Ecuador OR Guatemala OR Honduras OR Mexico OR Nicaragua OR Panama OR Peru OR "Puerto Rico" OR Paraguay OR "El Salvador" OR Uruguay OR Venezuela)
+AND CU=(Colombia)
+
+## DATE AND TYPE FILTERS
+AND PY=(1990-2025)
+AND DT=(Article OR Review OR "Proceedings Paper")
+
+## COMPARABILITY WARNING
+# TS= searches title, abstract, author keywords and KeyWords Plus, so it is broader than
+# the OpenAlex title-and-abstract counts and broader again than Scopus TITLE-ABS. For a
+# like-for-like comparison run the same string as (TI=(...) OR AB=(...)) and report both.

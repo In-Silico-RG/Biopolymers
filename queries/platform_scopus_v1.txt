@@ -1,0 +1,35 @@
+# SCOPUS — Advanced Search. Paste one block at a time.
+# Run date: ______  Records returned: ______   (fill both in before exporting)
+
+## S1 — CORE: the biopolymers field
+TITLE-ABS-KEY(biopolymer* OR bioplastic* OR "bio-based polymer*" OR "biobased polymer*" OR "biodegradable polymer*" OR "renewable polymer*" OR "natural polymer*" OR biomacromolecule*)
+
+## S2 — METHODS: computational chemistry, chemoinformatics and AI
+TITLE-ABS-KEY("molecular dynamics" OR "density functional theory" OR "ab initio" OR "quantum chemical" OR QSAR OR QSPR OR "molecular descriptor*" OR chemoinformatic* OR cheminformatic* OR "virtual screening" OR "molecular docking" OR "machine learning" OR "deep learning" OR "neural network*" OR "artificial intelligence" OR "random forest" OR "gradient boosting" OR "generative model*" OR "large language model*" OR "graph neural network*" OR "inverse design" OR "Hansen solubility" OR "solubility parameter*" OR "COSMO-RS" OR "coarse-grained simulation" OR "molecular simulation" OR "computational screening")
+
+## S3 — the method layer
+S1 AND S2          <- in Scopus, combine the two saved searches, or paste both TITLE-ABS-KEY blocks joined by AND
+
+## S4 — ANCHOR: cellulose and nanocellulose
+TITLE-ABS-KEY(cellulose OR nanocellulose OR "cellulose nanocrystal*" OR "cellulose nanofib*" OR "bacterial cellulose" OR "microfibrillated cellulose")
+
+## S5 — ANCHOR: polyhydroxyalkanoates  (bare PHA and PHB deliberately excluded)
+TITLE-ABS-KEY(polyhydroxyalkanoate* OR polyhydroxybutyrate* OR "poly(3-hydroxybutyrate)" OR "poly-3-hydroxybutyrate" OR polyhydroxyvalerate* OR "polyhydroxyalkanoic acid*")
+
+## S6 — ANCHOR: lignin
+TITLE-ABS-KEY(lignin* OR lignosulfonate* OR "kraft lignin" OR "organosolv lignin" OR "lignin nanoparticle*" OR lignocellulosic)
+
+## GEOGRAPHIC FILTERS — append with AND
+AND AFFILCOUNTRY(Argentina OR Bolivia OR Brazil OR Chile OR Colombia OR "Costa Rica" OR Cuba OR "Dominican Republic" OR Ecuador OR Guatemala OR Honduras OR Mexico OR Nicaragua OR Panama OR Peru OR "Puerto Rico" OR Paraguay OR "El Salvador" OR Uruguay OR Venezuela)
+AND AFFILCOUNTRY(Colombia)
+
+## DATE AND TYPE FILTERS — append with AND
+AND PUBYEAR > 1989 AND PUBYEAR < 2026
+AND (LIMIT-TO(DOCTYPE,"ar") OR LIMIT-TO(DOCTYPE,"re") OR LIMIT-TO(DOCTYPE,"cp"))
+
+## COMPARABILITY WARNING
+# TITLE-ABS-KEY also searches author and indexed keywords, while the OpenAlex counts
+# search title and abstract only. Scopus will therefore return MORE than OpenAlex for the
+# same concept, and the difference is not a coverage difference. To compare like with like,
+# run the same string as TITLE-ABS(...) as well and report both. The gap between the two is
+# itself worth a line in the methods section.

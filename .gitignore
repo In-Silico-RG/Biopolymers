@@ -11,3 +11,7 @@ __pycache__/
 *.pyc
 .venv/
 .venv/
+
+# Recovered abstracts are large and rebuildable from the scripts
+data/processed/crossref_abstracts.jsonl
+data/processed/recovered_abstracts.jsonl
