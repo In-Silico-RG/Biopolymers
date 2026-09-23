@@ -1,0 +1,12 @@
+# Raw exports can be large; keep them local unless small enough to version
+data/raw/**/*.zip
+data/raw/**/*.xlsx
+*.aux
+*.log
+*.out
+*.toc
+.Rhistory
+.RData
+__pycache__/
+*.pyc
+.venv/
