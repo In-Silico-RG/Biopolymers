@@ -255,8 +255,9 @@ The two coders also disagree in a consistent direction. On the random sample of 
 first coder called 79 works computational against the second coder's 73, a relative
 over-detection of 8.2\%. Five of the seven disputed works were labelled machine learning,
 and reading them shows why: they are reviews and experimental papers that mention artificial
-intelligence as a closing perspective without performing any computation. **Every screened
-share in this report is therefore an upper bound**, and the strict world figure of 1.28\%
+intelligence as a closing perspective without performing any computation. \\textbf{Every
+screened share in this report is therefore an upper bound}, and the strict world figure of
+1.28\%
 is closer to 1.18\% once the bias is applied. This runs the same way as every other
 correction found here.
 

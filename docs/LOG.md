@@ -244,3 +244,48 @@ Language: English.
   their Lens totals recorded, which is what the source comparison needs. Not retried further.
 - Report rebuilt from the updated tables and verified with pdftotext: 9 pages, 3,191 words.
 - Commit `9717282` — Rebuild the report after the completed refine pass.
+
+---
+
+## 2026-09-23 — Session 5: validation, language variants, and the generative frontier
+
+- AC rejected leaving the screening validation to Camila: "NOPE, VALIDA TU, O DILE A
+  DEEPSEEK API QUE VALIDE". Taken, with one correction of design: DeepSeek cannot validate
+  its own labels, because the same model repeats the same mistakes and reports high
+  agreement with itself. The second coder is Claude, a different model, coding blind.
+- 125 abstracts double-coded, 100 random plus 25 drawn from thin categories, shuffled
+  together so the stratum could not be inferred. Cohen's kappa rather than percent
+  agreement, because percent agreement flatters a dominant class.
+- **Result: kappa 0.878** on materials-versus-biological, the distinction the whole
+  correction rests on; 0.782 on computational-at-all; 0.816 on method family; 0.767 on
+  polymer family. Substantial to almost perfect throughout.
+- **Directional bias found and quantified.** DeepSeek calls 79 of 100 works computational
+  against the second coder's 73, +8.2% relative. Five of the seven disputed works were
+  labelled `ml` for merely mentioning artificial intelligence as a closing outlook, in
+  reviews and in purely experimental papers. Every screened share is therefore an upper
+  bound and the strict world figure of 1.28% is closer to 1.18%. Same direction as every
+  other correction in this project.
+- AC: "ok, ADELANTE CON ESO" on Spanish and Portuguese variants. Frozen as
+  `queries/p1_core_es_pt_v1.txt` and `p1_anchors_es_pt_v1.txt`, run as a **set difference**
+  against the English corpus rather than a count comparison, so what is reported is what
+  the English string misses. Additions: core field +15.4% for Latin America and +26.3% for
+  Colombia; cellulose +26.9% and +31.2%; PHA +13.8% and +34.1%; lignin +14.6% and +17.9%.
+  The regional deficit is partly linguistic, and with the affiliation-matching loss the
+  regional figures understate the region twice over for two independent reasons.
+- AC: "HAGAMOS LO MISMO, DEEPSEEK AND CLAUDE PARA ESO" on the generative works. Both read
+  all ten. Three disagreements, all material, in `docs/04_generative_frontier.md`: ten
+  records are nine works, one arXiv preprint indexed twice; the lignin paper trains
+  autoregressive *molecular* language models over SMILES and is not an LLM paper; and three
+  of the ten sit in venues whose DOI prefixes belong to other registrants, with 10.71465
+  registered to International Study Counselor while publishing as "Frontiers in
+  Agriculture" against Frontiers Media's own 10.3389. Stripping those and the
+  non-biopolymer work leaves four credible works.
+- The most relevant work in the whole generative slice to this group is *Population-aware
+  Generative Modeling of Lignin Ensemble*, which trains on 1.16M structures from
+  LigninGraphs and rewards a population rather than individual molecules. Adjacent to
+  `../Lignin_Project/`.
+- Cleaned stale open questions that had been resolved but left listed in docs 01 and 02.
+- Report rebuilt at 10 pages with the validation and language sections.
+- Open for AC: a third coding of a few dozen items by Camila as a domain-expert check on
+  two automatic coders that may share a bias; whether to apply the venue-provenance check
+  to the whole corpus rather than to the generative shortlist.
