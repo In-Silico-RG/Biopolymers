@@ -164,10 +164,9 @@ the blocked work described below.
 
 ## Open questions
 
-- **An OpenAlex API key is needed.** The free daily budget is shared across everyone on the
-  same IP and was exhausted by the aggregate harvest, so full-record downloads fail with
-  HTTP 429. Keys are free at https://help.openalex.org/api/authentication/. Until one
-  exists, everything in section 7 that needs records stays blocked. — AC.
+- ~~An OpenAlex API key is needed.~~ **Resolved 2026-09-23.** AC supplied a key for
+  insilico@unisucre.edu.co; it is stored at `~/.openalex_key` and never committed. The
+  record-level work that was blocked is done in `02_networks_and_screening.md`.
 - Scopus and Web of Science access at UNISUCRE, and Camila's credentials. — AC.
 - Whether to add Spanish and Portuguese query variants for the regional slices. — AC.
 - GIFTEX, UNF and Wilson Castro: names and lines, needed to place them on the map. — AC.
