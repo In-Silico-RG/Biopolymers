@@ -224,3 +224,23 @@ Language: English.
   hand-typed values, because several numbers changed twice in one day.
 - Open for AC: a hand-coded validation sample against the screening; Spanish and Portuguese
   query variants; whether to renew Lens past 2026-09-29.
+
+### 2026-09-23, later: refine completed, report rebuilt
+
+- The refine pass crashed on its first run: two screening threads reached the same corrupt
+  cache entry, the first removed it and the second died on `FileNotFoundError`. Cause was a
+  non-atomic cache write producing half-written entries. Fixed with a temp-file-and-rename
+  write and a tolerant unlink, then rerun.
+- Second run re-asked 599 works: 263 statistical design of experiments, 179 no modelling,
+  137 molecular modelling, 20 informatics.
+- With the recovered abstracts folded in, the unreadable share of the world method layer
+  fell from 29.9% to 20.2%, and 1,784 works are classified as biopolymer materials research
+  against 1,542 before.
+- Final figures: strict world method share 1.28% against a keyword 2.63%; Latin America
+  3.43% and Colombia 4.48% on screened abstracts, both above their keyword estimates, with
+  Colombia still above the regional average.
+- Lens will not finish its two largest world anchors; it stops with HTTP 429 after long
+  scrolls on every attempt. 13 corpora and 179,860 records are on disk and those two have
+  their Lens totals recorded, which is what the source comparison needs. Not retried further.
+- Report rebuilt from the updated tables and verified with pdftotext: 9 pages, 3,191 words.
+- Commit `9717282` — Rebuild the report after the completed refine pass.
