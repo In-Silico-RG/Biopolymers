@@ -13,7 +13,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from corpora import corpora
+from corpora import corpora, auth_headers
 
 MAILTO = "aldo.combariza@unisucre.edu.co"
 BASE = "https://api.openalex.org/works"
@@ -35,7 +35,8 @@ FACETS = [
 def get(params, tries=5):
     for a in range(tries):
         try:
-            r = requests.get(BASE, params={**params, "mailto": MAILTO}, timeout=90)
+            r = requests.get(BASE, params={**params, "mailto": MAILTO},
+                             headers=auth_headers(), timeout=90)
             if r.status_code == 200:
                 return r.json()
             if r.status_code in (429, 500, 502, 503):

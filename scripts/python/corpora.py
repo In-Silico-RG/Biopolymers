@@ -72,3 +72,27 @@ def corpora():
         c[f"anchor_{name}_methods_world"] = (f"{a} AND {meth}", None)
         c[f"anchor_{name}_methods_latam"] = (f"{a} AND {meth}", f"institutions.country_code:{LATAM}")
     return c
+
+
+def api_key() -> str:
+    """OpenAlex key, from the environment or ~/.openalex_key.
+
+    The key is never stored in the repository. OpenAlex meters anonymous requests against
+    a daily budget shared by everyone on the same IP, which is exhausted in a single
+    harvest, so a key is required for anything beyond a few calls.
+    """
+    import os
+    k = os.environ.get("OPENALEX_API_KEY", "").strip()
+    if k:
+        return k
+    p = Path.home() / ".openalex_key"
+    if p.exists():
+        return p.read_text(encoding="utf-8").strip()
+    raise RuntimeError(
+        "No OpenAlex API key. Set OPENALEX_API_KEY or write it to ~/.openalex_key. "
+        "Free keys: https://help.openalex.org/api/authentication/"
+    )
+
+
+def auth_headers() -> dict:
+    return {"Authorization": f"Bearer {api_key()}"}

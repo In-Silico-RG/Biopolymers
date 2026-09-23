@@ -13,7 +13,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from corpora import corpora
+from corpora import corpora, auth_headers
 
 MAILTO = "aldo.combariza@unisucre.edu.co"
 BASE = "https://api.openalex.org/works"
@@ -30,18 +30,26 @@ TARGETS = [
     "anchor_lignin_methods_latam",
 ]
 
+# "grants" is not a select field on this API version; awards and funders are.
+# countries_distinct_count and institutions_distinct_count are carried because the
+# international-collaboration share is computed from them rather than from parsing
+# authorships by hand.
 FIELDS = ",".join([
     "id", "doi", "title", "display_name", "publication_year", "publication_date",
-    "type", "language", "cited_by_count", "is_retracted",
-    "authorships", "primary_location", "open_access", "primary_topic", "topics",
-    "keywords", "concepts", "referenced_works_count", "grants", "abstract_inverted_index",
+    "type", "language", "cited_by_count", "is_retracted", "fwci",
+    "authorships", "countries_distinct_count", "institutions_distinct_count",
+    "corresponding_institution_ids", "primary_location", "open_access",
+    "primary_topic", "topics", "keywords", "concepts",
+    "sustainable_development_goals", "awards", "funders",
+    "referenced_works_count", "abstract_inverted_index",
 ])
 
 
 def get(params, tries=6):
     for a in range(tries):
         try:
-            r = requests.get(BASE, params={**params, "mailto": MAILTO}, timeout=120)
+            r = requests.get(BASE, params={**params, "mailto": MAILTO},
+                             headers=auth_headers(), timeout=120)
             if r.status_code == 200:
                 return r.json()
             if r.status_code in (429, 500, 502, 503):

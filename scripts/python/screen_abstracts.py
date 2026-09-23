@@ -97,6 +97,9 @@ def main():
     ap.add_argument("records")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--out", default=None)
+    ap.add_argument("--workers", type=int, default=8,
+                    help="parallel requests; calls are independent and cached by prompt "
+                         "hash, so order does not matter and a re-run is free")
     args = ap.parse_args()
 
     api_key = os.environ.get("DEEPSEEK_API_KEY")
@@ -104,27 +107,42 @@ def main():
         sys.exit("DEEPSEEK_API_KEY is not set")
 
     import csv
+    from concurrent.futures import ThreadPoolExecutor
+
     src = Path(args.records)
     out = Path(args.out) if args.out else ROOT / "data/processed" / f"screened_{src.stem}.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    n = hits = 0
-    with src.open(encoding="utf-8") as fh, out.open("w", newline="", encoding="utf-8") as oh:
+    recs = []
+    with src.open(encoding="utf-8") as fh:
+        for line in fh:
+            if args.limit and len(recs) >= args.limit:
+                break
+            recs.append(json.loads(line))
+
+    done = [0]
+
+    def work(rec):
+        title = rec.get("display_name") or rec.get("title") or ""
+        abstract = deabbrev(rec.get("abstract_inverted_index"))
+        res, cached = ask(title, abstract, api_key)
+        done[0] += 1
+        if done[0] % 50 == 0:
+            print(f"\r{done[0]}/{len(recs)}", end=""); sys.stdout.flush()
+        return rec, res, cached
+
+    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+        results = list(ex.map(work, recs))
+
+    hits = sum(c for _, _, c in results)
+    with out.open("w", newline="", encoding="utf-8") as oh:
         w = csv.writer(oh)
         w.writerow(["id", "doi", "year", "title"] + FIELDS + ["error"])
-        for line in fh:
-            if args.limit and n >= args.limit:
-                break
-            rec = json.loads(line)
-            title = rec.get("display_name") or rec.get("title") or ""
-            abstract = deabbrev(rec.get("abstract_inverted_index"))
-            res, cached = ask(title, abstract, api_key)
-            hits += cached; n += 1
-            w.writerow([rec.get("id"), rec.get("doi"), rec.get("publication_year"), title]
+        for rec, res, _ in results:
+            w.writerow([rec.get("id"), rec.get("doi"), rec.get("publication_year"),
+                        rec.get("display_name") or rec.get("title") or ""]
                        + [res.get(f) for f in FIELDS] + [res.get("_error", "")])
-            if n % 25 == 0:
-                print(f"\r{n} screened ({hits} from cache)", end=""); sys.stdout.flush()
-    print(f"\r{n} screened ({hits} from cache) -> {out}")
+    print(f"\r{len(results)} screened ({hits} from cache) -> {out}")
 
 
 if __name__ == "__main__":
