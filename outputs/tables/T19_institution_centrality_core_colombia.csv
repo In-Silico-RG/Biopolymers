@@ -1,0 +1,51 @@
+id,label,documents,partners,collaboration_links,betweenness
+https://openalex.org/I36243813,Universidad Nacional de Colombia,96,38,87,0.03432
+https://openalex.org/I91732220,Universidad del Valle,66,23,97,0.01625
+https://openalex.org/I153390918,University of Cartagena,47,10,34,0.00703
+https://openalex.org/I35961687,Universidad de Antioquia,47,8,25,0.01275
+https://openalex.org/I181028852,Universidad Pontificia Bolivariana,36,6,14,0.00558
+https://openalex.org/I222202552,Pedagogical and Technological University of Colombia,32,5,17,0.00561
+https://openalex.org/I274899335,University of Atlántico,29,17,58,0.0147
+https://openalex.org/I162096671,Universidad de Los Andes,28,9,23,0.00654
+https://openalex.org/I4210112678,University of the Coast,28,19,58,0.01477
+https://openalex.org/I115684694,Industrial University of Santander,27,5,11,0.00472
+https://openalex.org/I218553996,University of Sucre,25,6,30,0.00992
+https://openalex.org/I4210091828,Universidad Santiago de Cali,24,13,48,0.00754
+https://openalex.org/I324290372,University of Córdoba,20,5,24,0.00258
+https://openalex.org/I152650591,University of Cauca,19,3,8,0.00096
+https://openalex.org/I4210124532,NIHR MindTech MedTech Co-operative,17,1,17,0.0
+https://openalex.org/I198251651,National Training Service,17,7,22,0.0002
+https://openalex.org/I4210164218,Fundación Universitaria Los Libertadores,14,3,16,0.00029
+https://openalex.org/I4210153120,"Universidad de San Buenaventura, Bogota",13,5,22,0.00035
+https://openalex.org/I4405269410,Centro de Investigación en Química Aplicada,10,5,25,2e-05
+https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,9,10,20,0.00096
+https://openalex.org/I152456871,University of Caldas,9,4,14,0.00015
+https://openalex.org/I10457146,Universidad de Santiago de Chile,9,12,34,0.00178
+https://openalex.org/I76842071,Icesi University,9,2,5,0.0
+https://openalex.org/I3132601863,Francisco de Paula Santander University,9,2,6,0.00096
+https://openalex.org/I189460059,Universidad El Bosque,8,0,0,0.0
+https://openalex.org/I3133242944,University of Boyaca,8,2,9,0.00318
+https://openalex.org/I332011152,Universidad Distrital Francisco José de Caldas,8,2,4,0.0
+https://openalex.org/I862322245,Universidad EAFIT,8,0,0,0.0
+https://openalex.org/I33501960,Universidade Federal de Santa Maria,8,8,21,0.00069
+https://openalex.org/I142879360,Universidad del Norte,8,6,13,0.00222
+https://openalex.org/I4210145466,Universidad Nacional Abierta y a Distancia,7,3,6,0.0
+https://openalex.org/I4210149504,Clínica CES,7,3,8,0.0
+https://openalex.org/I194672558,Universidad Autónoma de Coahuila,7,4,16,0.0
+https://openalex.org/I135437138,University of Quindío,7,0,0,0.0
+https://openalex.org/I4210141572,Institución Universitaria ITM,7,1,2,0.0
+https://openalex.org/I151201029,Consejo Nacional de Investigaciones Científicas y Técnicas,7,3,6,0.00285
+https://openalex.org/I4210093237,Universidad Autonoma de Manizales,7,5,11,0.00257
+https://openalex.org/I59361560,Instituto Politécnico Nacional,7,1,3,0.0
+https://openalex.org/I41047195,Military University Nueva Granada,6,1,2,0.0
+https://openalex.org/I141943178,Universidad Tecnológica de Bolívar,6,2,5,0.0
+https://openalex.org/I16097986,Universitat de València,6,4,8,0.00236
+https://openalex.org/I4210163111,"Secretaría de Ciencia, Humanidades, Tecnología e Innovación",6,4,17,0.0
+https://openalex.org/I4104125,Universidade Federal de Santa Catarina,6,2,4,0.0
+https://openalex.org/I4210131753,Colombian Corporation for Agricultural Research - AGROSAVIA,6,0,0,0.0
+https://openalex.org/I4210133585,Universidad de Medellín,6,2,6,0.00096
+https://openalex.org/I4210128920,Universidad CES,6,4,10,2e-05
+https://openalex.org/I233745408,Pontificia Universidad Javeriana,6,2,4,0.00046
+https://openalex.org/I8961855,Universidad Nacional Autónoma de México,6,2,5,0.00318
+https://openalex.org/I4210132513,Universidad FUCS,6,1,2,0.0
+https://openalex.org/I17974374,Universidade de São Paulo,6,1,2,0.0

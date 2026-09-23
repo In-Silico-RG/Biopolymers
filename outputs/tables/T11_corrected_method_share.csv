@@ -1,2 +1,2 @@
-measure,uncorrected_pct,materials_fraction_of_methods_layer,corrected_pct
-"method share of the field, 2015-2025",2.63,55.6,1.46
+measure,uncorrected_pct,materials_fraction_of_methods_layer,materials_and_computational_fraction,corrected_pct_materials_only,corrected_pct_strict
+"method share of the field, 2015-2025",2.63,55.6,47.9,1.46,1.26

@@ -1,0 +1,51 @@
+id,label,documents,partners,collaboration_links,betweenness
+https://openalex.org/I17974374,Universidade de São Paulo,636,192,1099,0.02658
+https://openalex.org/I181391015,Universidade Estadual de Campinas (UNICAMP),545,126,621,0.0177
+https://openalex.org/I151201029,Consejo Nacional de Investigaciones Científicas y Técnicas,449,118,1082,0.01452
+https://openalex.org/I879563668,Universidade Estadual Paulista (Unesp),406,121,740,0.01019
+https://openalex.org/I177909021,Universidade Federal de São Carlos,297,92,549,0.00584
+https://openalex.org/I122140584,Universidade Federal do Rio de Janeiro,264,77,351,0.00671
+https://openalex.org/I59361560,Instituto Politécnico Nacional,257,83,442,0.00784
+https://openalex.org/I8961855,Universidad Nacional Autónoma de México,238,66,377,0.00531
+https://openalex.org/I4104125,Universidade Federal de Santa Catarina,236,74,272,0.00689
+https://openalex.org/I199691007,Brazilian Agricultural Research Corporation,225,78,406,0.00372
+https://openalex.org/I52418104,Universidade Federal do Paraná,191,47,170,0.0035
+https://openalex.org/I130442723,Universidade Federal do Rio Grande do Sul,167,46,165,0.00374
+https://openalex.org/I24354313,Universidad de Buenos Aires,165,45,372,0.00171
+https://openalex.org/I110200422,Universidade Federal de Minas Gerais,163,35,146,0.00233
+https://openalex.org/I98461037,Tecnológico de Monterrey,150,61,230,0.00547
+https://openalex.org/I88273585,Universidade Federal de São Paulo,147,48,216,0.00132
+https://openalex.org/I243754102,Universidade Federal do Ceará,146,50,210,0.00481
+https://openalex.org/I25112270,Universidade Federal de Pernambuco,140,36,186,0.00132
+https://openalex.org/I1283613182,Universidade Tecnológica Federal do Paraná,129,33,159,0.00157
+https://openalex.org/I3121799822,Universidade Federal do Piauí,129,48,252,0.00337
+https://openalex.org/I4210129969,Instituto de Investigaciones en Ciencia y Tecnología de Materiales,119,29,281,0.00211
+https://openalex.org/I189075073,National University of Mar del Plata,119,25,281,0.00046
+https://openalex.org/I71715416,Universidade Federal do ABC,116,30,117,0.00102
+https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,114,119,403,0.01738
+https://openalex.org/I4210090124,Tecnológico Nacional de México,113,59,238,0.00367
+https://openalex.org/I146165071,Universidade Federal de Viçosa,111,25,107,0.0008
+https://openalex.org/I53241121,Fundación Ciencias Exactas y Naturales,110,30,269,0.00055
+https://openalex.org/I200362191,Universidad Autónoma Metropolitana,108,41,192,0.00174
+https://openalex.org/I4210156688,Centro Universitário de Araraquara,101,39,242,0.00115
+https://openalex.org/I36243813,Universidad Nacional de Colombia,96,38,87,0.00494
+https://openalex.org/I126460647,Universidade Federal do Rio Grande,94,22,77,0.0021
+https://openalex.org/I161127581,Universidade Federal Fluminense,89,27,131,0.0004
+https://openalex.org/I1315085146,Universidade Federal de Lavras,89,22,104,0.00054
+https://openalex.org/I41455075,Universidade Federal de Campina Grande,88,21,86,0.00047
+https://openalex.org/I193181351,Universidad de Guadalajara,87,24,77,0.00288
+https://openalex.org/I4405269410,Centro de Investigación en Química Aplicada,87,31,176,0.00153
+https://openalex.org/I69737025,University of Chile,87,40,146,0.00203
+https://openalex.org/I10457146,Universidad de Santiago de Chile,86,38,165,0.00231
+https://openalex.org/I68368234,Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional,85,37,162,0.00119
+https://openalex.org/I169045520,Universidade Federal da Paraíba,84,21,108,0.00026
+https://openalex.org/I33501960,Universidade Federal de Santa Maria,83,28,119,0.00134
+https://openalex.org/I4061448,Universidad de Sonora,82,23,98,0.00077
+https://openalex.org/I123443094,Universidade Estadual de Maringá,82,23,88,0.00045
+https://openalex.org/I35046152,Universidade Federal do Rio Grande do Norte,82,27,89,0.00053
+https://openalex.org/I126158947,Universidade Federal da Bahia,81,44,144,0.00221
+https://openalex.org/I56858762,Universidad Nacional del Sur,81,20,147,0.00031
+https://openalex.org/I127110123,Universidade Estadual de Londrina,81,16,77,0.00015
+https://openalex.org/I150729083,Universidade de Brasília,81,31,115,0.00116
+https://openalex.org/I194672558,Universidad Autónoma de Coahuila,79,20,92,9e-05
+https://openalex.org/I172787465,University of Concepción,78,38,137,0.00374

@@ -1,0 +1,250 @@
+id	label	weight<Documents>	cluster
+1	Universidade de São Paulo	636	3
+2	Universidade Estadual de Campinas (UNICAMP)	545	3
+3	Consejo Nacional de Investigaciones Científicas y Técnicas	449	6
+4	Universidade Estadual Paulista (Unesp)	406	3
+5	Universidade Federal de São Carlos	297	3
+6	Universidade Federal do Rio de Janeiro	264	2
+7	Instituto Politécnico Nacional	257	7
+8	Universidad Nacional Autónoma de México	238	7
+9	Universidade Federal de Santa Catarina	236	8
+10	Brazilian Agricultural Research Corporation	225	3
+11	Universidade Federal do Paraná	191	8
+12	Universidade Federal do Rio Grande do Sul	167	8
+13	Universidad de Buenos Aires	165	6
+14	Universidade Federal de Minas Gerais	163	3
+15	Tecnológico de Monterrey	150	7
+16	Universidade Federal de São Paulo	147	3
+17	Universidade Federal do Ceará	146	3
+18	Universidade Federal de Pernambuco	140	5
+19	Universidade Tecnológica Federal do Paraná	129	8
+20	Universidade Federal do Piauí	129	5
+21	National University of Mar del Plata	119	6
+22	Instituto de Investigaciones en Ciencia y Tecnología de Materiales	119	6
+23	Universidade Federal do ABC	116	3
+24	Centre National de la Recherche Scientifique	114	2
+25	Tecnológico Nacional de México	113	7
+26	Universidade Federal de Viçosa	111	3
+27	Fundación Ciencias Exactas y Naturales	110	6
+28	Universidad Autónoma Metropolitana	108	7
+29	Centro Universitário de Araraquara	101	3
+30	Universidad Nacional de Colombia	96	4
+31	Universidade Federal do Rio Grande	94	8
+32	Universidade Federal de Lavras	89	3
+33	Universidade Federal Fluminense	89	2
+34	Universidade Federal de Campina Grande	88	5
+35	Centro de Investigación en Química Aplicada	87	7
+36	Universidad de Guadalajara	87	7
+37	University of Chile	87	4
+38	Universidad de Santiago de Chile	86	4
+39	Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional	85	7
+40	Universidade Federal da Paraíba	84	5
+41	Universidade Federal de Santa Maria	83	8
+42	Universidad de Sonora	82	7
+43	Universidade Federal do Rio Grande do Norte	82	5
+44	Universidade Estadual de Maringá	82	8
+45	Universidade Estadual de Londrina	81	8
+46	Universidade de Brasília	81	3
+47	Universidad Nacional del Sur	81	6
+48	Universidade Federal da Bahia	81	5
+49	Universidad Autónoma de Coahuila	79	7
+50	University of Concepción	78	4
+51	Universidade Federal de Pelotas	77	8
+52	Universidad Autónoma de Nuevo León	73	7
+53	Universidad Nacional de La Plata	72	6
+54	Universidade do Estado do Rio de Janeiro	67	2
+55	Universidad del Valle	66	4
+56	Centro de Investigación en Alimentación y Desarrollo	61	7
+57	Centro de Investigación en Materiales Avanzados	57	7
+58	Pontificia Universidad Católica de Chile	57	4
+59	Universidad Nacional de Córdoba	56	6
+60	Universidade Federal Rural do Rio de Janeiro	52	2
+61	University of Minho	51	5
+62	Universidade Federal Rural de Pernambuco	51	5
+63	Universidad Nacional del Litoral	51	6
+64	Autonomous University of San Luis Potosí	47	7
+65	Secretaría de Ciencia, Humanidades, Tecnología e Innovación	47	7
+66	University of Coimbra	47	5
+67	Universidade Federal do Maranhão	47	5
+68	Universidad de Antioquia	47	4
+69	University of Cartagena	47	8
+70	Universidad de Sevilla	46	6
+71	Universidade do Porto	46	1
+72	Universidade Federal do Pará	46	1
+73	Universidad Autónoma del Estado de México	46	7
+74	Brazilian Center for Research in Energy and Materials	45	3
+75	Universidad de Guanajuato	45	7
+76	Universidade de Sorocaba	44	3
+77	Universidade Federal de Uberlândia	44	3
+78	Universidade Federal de Juiz de Fora	44	3
+79	Benemérita Universidad Autónoma de Puebla	44	7
+80	Autonomous University of Queretaro	44	7
+81	Universitat Politècnica de València	43	4
+82	Universidad Veracruzana	43	7
+83	Pontificia Universidad Católica de Valparaíso	43	3
+84	Centro de Investigación y Desarrollo en Criotecnología de Alimentos	42	6
+85	Universidade de Ribeirão Preto	42	3
+86	Consejo Nacional de Ciencia y Tecnología	42	7
+87	Pontificia Universidad Católica del Perú	41	4
+88	Planta Piloto de Ingeniería Química	41	6
+89	San Sebastián University	40	4
+90	Universidade Federal da Grande Dourados	39	3
+91	Secretaría de Investigación, Innovación y Educación Superior	39	7
+92	National Nuclear Energy Commission	39	3
+93	Universidade Federal dos Vales do Jequitinhonha e Mucuri	38	3
+94	Universidade de Santiago de Compostela	38	1
+95	Universidad de La Frontera	37	4
+96	Universidade Federal do Estado do Rio de Janeiro	37	2
+97	Federal University of São João del-Rei	37	3
+98	University of the Basque Country	36	6
+99	Universidade Federal do Tocantins	36	3
+100	Universidad Pontificia Bolivariana	36	4
+101	Universidade Federal de Goiás	35	3
+102	Centro Científico Tecnológico - San Juan	35	6
+103	Universidade Estadual do Ceará	35	3
+104	Universidad de la República de Uruguay	35	1
+105	Universidad Andrés Bello	33	4
+106	Universidad de Cuautitlán Izcalli	32	7
+107	Pedagogical and Technological University of Colombia	32	7
+108	Instituto de Tecnologia e Pesquisa	32	5
+109	Universidad Autónoma del Estado de Hidalgo	32	7
+110	Universidad Autónoma del Estado de Morelos	32	7
+111	Rede de Química e Tecnologia	31	1
+112	Federico Santa María Technical University	31	4
+113	Universidad Nacional	31	1
+114	National University of Rosario	31	6
+115	Instituto de Química y Fisicoquímica Biológicas	31	6
+116	Facultad de Estudios Superiores Cuautitlán	30	7
+117	Universidade Federal do Amazonas	30	2
+118	Instituto Federal Goiano	30	3
+119	Fundação Oswaldo Cruz	30	5
+120	Universidade Tiradentes	30	5
+121	University of Talca	30	4
+122	Universidade Federal de Sergipe	30	5
+123	Universidade Federal de Ouro Preto	29	3
+124	Universidade de Caxias do Sul	29	8
+125	University of Atlántico	29	4
+126	Autonomous University of Chihuahua	28	7
+127	University of the Coast	28	8
+128	Instituto Dante Pazzanese de Cardiologia	28	3
+129	University of Aveiro	28	2
+130	Universidad de Los Andes	28	4
+131	National University of Quilmes	27	6
+132	Instituto de Pesquisas Energéticas e Nucleares	27	3
+133	Universidade do Estado de Santa Catarina	27	8
+134	Universidade Regional de Blumenau	27	8
+135	National Polytechnic School	27	4
+136	Industrial University of Santander	27	4
+137	Universidad Técnica de Manabí	27	3
+138	Huai'an University	26	7
+139	University of Havana	26	4
+140	Chapingo Autonomous University	26	7
+141	Consejo Superior de Investigaciones Científicas	26	4
+142	Serviço Nacional de Aprendizagem Industrial	26	5
+143	Instituto de Desarrollo Tecnológico para la Industria Química	26	6
+144	National University of San Luis	26	6
+145	Catholic University of the Maule	26	4
+146	Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco	26	7
+147	Universidad Nacional de Río Cuarto	26	6
+148	Instituto Tecnológico de Querétaro	25	7
+149	Instituto de Tecnologia de Alimentos	25	3
+150	Pontifícia Universidade Católica do Rio de Janeiro	25	3
+151	Instituto Federal do Piauí	25	5
+152	University of Sucre	25	4
+153	Institute of Physics	24	3
+154	Universidad Santiago de Cali	24	7
+155	Universidad Yachay Tech	23	4
+156	Universidade Estadual de Ponta Grossa	23	8
+157	Universidad de Granada	23	5
+158	Universidade Federal do Espírito Santo	23	3
+159	Universidade de Marília	23	3
+160	Sonora Institute of Technology	23	7
+161	Metropolitan University of Technology	23	4
+162	Université Grenoble Alpes	22	2
+163	Universidad de Valladolid	22	6
+164	Universidad Autónoma de Baja California	22	7
+165	Solução Ambiental Assessoria e Consultoria	22	3
+166	University of Bío-Bío	22	4
+167	Universidad San Francisco de Quito	22	4
+168	Universidad Autónoma de Chile	22	4
+169	Instituto Nacional de Rehabilitación	22	7
+170	Universidad Autónoma Agraria Antonio Narro	22	7
+171	Universidad Autónoma de Ciudad Juárez	21	7
+172	Centro Universitário de Adamantina	21	3
+173	Universitat Politècnica de Catalunya	21	8
+174	Universidade Federal de Alfenas	21	3
+175	Center for the Development of Nanoscience and Nanotechnology	21	4
+176	Universidade Federal Rural do Semi-Árido	21	5
+177	Universidad Michoacana de San Nicolás de Hidalgo	21	7
+178	Universidade de Passo Fundo	20	8
+179	Instituto de Ciencia y Tecnología de Polímeros	20	6
+180	Universidad de las Fuerzas Armadas ESPE	20	4
+181	Departamento de Ciência e Tecnologia	20	8
+182	National University of General San Martín	20	6
+183	University of Córdoba	20	4
+184	Universidade Federal do Vale do São Francisco	20	5
+185	Instituto de Agroquímica y Tecnología de Alimentos	20	4
+186	Universidade Federal do Pampa	20	8
+187	Universidad Autónoma de Sinaloa	20	7
+188	National University of Engineering	20	4
+189	Universidade Católica de Pernambuco	20	5
+190	Federal University of São João del-Rei	20	3
+191	Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement	20	2
+192	Universidade Federal de Alagoas	20	3
+193	Simón Bolívar University	20	6
+194	Saveetha University	19	3
+195	Instituto Tecnológico de Tepic	19	7
+196	Autonomous University of Yucatán	19	7
+197	Military Institute of Engineering	19	2
+198	Secretaría de Salud de Jalisco	19	7
+199	National Technological University	19	6
+200	Centro Científico Tecnológico - Bahía Blanca	19	6
+201	University of Cauca	19	4
+202	Escuela Superior Politecnica del Litoral	19	4
+203	Universidad Católica de Temuco	18	4
+204	Universidad Autónoma de la Ciudad de México	18	7
+205	Instituto Tecnológico Superior de Xalapa	18	7
+206	Ibero American University	18	7
+207	University of Lisbon	18	8
+208	Universidad Central "Marta Abreu" de las Villas (UCLV)	18	1
+209	Instituto Tecnológico de Toluca	18	7
+210	Durango Institute of Technology	18	7
+211	Universidade Estadual do Centro-Oeste	18	8
+212	Université de Lorraine	17	2
+213	Université Laval	17	3
+214	Universidade de Pernambuco	17	5
+215	NIHR MindTech MedTech Co-operative	17	4
+216	National Training Service	17	7
+217	Universidad Complutense de Madrid	17	5
+218	Biomedical Research Networking Center in Bioengineering, Biomaterials and Nanomedicine	17	6
+219	Instituto de Ciencia de Materiales de Madrid	17	5
+220	Universidad del Noreste	17	7
+221	Centro de Tecnologias Estratégicas do Nordeste	17	5
+222	Nanomed (Brazil)	17	5
+223	Universidade Regional Integrada do Alto Uruguai e das Missões	17	8
+224	Aalto University	16	3
+225	Universidade Federal do Recôncavo da Bahia	16	5
+226	Universidad de Los Andes, Chile	16	4
+227	Federal Center for Technological Education of Minas Gerais	16	3
+228	International Iberian Nanotechnology Laboratory	16	3
+229	Centro de Tecnologia Mineral	16	2
+230	Massachusetts Institute of Technology	16	5
+231	National University of Tucumán	16	6
+232	Pontificial Catholic University of Valparaiso	16	3
+233	Universidade Estadual do Oeste do Paraná	16	8
+234	North Carolina State University	16	3
+235	Universidad de Costa Rica	16	1
+236	National University of San Marcos	16	7
+237	Universidade Nova de Lisboa	16	1
+238	Centro de Investigación y Proyectos en Ambiente y Desarrollo	16	7
+239	Southwest Bahia State University	15	3
+240	University of British Columbia	15	3
+241	Harvard University	15	5
+242	Instituto de Investigaciones Fisicoquímicas Teóricas y Aplicadas	15	6
+243	Instituto Federal de Educação, Ciência e Tecnologia do Pará	15	1
+244	Technological Institute of Celaya	15	7
+245	Friedrich-Alexander-Universität Erlangen-Nürnberg	15	6
+246	Universidade Federal de Mato Grosso	15	8
+247	Instituto Tecnológico de Mérida	15	7
+248	Instituto Federal do Maranhão	15	5
+249	Universidade Federal do Triângulo Mineiro	15	3

@@ -14,6 +14,12 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 PROC, TAB = ROOT / "data/processed", ROOT / "outputs/tables"
 
+# Strict definition, after the second pass in refine_other_computational.py.
+# statistical_doe (factorial design, response surface, curve fitting) is not computational
+# chemistry and is excluded.
+COMPUTATIONAL = {"md", "qc", "qsar", "docking", "ml", "generative", "solubility",
+                 "molecular_modelling", "informatics"}
+
 
 def load(stem):
     p = PROC / f"screened_{stem}.csv"
@@ -52,12 +58,17 @@ def main():
     t3 = pd.read_csv(TAB / "T3_context_comparison.csv")
     core_w = int(t3.loc[t3["context"] == "World", "core_2015_2025"].iloc[0])
     meth_w = int(t3.loc[t3["context"] == "World", "methods_2015_2025"].iloc[0])
-    frac = len(mat) / (len(mat) + len(bio)) if (len(mat) + len(bio)) else float("nan")
+    classified = len(mat) + len(bio)
+    frac_mat = len(mat) / classified if classified else float("nan")
+    mat_comp = mat[mat["method"].isin(COMPUTATIONAL)]
+    frac_both = len(mat_comp) / classified if classified else float("nan")
     corrected = pd.DataFrame([{
         "measure": "method share of the field, 2015-2025",
         "uncorrected_pct": round(meth_w / core_w * 100, 2),
-        "materials_fraction_of_methods_layer": round(frac * 100, 1),
-        "corrected_pct": round(meth_w * frac / core_w * 100, 2),
+        "materials_fraction_of_methods_layer": round(frac_mat * 100, 1),
+        "materials_and_computational_fraction": round(frac_both * 100, 1),
+        "corrected_pct_materials_only": round(meth_w * frac_mat / core_w * 100, 2),
+        "corrected_pct_strict": round(meth_w * frac_both / core_w * 100, 2),
     }])
     corrected.to_csv(TAB / "T11_corrected_method_share.csv", index=False)
 
