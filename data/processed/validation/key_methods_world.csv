@@ -1,0 +1,126 @@
+n,id,stratum,ds_materials,ds_polymer,ds_method,ds_experimental,title
+1,https://openalex.org/W7103993588,random,False,none,none,False,Revolutionizing Food Processing and Preservation through Smart and Sustainable Technologies
+2,https://openalex.org/W4391133548,random,False,nucleic_acid,md,False,Discovery of a trefoil knot in the RydC RNA: Challenging previous notions of RNA topology
+3,https://openalex.org/W2010947880,random,False,protein,md,False,Molecular dynamics simulation of antimicrobial peptide arenicin‐2: β‐Hairpin stabilization by noncovalent interactions
+4,https://openalex.org/W2318764707,random,True,other,md,False,An Integrated Procedure for Computer Simulation of Dynamics of Multibody Molecular Structures in Polymers and Biopolymers
+5,https://openalex.org/W3200024873,random,True,protein,md,True,Silk protein as a biomaterial for tissue engineering application
+6,https://openalex.org/W4376226284,random,False,none,md,False,Development and Benchmarking of Open Force Field 2.0.0: The Sage Small Molecule Force Field
+7,https://openalex.org/W2087137877,rare,False,protein,qsar,False,A network-QSAR model for prediction of genetic-component biomarkers in human colorectal cancer
+8,https://openalex.org/W4212946115,random,True,pha,solubility,True,Switchable Solvents for the Reversible Dissolution of Poly(3-hydroxybutyrate)
+9,https://openalex.org/W4408574013,random,True,lignin,ml,True,Exploring the Feasibility of Deep Learning for Predicting Lignin GC-MS Analysis Results Using TGA and FT-IR
+10,https://openalex.org/W2041369509,random,False,none,none,True,The secretome of Pleurotus sapidus
+11,https://openalex.org/W2030448269,random,True,other,qc,True,Knowledge‐Based Approach towards Hydrolytic Degradation of Polymer‐Based Biomaterials
+12,https://openalex.org/W7171280444,random,True,pha,docking,False,Computational evaluation of PHO model compounds for monitoring PHA depolymerase activity
+13,https://openalex.org/W4392710503,random,True,protein,md,True,Impact of crystalline domains on long‐term stability and mechanical performance of anisotropic silk fibroin sponges
+14,https://openalex.org/W2963664536,rare,False,none,docking,True,"A novel ligand transfer reaction: Transferring an N3-donor amine ligand from Ni(II) to Cu(II)—structural, spectral, theoretical, and docking studies"
+15,https://openalex.org/W4220821803,random,True,protein,md,False,A Comparison between the Lower Critical Solution Temperature Behavior of Polymers and Biomacromolecules
+16,https://openalex.org/W4403245695,random,False,none,qc,True,‘Invisible’ Molecular Dynamics Revealed for a Conformationally Chiral π‐Stacked Perylene Bisimide Foldamer
+17,https://openalex.org/W7140314943,random,True,nucleic_acid,md,True,Precise Mechanochemical Scission of DNA Guided by Secondary Structures
+18,https://openalex.org/W2336588883,random,True,other,ml,False,Developing a Suitable Model for Water Uptake for Biodegradable Polymers Using Small Training Sets
+19,https://openalex.org/W569047147,rare,True,pla,qsar,True,Inclusion et libération de molécules antioxydantes dans un emballage à base d’Acide Poly Lactique en contact alimentaire
+20,https://openalex.org/W2293367254,rare,True,protein,qsar,True,Coiled-coil forming peptides for the induction of silver nanoparticles
+21,https://openalex.org/W4389056482,random,False,nucleic_acid,md,False,Computation of topographic and three-dimensional atomic force microscopy images of biopolymers by calculating forces
+22,https://openalex.org/W2511849906,random,True,other,none,False,Methods and Tastes in Modern Continuum Mechanics: To the Memory of Donald E. Carlson
+23,https://openalex.org/W4395684551,random,True,cellulose,md,False,Study of Cellulose Dissolution in ZnO/NaOH/Water Solvent Solution and Its Temperature-Dependent Effect Using Molecular Dynamics Simulation
+24,https://openalex.org/W7163587132,random,True,cellulose,md,False,Size and solvent effects on cellulose transverse anisotropy and toughening design
+25,https://openalex.org/W4281929746,rare,True,other_polysaccharide,docking,True,"Dendronized Polymeric Biomaterial for Loading, Stabilization, and Targeted Cytosolic Delivery of microRNA in Cancer Cells"
+26,https://openalex.org/W2320565857,random,True,other,md,False,Large-Scale Reactive Molecular Dynamics Simulation and Kinetic Modeling of High-Temperature Pyrolysis of the Gloeocapsomorphaprisca Microfossils
+27,https://openalex.org/W7201961493,rare,False,none,generative,False,Reverse Biochemical Construction: A Computational Paradigm for Inverse Molecular Design from Functional Specifications
+28,https://openalex.org/W2249675297,random,True,other_polysaccharide,solubility,True,Understanding molecular and thermodynamic miscibility of carbohydrate biopolymers
+29,https://openalex.org/W2146554742,rare,True,other,qsar,True,Accurate predictions of cellular response using QSPR: a feasibility test of rational design of polymeric biomaterials
+30,https://openalex.org/W3209309534,random,True,cellulose,qc,True,A Novel Schiff Base‐Modified Dialdehyde Cellulose‐Based Fluorescent Probe for Al3+ and Its Application in Environmental Analysis
+31,https://openalex.org/W2068467820,random,False,nucleic_acid,ml,True,An Alignment-Free Approach for Eukaryotic ITS2 Annotation and Phylogenetic Inference
+32,https://openalex.org/W4389683994,random,True,other,md,False,Predicting the Glass Transition Temperature of Biopolymers via High-Throughput Molecular Dynamics Simulations and Machine Learning
+33,https://openalex.org/W2808281526,random,False,protein,md,True,The Dance of Water Molecules around Proteins
+34,https://openalex.org/W1993236607,rare,True,other,qsar,False,QSAR Models for the Analysis of Bioresponse Data from Combinatorial Libraries of Biomaterials
+35,https://openalex.org/W4310806566,random,True,pha,ml,False,Bioplastic design using multitask deep neural networks
+36,https://openalex.org/W4409002002,rare,False,none,docking,True,"Integrated ultrastructural, physiological and transcriptomic analyses uncover alterations in photosynthetic biomacromolecule structures by cadmium and cerium co-exposure and their regulation by hormone signaling and antioxidant pathways in maize"
+37,https://openalex.org/W2071267807,random,False,none,md,False,Dynamics of Water in Solvation Shells and Intersolute Regions of C60: A Molecular Dynamics Simulation Study
+38,https://openalex.org/W7201913981,random,True,cellulose,md,False,Tetrahedral linkage as an intrinsic measure of glycan antifreeze behavior
+39,https://openalex.org/W2164398475,random,True,chitosan,qc,False,"Preliminary Study of Conformation and Drug Release Mechanism of Doxorubicin-Conjugated Glycol Chitosan, via cis-Aconityl Linkage, by Molecular Modeling"
+40,https://openalex.org/W4361000809,random,False,other_polysaccharide,md,True,Gas-Phase Behavior of Galactofuranosides upon Collisional Fragmentation: A Multistage High-Resolution Ion Mobility Study
+41,https://openalex.org/W1988880705,random,False,protein,qsar,False,QSAR model for alignment‐free prediction of human breast cancer biomarkers based on electrostatic potentials of protein pseudofolding HP‐lattice networks
+42,https://openalex.org/W2021076428,random,False,protein,md,True,Dynamics of a globular protein and its hydration water studied by neutron scattering and MD simulations
+43,https://openalex.org/W7125532273,random,False,protein,md,False,Understanding the Kinetic Mechanism of Ligands Stabilizing the RAS–CYPA Interaction
+44,https://openalex.org/W4415712544,random,True,lignin,none,False,Building a lignin biofoundry: a review
+45,https://openalex.org/W2019857898,random,False,protein,qc,False,An efficient approach for ab initio energy calculation of biopolymers
+46,https://openalex.org/W3017121684,random,False,none,none,False,Examining Curricular Trends in Introductory Biochemistry Courses at Large Universities
+47,https://openalex.org/W1795108899,random,False,protein,md,False,Polymer-theory insights into biomolecular systems
+48,https://openalex.org/W7170343904,random,True,other_polysaccharide,md,True,Sequential extraction and characterization of α-glucans from Gastrodiae Rhizoma: Induction of caspase-mediated apoptosis in cervical cancer cells via PI3K/AKT pathway suppression and network pharmacology-guided experimental validation
+49,https://openalex.org/W2605517795,rare,False,none,docking,True,Discovery of Novel Ligands for TNF-α and TNF Receptor-1 through Structure-Based Virtual Screening and Biological Assay
+50,https://openalex.org/W4313610829,random,False,none,none,True,Introduction to Incoherent Neutron Scattering
+51,https://openalex.org/W4414161427,random,True,other,md,False,All-Atom Modeling and Simulation of Biopolymer Interface: Dual Role of Antifouling Polymer Brushes
+52,https://openalex.org/W3088841304,random,True,other_polysaccharide,qc,True,Low-Cost and Environmentally Friendly Biopolymer Binders for Li–S Batteries
+53,https://openalex.org/W4399087283,random,True,other,ml,False,INTELLIGENT INFORMATION TECHNOLOGIES TO SUPPORT DECISION-MAKING WHEN APPLYING THE CAD/CAM/CAE SYSTEM OF DESIGN AND USING ADDITIVE TECHNOLOGIES
+54,https://openalex.org/W1974886244,random,True,chitosan,qc,False,Density functional theory studies of Pb (II) interaction with chitosan and its derivatives
+55,https://openalex.org/W7152078306,rare,True,pha,qsar,False,A Data-Driven Framework for Predicting PHBV Biodegradation-Induced Weight Loss Based on Laboratory and Real-Environment Condition Tests
+56,https://openalex.org/W7142325483,random,True,other_polysaccharide,md,True,Synergistic Noncovalent Mulberry Polysaccharide–Ovalbumin Complexes for Enhanced Functional Properties and Pickering Emulsion Stability
+57,https://openalex.org/W7164167439,random,True,chitosan,none,False,A Review on Biodegradable Polymer-Based Drug Delivery Systems
+58,https://openalex.org/W4394973856,random,False,protein,md,False,Почему белок сворачивается в уникальную 3D-структуру? И не только это…
+59,https://openalex.org/W3080120346,rare,False,none,docking,True,"Diversity-Oriented Synthesis of Thiazolidine-2-imines via Microwave-Assisted One-Pot, Telescopic Approach and Its Interaction with Biomacromolecules"
+60,https://openalex.org/W2733697433,random,True,other_polysaccharide,md,False,Theoretical Models for Biopolymers
+61,https://openalex.org/W4386326162,random,False,other_polysaccharide,md,True,eLife Assessment: Structural characterization of ligand binding and pH-specific enzymatic activity of mouse Acidic Mammalian Chitinase
+62,https://openalex.org/W4400311083,random,True,protein,none,False,Silk fibroin-based flexible pressure sensors: processing and application
+63,https://openalex.org/W2290118723,random,True,other,qc,True,Evidence of Porphyrin‐Like Structures in Natural Melanin Pigments Using Electrochemical Fingerprinting
+64,https://openalex.org/W2036742658,random,False,protein,docking,True,Binding Studies and Computer‐Aided Modelling of Macromolecule/Odorant Interactions
+65,https://openalex.org/W2954392651,random,False,protein,none,True,Cytoskeletal Dynamics of Neurons Measured by Combined Fluorescence and Atomic Force Microscopy
+66,https://openalex.org/W7171781146,rare,True,pha,docking,True,Genomic and structural insights into the high-efficiency poly(3-hydroxybutyrate) biodegradation in Terrabacter sp. AAH1
+67,https://openalex.org/W4399428721,random,False,protein,md,True,Elementary Processes of Molecular Dynamics in Aqueous Biopolymer Systems
+68,https://openalex.org/W2969340540,random,True,alginate,none,True,The effect of the two biopolymers “sodium alginate and chitosan” on the inhibition of copper corrosion in 1 M hydrochloric acid
+69,https://openalex.org/W4319300238,rare,False,nucleic_acid,docking,True,Insights into interactions of N-ethylpentylone drug with water and biomacromolecules
+70,https://openalex.org/W3045567321,random,False,none,qc,False,Efficient Computation of Free Energy Contributions for Association Reactions of Large Molecules
+71,https://openalex.org/W4412506427,random,False,none,none,True,Nitrogen limitation causes a seismic shift in redox state and phosphorylation of proteins implicated in carbon flux and lipidome remodeling in Rhodotorula toruloides
+72,https://openalex.org/W4318719287,random,True,other,md,False,Programmable phase behavior in fluids with designable interactions
+73,https://openalex.org/W2621068199,random,True,other,md,True,A Novel Multiblock Copolymer of CO2-Based PPC-mb-PBS: From Simulation to Experiment
+74,https://openalex.org/W4416588459,random,True,other_polysaccharide,ml,False,"Toward sustainable, smart, and multifunctional Carrageenan bio(nano)composites: Mechanistic insights, physicochemical properties, biomedical interfaces, and AI-driven design perspectives"
+75,https://openalex.org/W3023768408,random,True,other_polysaccharide,md,False,"Conformation, flexibility and hydration of hyaluronic acid by molecular dynamics simulations"
+76,https://openalex.org/W2034694272,random,False,protein,md,True,Metal Ions Guided Self-assembly of Therapeutic Proteins for Controllable Release: From Random to Ordered Aggregation
+77,https://openalex.org/W4382679325,random,True,starch,ml,True,Modeling of degradation ability for starch-based biodegradable polymer film using ANFIS
+78,https://openalex.org/W7116916151,random,True,other,none,False,"Thermo-Responsive Smart Hydrogels: Molecular Engineering, Dynamic Cross-Linking Strategies, and Therapeutics Applications"
+79,https://openalex.org/W4411429383,random,True,pla,ml,True,"not-yet-known not-yet-known not-yet-known unknown Exploring How Cracks Grow in PLA with Dual Keyhole Notches: Blending Experiments, Simulations, and Smart Predictions"
+80,https://openalex.org/W7143410323,rare,False,protein,docking,False,STELLAR Enables Structural Prediction of Highly Flexible Long-Chain Biopolymers via a Novel Fragment-Based Workflow
+81,https://openalex.org/W4397031737,rare,True,lignin,qsar,False,Modeling lignin extraction with ionic liquids using machine learning approach
+82,https://openalex.org/W7204208086,random,False,none,none,False,Food Waste Valorization: Converting Agro-Industrial By-Products into Value-Added Products
+83,https://openalex.org/W7171950907,random,False,none,none,False,Green Electrochemical Nano-Biosensors for Sustainable Arsenic Speciation and Monitoring
+84,https://openalex.org/W3127559009,rare,True,cellulose,docking,False,COLD-ACTIVE MICROBIAL CELLULASE: NOVEL APPROACH TO UNDERSTAND MECHANISM AND ITS APPLICATIONS IN FOOD AND BEVERAGES INDUSTRY
+85,https://openalex.org/W7170048893,random,True,other_polysaccharide,ml,False,Agricultural-based biopolymer packaging films and AI-integrated smart double-layer systems: Trends and innovations in food science and technology
+86,https://openalex.org/W7171776094,random,True,other,qc,False,Green Corrosion Inhibitors: Sustainable Approaches for Metal Protection in Harsh Environments
+87,https://openalex.org/W7147469067,rare,False,none,generative,False,TRACE: An Artefact-Centric Governance Framework for Human-in-the-Loop GenAI Co-Design
+88,https://openalex.org/W4416373742,random,False,nucleic_acid,docking,True,Adsorption and separation of RNA and protein on imidazolium-type ionic liquids-based chromatographic media: influence of counterions
+89,https://openalex.org/W4317829655,rare,True,other,docking,True,"In Silico Molecular Docking Approach of Melanin Against Melanoma Causing MITF Proteins and Anticancer, Oxidation–Reduction, Photoprotection, and Drug-Binding Affinity Properties of Extracted Melanin from Streptomyces sp. strain MR28"
+90,https://openalex.org/W4405768971,random,True,chitosan,qc,True,Development of a Method for Obtaining Nanoscale Magnesium Carbonate Stabilized with Chitosan as the Basis of Scaffold Matrices for Regenerative Medicine
+91,https://openalex.org/W4402165870,rare,True,protein,docking,True,Fabrication and characterization of whey protein isolate-tryptophan nanoparticles by pH-shifting combined with heat treatment
+92,https://openalex.org/W1642857922,random,False,none,md,False,A visual computing environment for very large scale biomolecular modeling
+93,https://openalex.org/W4400940893,random,False,none,qc,False,Structural and Energetic study of Lithium ions with fatty acid methyl ester [FAME (9Z-18:1) + Li+] using quantum chemical method (PM3)
+94,https://openalex.org/W7163571417,random,True,other_polysaccharide,ml,False,Multifunctional Hydrogel-Based Scaffolds: Integrating Conductive Nanomaterials for Smart Wound Healing Applications
+95,https://openalex.org/W4318480686,random,True,protein,ml,True,The Influence of Biopolymer Coating Based on Pumpkin Oil Cake Activated with Mentha piperita Essential Oil on the Quality and Shelf-Life of Grape
+96,https://openalex.org/W2287641131,random,False,protein,md,True,"Potent antidiuretic agonists, deamino‐vasopressin and desmopressin, and theirinversoanalogs: NMR structure and interactions with micellar and liposomic models of cell membrane"
+97,https://openalex.org/W4408536850,rare,True,pha,docking,False,Comparative In Silico Structural Analysis of PHA Synthases from Industrially Prominent PHA Producers
+98,https://openalex.org/W4213222436,random,True,pla,ml,True,Estimating the Relative Crystallinity of Biodegradable Polylactic Acid and Polyglycolide Polymer Composites by Machine Learning Methodologies
+99,https://openalex.org/W7202361968,random,False,none,none,False,ADVANCED DRUG DELIVERY STRATEGIES FOR HIV THERAPY
+100,https://openalex.org/W7117245138,random,True,other,none,False,Spatiotemporally controlled delivery of biomacromolecules via injectable hydrogels for precision modulation of the tumor immune microenvironment
+101,https://openalex.org/W4319989273,random,False,none,docking,True,"Photophysical, photobiological, and biomolecule-binding properties of new tri-cationic meso-tri(2-thienyl)corroles with Pt(II) and Pd(II) polypyridyl derivatives"
+102,https://openalex.org/W4386326432,random,False,other_polysaccharide,md,True,Structural characterization of ligand binding and pH-specific enzymatic activity of mouse Acidic Mammalian Chitinase
+103,https://openalex.org/W3001635210,random,True,protein,docking,True,Re-assembled oleic acid-protein complexes as nano-vehicles for astaxanthin: Multispectral analysis and molecular docking
+104,https://openalex.org/W7147475512,rare,False,other,docking,False,STELLAR Enables Structural Prediction of Highly Flexible Long-Chain Biopolymers via a Novel Fragment-Based Workflow
+105,https://openalex.org/W7154287722,random,True,alginate,ml,True,A novel Terahertz spectral imaging technique for non-destructive quantitative analysis of alginate in Alaria esculenta Extracts
+106,https://openalex.org/W4405002327,rare,False,pla,docking,True,Structure-based drug design of pre-clinical candidate nanopiperine: a direct target for CYP1A1 protein to mitigate hyperglycaemia and associated microbes
+107,https://openalex.org/W1968321705,random,False,nucleic_acid,none,True,Fast imaging and fast force spectroscopy of single biopolymers with a new atomic force microscope designed for small cantilevers
+108,https://openalex.org/W4401760605,random,False,none,none,False,3D Printing Techniques: Transforming Manufacturing with Precision and Sustainability
+109,https://openalex.org/W1965796655,random,False,none,md,False,On Protein Crowding and Bilayer Bulging in Spontaneous Vesicle Formation
+110,https://openalex.org/W4388093830,random,True,other_polysaccharide,ml,False,Predicting the Composition and Mechanical Properties of Seaweed Bioplastics from the Scientific Literature: A Machine Learning Approach for Modeling Sparse Data
+111,https://openalex.org/W7124179459,random,True,other,none,False,Customization of Drug Delivery using 3D Printing Technologies: A Material Driven Review
+112,https://openalex.org/W3082637668,random,False,protein,md,False,"Molecular Simulation of Biological Macromolecules: Aggregation, Ion Capture, and Sliding Dynamics"
+113,https://openalex.org/W4399437295,random,True,other,ml,True,Assessment of sustainable baits for passive fishing gears through automatic fish behavior recognition
+114,https://openalex.org/W4396893021,random,True,other_polysaccharide,ml,False,Exploring the purity of chitin from crustacean sources using deep eutectic solvents: A machine learning approach
+115,https://openalex.org/W7155456150,random,False,nucleic_acid,md,False,Yksittäisen polymeerin dynamiikka ahtaissa geometrioissa: Kapsidiejektio ja sedimentaatio
+116,https://openalex.org/W4407706904,rare,True,chitosan,docking,True,Integrated network pharmacology and bio-functional chitosan-hydroxyapatite scaffolds incorporating quercetin for enhanced bone regeneration in articular cartilage defects
+117,https://openalex.org/W7118022177,rare,False,protein,docking,True,"Interaction of 7,8-dihydroxycoumarin with a biopolymer bromelain: Synthesis, spectroscopic and molecular docking insights"
+118,https://openalex.org/W4407185054,random,False,other,docking,True,Nano-Polymers as Cas9 Inhibitors
+119,https://openalex.org/W7207657113,random,True,cellulose,ml,True,Eco-Friendly Charge-Trapping Memory Transistors with Balanced Rewritability for Neuromorphic Computing
+120,https://openalex.org/W4376891216,random,True,chitosan,md,True,Reduced Chitosan as a Strategy for Removing Copper Ions from Water
+121,https://openalex.org/W4402985443,random,True,pha,md,True,Modelling Across Multiple Scales to Design Biopolymer Membranes for Sustainable Gas Separations: 2-Multiscale Approach
+122,https://openalex.org/W4382777655,random,True,pla,md,True,Green solvent mediated extraction of micro- and nano-plastic particles from water
+123,https://openalex.org/W7141245999,random,False,other_polysaccharide,none,False,Frontiers in polysaccharide biosynthesis: Decoding the catalytic logic of enzymes for future applications
+124,https://openalex.org/W2802751822,random,True,other_polysaccharide,qc,True,A Biopolymer Heparin Sodium Interlayer Anchoring TiO2 and MAPbI3 Enhances Trap Passivation and Device Stability in Perovskite Solar Cells
+125,https://openalex.org/W4413088757,random,False,none,none,False,"Recent Advances in Nanobiotechnology: Applications in Medicine, Environmental Science, and Industry"

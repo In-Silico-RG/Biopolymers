@@ -1,0 +1,16 @@
+# Phase 1 — ANCHORS, Spanish and Portuguese variants
+# Source: OpenAlex | Field: title_and_abstract.search
+# Run: ____ | Count: ____
+# One block per anchored line, to test whether the regional deficit is partly linguistic.
+
+## cellulose
+celulosa OR celulose OR nanocelulosa OR nanocelulose OR "celulosa bacteriana" OR "celulose bacteriana" OR "nanocristales de celulosa" OR "nanocristais de celulose" OR "nanofibras de celulosa" OR "nanofibras de celulose" OR lignocelulósico OR lignocelulósica OR lignocelulósicos
+
+## pha
+polihidroxialcanoato OR polihidroxialcanoatos OR polihidroxialcanoatos OR poli-hidroxialcanoatos OR polihidroxibutirato OR poli-hidroxibutirato OR poliidroxialcanoatos OR poliidroxibutirato
+
+## lignin
+lignina OR ligninas OR lignosulfonato OR lignosulfonatos OR "lignina kraft" OR "lignina organosolv"
+
+## starch and others
+almidón OR amido OR "almidón termoplástico" OR "amido termoplástico" OR quitosano OR quitosana OR quitina OR alginato OR pectina OR "goma xantana"

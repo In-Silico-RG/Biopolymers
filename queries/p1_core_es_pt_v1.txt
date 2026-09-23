@@ -1,0 +1,8 @@
+# Phase 1 — CORE, Spanish and Portuguese variants
+# Source: OpenAlex | Field: title_and_abstract.search
+# Run: ____ | Count: ____
+# Purpose: measure what a Spanish and Portuguese vocabulary adds to the regional slices.
+# Reported as an addition to the English core, never merged into it silently, because the
+# English counts in docs 01 and 02 were produced without these terms.
+
+biopolímero OR biopolímeros OR biopolimero OR biopolimeros OR bioplástico OR bioplásticos OR bioplastico OR bioplasticos OR "polímero biodegradable" OR "polímeros biodegradables" OR "polímero biodegradável" OR "polímeros biodegradáveis" OR "polímero natural" OR "polímeros naturales" OR "polímeros naturais" OR "polímero de origen renovable" OR biomacromolécula OR biomacromoléculas
