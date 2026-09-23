@@ -106,3 +106,57 @@ Language: English.
 - Commit `10c8c01` 10:51 — Phase 1: bibliometric mapping of the biopolymers field on OpenAlex
 - Open for AC: an OpenAlex API key; Scopus and WoS access; whether to add Spanish and
   Portuguese query variants; the identities of GIFTEX, UNF and Wilson Castro.
+
+---
+
+## 2026-09-23 — Session 3: API key, networks, and the screened method layer
+
+- AC supplied an OpenAlex API key for insilico@unisucre.edu.co. Stored at
+  `~/.openalex_key`, mode 600, exported from `.bashrc`, never in the repository.
+  `corpora.api_key()` reads the environment first, then that file.
+- Harvested 28,556 full records across 14 corpora. Two API corrections: `grants` is not a
+  valid select field on this version and was replaced with `awards` and `funders`; added
+  `countries_distinct_count` so the international-collaboration share is read from the API
+  rather than parsed out of authorships.
+- Screened the world method layer, 3,951 works, with DeepSeek on a 12-thread pool. Result:
+  70.1% carry an abstract, and of those only 55.6% are biopolymer materials research. The
+  keyword method share of 2.63% falls to 1.46%.
+- **Correction, found by inspecting the output rather than trusting it.** The Colombian
+  screening put the computational share at 12.47%, which looked wrong against the keyword
+  2.8%. Reading the titles showed the `other_computational` category was catching factorial
+  designs, response-surface methodology and curve fitting. Rather than re-screen 12,000
+  abstracts under a new prompt, only that bucket was re-asked with a question naming the
+  distinction: 504 works, of which 221 turned out to be statistical design of experiments
+  and 127 no modelling at all. `statistical_doe` is now excluded from every computational
+  count, the strict world figure is 1.26%, and the Colombian figure is 5.09%. First-pass
+  files kept as `*.firstpass.csv`.
+- AC: "sigue con las redes de coautoría y el cribado latinoamericano". Both done.
+- Networks built with networkx: country, institution and author co-authorship with degree,
+  weighted degree and betweenness, plus Louvain clusters. VOSviewer map+network pairs
+  written to `outputs/maps/` for all five graphs, since VOSviewer is the right tool for the
+  node-link rendering and matplotlib is not.
+- **Decision on figures.** No node-link figure was drawn. A 115-node co-authorship graph is
+  a hairball; the collaboration structure went into a matrix instead (`F5`), which is
+  legible, and the graphs went to VOSviewer.
+- Findings. Colombia is the most internationally (44.1%) and most regionally (23.9% with a
+  second Latin American country) connected corpus measured, four times the regional average,
+  while Brazil's strongest ties run outward to the United States, Portugal and Spain.
+  Lotka exponents are 2.6 to 3.5 against a classic 2, and the method layers are steepest:
+  86% of the 14,861 authors in the world method layer appear exactly once, so there is no
+  standing community of computational biopolymer researchers. Bradford's core zone is 2%
+  of journals worldwide but 13% for the Latin American method layer, meaning that work has
+  no home venue. Universidad de Sucre appears in the Colombian institution ranking with 25
+  works.
+- **Reversal worth flagging.** Screening the whole regional fields rather than the
+  keyword-selected layer raises Latin America to 3.68% and Colombia to 5.09%, so Colombia is
+  *above* the regional average, not below as the keyword counts in
+  `01_bibliometric_mapping.md` section 4 said. That section is now marked superseded.
+  Keyword bibliometrics undercounts the region by about 1.7 times.
+- The regional method mix differs from the world's: molecular dynamics leads worldwide,
+  machine learning leads in Latin America, quantum chemistry leads in Colombia. Offered as
+  a hypothesis about computing infrastructure, not as a result, because the Colombian
+  denominator is nine works.
+- Written to `docs/02_networks_and_screening.md`, status in progress.
+- Open for AC: whether to recover the missing 30% of abstracts from Crossref; whether
+  Camila should hand-code a validation sample against the screening; Scopus and WoS access;
+  Spanish and Portuguese query variants; the identities of GIFTEX, UNF and Wilson Castro.

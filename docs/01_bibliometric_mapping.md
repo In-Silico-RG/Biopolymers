@@ -6,10 +6,11 @@
 made about it, and measure how much of that field uses computational, chemoinformatic or
 AI methods.
 
-**Status.** in progress — 2026-09-23. First pass complete on OpenAlex aggregates. Web of
-Science, Scopus and Lens not yet added, and no record-level analysis yet: the OpenAlex
-free daily budget was exhausted, which blocks full-record downloads until an API key
-exists. See *Open questions*.
+**Status.** in progress — 2026-09-23. Keyword-based pass complete on OpenAlex aggregates.
+The record-level work that was blocked here is done in `02_networks_and_screening.md`, and
+**section 4 of this document is superseded by section 3.3 there**: reading the abstracts
+shows the keyword counts both overstate the world share and understate the regional one.
+Web of Science, Scopus and Lens still not added.
 
 ---
 
@@ -92,7 +93,10 @@ doubled in a decade after a decline through the 2000s. Figure `F2_methods_share.
 
 **The region is not behind in method uptake.** Latin America sits at 2.20% against a world
 2.63%, and Colombia at 1.94%. The regional deficit is one of **volume**, not of methodological
-modernity. This cuts against the expectation that the gap would be technological, and it
+modernity. *(Superseded: `02_networks_and_screening.md` section 3.3 shows these keyword
+counts understate the region. On screened abstracts Latin America reaches 3.68% and
+Colombia 5.09%, so Colombia is above the regional average rather than below it. The
+conclusion holds and strengthens; the ordering and the numbers here should not be quoted.)* This cuts against the expectation that the gap would be technological, and it
 changes what the thesis can recommend: the constraint to argue about is scale and
 continuity of output, not access to computational practice.
 
