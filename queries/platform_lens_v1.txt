@@ -34,9 +34,11 @@ author.affiliation.address.country_code:(CO)
 ## DATE FILTER
 year_published:[1990 TO 2025]
 
-## NOTE ON FIELD NAMES
-# The field names above follow Lens's scholarly-works schema, but they were not tested
-# against a live account. If a query is rejected, check the exact spelling in the Lens
-# field reference and use the facet panel for the country and date filters instead of
-# writing them into the string. The topical blocks are the part that matters; the filters
-# are reproducible either way as long as the run is recorded.
+## NOTE ON FIELD NAMES — CONFIRMED 2026-09-23
+# Checked against the Lens Scholar API reference: title, abstract,
+# author.affiliation.address.country_code and year_published are the correct field names.
+# The same strings therefore serve both the web interface and the API.
+#
+## PREFER THE API
+# scripts/python/harvest_lens.py runs these blocks through the Lens scholarly API and
+# writes to data/raw/lens/. Manual CSV export is the fallback, not the plan.

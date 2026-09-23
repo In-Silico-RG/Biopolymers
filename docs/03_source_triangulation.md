@@ -6,9 +6,9 @@
 far from OpenAlex alone can be triangulated rather than trusted.
 
 **Status.** in progress — 2026-09-23. Search equations written in native syntax for all
-three platforms and frozen in `queries/platform_*_v1.txt`. Nothing downloaded: Lens needs an
-account and Scopus and WoS need institutional access. This document is the instruction
-sheet for that download.
+three platforms and frozen in `queries/platform_*_v1.txt`, and a Lens API harvester written
+and its parsing tested. Nothing downloaded: Lens needs an API token and Scopus and Web of
+Science need institutional access. This document is the instruction sheet for both.
 
 ---
 
@@ -27,23 +27,35 @@ R&D on biopolymers shows up in patents before it shows up in papers.
 
 ## 2. Lens.org
 
-**What is needed.** A free account at lens.org. No institutional subscription. This is the
-one you can start today.
+**Lens has an API, and it is the better route.** The manual export below is the fallback.
+`POST https://api.lens.org/scholarly/search` with `Authorization: Bearer <token>` is live;
+an unauthenticated probe returns 401, which is how we know the endpoint is right. It
+accepts Lucene-style `query_string` with explicit AND/OR/NOT, so the same strings serve the
+web interface and the API unchanged.
 
-**What to run.** The six blocks in `queries/platform_lens_v1.txt`, under Scholarly Works.
+**How to get a token.** Sign in at lens.org, open the **API & Data** tab, choose Trial or
+Custom Access, and complete the service request form. Approval arrives by email with
+instructions for generating the token. The academic trial is the usual route for
+non-commercial research. Once issued, write it to `~/.lens_token` or set `LENS_API_TOKEN`,
+and never commit it.
+
+**What to run.** `scripts/python/harvest_lens.py`, which reads the blocks straight out of
+`queries/platform_lens_v1.txt` and writes one JSONL file per block and region into
+`data/raw/lens/`, plus a manifest recording the query, the run date and the record count.
 Run the patent search separately, never mixed into the scholarly counts.
 
-**Caution on the field names.** The country and date filters in that file follow Lens's
-documented schema but were not tested against a live account. If a string is rejected, use
-the left-hand facet panel for country and year instead and leave the topical block alone.
-The topical block is the part that has to be reproducible; the filters are reproducible
-either way as long as the run is recorded.
+**Two API constraints the script already handles.** Offset paging refuses to go past 10,000
+records, so every corpus is scrolled with a cursor instead; and a `scroll_id` expires after
+one minute, so the paging loop never pauses between pages. Maximum page size is 1,000.
 
-**Export.** CSV and BibTeX both, same search, same day. The free tier caps the export size
-and the cap has changed more than once, so read the number the platform shows rather than
-trusting any figure written down here. If the cap bites, segment by year and export one
-slice per year, which is cleaner than segmenting by subtopic because the slices cannot
-overlap.
+**Field names, confirmed against the Scholar API reference:** `title`, `abstract`,
+`author.affiliation.address.country_code`, `year_published`.
+
+**Manual fallback.** If the token is refused or delayed, export CSV and BibTeX from the web
+interface, same search and same day. The free tier caps the export size and the cap has
+changed more than once, so read the number the platform shows rather than trusting any
+figure written here. If the cap bites, segment by year, which is cleaner than segmenting by
+subtopic because year slices cannot overlap.
 
 ## 3. Scopus
 
@@ -128,6 +140,9 @@ nothing should be.
 
 ## Open questions
 
+- Request a Lens API token at lens.org under API & Data, Trial or Custom Access. It is the
+  only one of the three that needs no institutional subscription, so it is the fastest path
+  to a second source. — AC.
 - Does UNISUCRE have active Scopus and Web of Science subscriptions, and does Camila have
   credentials and off-campus access? — AC.
 - Which Web of Science indexes does the subscription cover, ESCI in particular? — AC.
