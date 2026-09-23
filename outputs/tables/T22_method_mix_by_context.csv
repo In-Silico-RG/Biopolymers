@@ -1,10 +1,12 @@
 method,World,Ibero-America,Latin America,Colombia
 docking,5.7,4.7,4.0,0.0
 generative,0.6,0.0,0.0,0.0
+informatics,0.2,0.7,1.0,0.0
 md,33.0,28.2,24.2,22.2
 ml,24.8,27.5,29.3,22.2
-none,12.1,9.4,11.1,11.1
-other_computational,2.4,5.4,7.1,11.1
+molecular_modelling,0.7,2.0,3.0,11.1
+none,13.4,12.1,14.1,11.1
 qc,16.5,22.8,24.2,33.3
 qsar,1.4,0.0,0.0,0.0
 solubility,3.5,2.0,0.0,0.0
+statistical_doe,0.2,0.0,0.0,0.0

@@ -1,144 +1,144 @@
 id	label	weight<Documents>	cluster
-1	Universidad Nacional de Colombia	96	4
-2	Universidad del Valle	66	14
-3	Universidad de Antioquia	47	6
-4	University of Cartagena	47	8
-5	Universidad Pontificia Bolivariana	36	3
-6	Pedagogical and Technological University of Colombia	32	15
-7	University of Atlántico	29	14
-8	University of the Coast	28	5
-9	Universidad de Los Andes	28	6
-10	Industrial University of Santander	27	10
-11	University of Sucre	25	14
-12	Universidad Santiago de Cali	24	16
-13	University of Córdoba	20	14
-14	University of Cauca	19	14
-15	NIHR MindTech MedTech Co-operative	17	14
-16	National Training Service	17	16
-17	Fundación Universitaria Los Libertadores	14	8
-18	Universidad de San Buenaventura, Bogota	13	14
-19	Centro de Investigación en Química Aplicada	10	16
-20	Icesi University	9	13
-21	Universidad de Santiago de Chile	9	4
-22	University of Caldas	9	4
-23	Francisco de Paula Santander University	9	10
+1	Universidad Nacional de Colombia	96	2
+2	Universidad del Valle	66	8
+3	Universidad de Antioquia	47	11
+4	University of Cartagena	47	13
+5	Universidad Pontificia Bolivariana	36	6
+6	Pedagogical and Technological University of Colombia	32	14
+7	University of Atlántico	29	8
+8	University of the Coast	28	7
+9	Universidad de Los Andes	28	11
+10	Industrial University of Santander	27	5
+11	University of Sucre	25	8
+12	Universidad Santiago de Cali	24	9
+13	University of Córdoba	20	8
+14	University of Cauca	19	8
+15	NIHR MindTech MedTech Co-operative	17	8
+16	National Training Service	17	9
+17	Fundación Universitaria Los Libertadores	14	13
+18	Universidad de San Buenaventura, Bogota	13	8
+19	Centro de Investigación en Química Aplicada	10	9
+20	Icesi University	9	4
+21	Universidad de Santiago de Chile	9	2
+22	University of Caldas	9	2
+23	Francisco de Paula Santander University	9	5
 24	Centre National de la Recherche Scientifique	9	1
-25	Universidade Federal de Santa Maria	8	5
-26	University of Boyaca	8	15
-27	Universidad Distrital Francisco José de Caldas	8	4
-28	Universidad del Norte	8	8
-29	Instituto Politécnico Nacional	7	15
-30	Universidad Autónoma de Coahuila	7	16
-31	Universidad Nacional Abierta y a Distancia	7	10
-32	Institución Universitaria ITM	7	11
-33	Clínica CES	7	7
-34	Consejo Nacional de Investigaciones Científicas y Técnicas	7	15
-35	Universidad Autonoma de Manizales	7	4
-36	Secretaría de Ciencia, Humanidades, Tecnología e Innovación	6	16
-37	Universitat Politècnica de València	6	10
-38	Military University Nueva Granada	6	4
-39	Universidad Tecnológica de Bolívar	6	8
-40	Universitat de València	6	3
-41	Universidad de Medellín	6	6
-42	Universidad CES	6	7
-43	Universidad de La Sabana	6	4
-44	Universidad FUCS	6	6
-45	Universidade de São Paulo	6	4
-46	Universidade Estadual de Campinas (UNICAMP)	6	4
-47	Popular University of Cesar	6	14
-48	Universidade Federal de Santa Catarina	6	4
-49	Pontificia Universidad Javeriana	6	14
-50	Universidad Nacional Autónoma de México	6	15
-51	Universidad de Sevilla	5	6
-52	University of Concepción	5	14
-53	Consejo Nacional de Ciencia y Tecnología	5	16
-54	Universidade Federal do Rio Grande	5	5
-55	Universidad de Manizales	5	4
-56	Universidad del Rosario	5	6
-57	Universidad Autónoma de Bucaramanga	5	9
-58	Ecopetrol (Colombia)	5	10
-59	Universidad Autónoma de Occidente	5	14
-60	University of La Salle	5	8
-61	Central University of Valle del Cauca	5	16
-62	Universidad Cooperativa de Colombia	5	2
-63	Universidad Antonio Nariño	4	12
-64	Fundación Valle del Lili	4	13
-65	SASTRA University	4	8
-66	Universidad Manuela Beltrán	4	12
-67	Consejo Superior de Investigaciones Científicas	4	10
-68	Universidad de Granada	4	4
-69	Tomas Bata University in Zlín	4	12
-70	Colombian Association of Surgery	4	14
-71	Fundación Santa Fe de Bogotá	4	6
-72	Municipality of Medellín	4	6
-73	Universidad de Los Andes	4	6
-74	Imam Mohammad ibn Saud Islamic University	4	5
-75	Instituts Supérieurs des Professions Infirmières et Techniques de Santé	4	5
-76	Sidi Mohamed Ben Abdellah University	4	5
-77	Sapienza University of Rome	4	10
-78	Universidad de Huelva	3	6
-79	Universidade Federal do Rio Grande do Sul	3	5
-80	Catholic University of the Maule	3	14
-81	University of Valparaíso	3	4
-82	University of Cundinamarca	3	4
-83	University of the Basque Country	3	4
-84	Universidad Nacional Agraria La Molina	3	4
-85	Brazilian Agricultural Research Corporation	3	14
-86	Universidad de Buenos Aires	3	15
-87	Auburn University	3	3
-88	University of La Guajira	3	15
-89	Universidad EAN	3	8
-90	Fundación Universitaria Agraria de Colombia - UNIAGRARIA	3	4
-91	Hochschule für Angewandte Wissenschaften Kiel	3	14
-92	Christian-Albrechts-Universität zu Kiel	3	14
-93	University of Pittsburgh	3	6
-94	Institute of Cardiology	3	6
-95	McGowan Institute for Regenerative Medicine	3	6
-96	Universidad De Santander	3	10
-97	Yalova University	3	5
-98	Fundación Universitaria del Área Andina	3	6
-99	Fundación Ciencias Exactas y Naturales	3	15
-100	Universidad de la Amazonia	3	10
-101	Instituto de Tecnologia e Pesquisa	2	14
-102	Atitus Educação	2	5
-103	Université Moulay Ismail de Meknes	2	5
-104	Pontificia Universidad Católica de Chile	2	14
-105	Autonomous University of San Luis Potosí	2	6
-106	Austral University	2	7
-107	University of Palermo	2	7
-108	SIU Medicine	2	13
-109	King Saud University	2	5
-110	Instituto de Ciencias de La Construcción Eduardo Torroja	2	4
-111	Universidad Bernardo O'Higgins	2	4
-112	Universidad Andrés Bello	2	4
-113	Universidad Santo Tomás	2	4
-114	Instituto de Química y Fisicoquímica Biológicas	2	4
-115	University of Chile	2	4
-116	Qingdao University	2	5
-117	University of Monastir	2	5
-118	Universidad Tecnológica de Aguascalientes	2	5
-119	Instituto Tecnológico de Aguascalientes	2	5
-120	Institución Universitaria Colegio Mayor de Antioquia	2	4
-121	Foscal Hospital	2	9
-122	Universidad de Oviedo	2	4
-123	Corporación para Investigaciones Biológicas	2	3
-124	Université Ibn Zohr	2	5
-125	Hospital Universitario del Valle ESE	2	14
-126	Instituto de Investigaciones en Ciencia y Tecnología de Materiales	2	15
-127	Brazilian Center for Research in Energy and Materials	2	4
-128	University of Bío-Bío	2	6
+25	Universidade Federal de Santa Maria	8	7
+26	University of Boyaca	8	14
+27	Universidad Distrital Francisco José de Caldas	8	2
+28	Universidad del Norte	8	13
+29	Instituto Politécnico Nacional	7	14
+30	Universidad Autónoma de Coahuila	7	9
+31	Universidad Nacional Abierta y a Distancia	7	5
+32	Institución Universitaria ITM	7	12
+33	Clínica CES	7	10
+34	Consejo Nacional de Investigaciones Científicas y Técnicas	7	14
+35	Universidad Autonoma de Manizales	7	2
+36	Secretaría de Ciencia, Humanidades, Tecnología e Innovación	6	9
+37	Universitat Politècnica de València	6	5
+38	Military University Nueva Granada	6	2
+39	Universidad Tecnológica de Bolívar	6	13
+40	Universitat de València	6	6
+41	Universidad de Medellín	6	11
+42	Universidad CES	6	10
+43	Universidad de La Sabana	6	2
+44	Universidad FUCS	6	11
+45	Universidade de São Paulo	6	2
+46	Universidade Estadual de Campinas (UNICAMP)	6	2
+47	Popular University of Cesar	6	8
+48	Universidade Federal de Santa Catarina	6	2
+49	Pontificia Universidad Javeriana	6	8
+50	Universidad Nacional Autónoma de México	6	14
+51	Universidad de Sevilla	5	11
+52	University of Concepción	5	8
+53	Consejo Nacional de Ciencia y Tecnología	5	9
+54	Universidade Federal do Rio Grande	5	7
+55	Universidad de Manizales	5	2
+56	Universidad del Rosario	5	11
+57	Universidad Autónoma de Bucaramanga	5	16
+58	Ecopetrol (Colombia)	5	5
+59	Universidad Autónoma de Occidente	5	8
+60	University of La Salle	5	13
+61	Central University of Valle del Cauca	5	9
+62	Universidad Cooperativa de Colombia	5	15
+63	Universidad Antonio Nariño	4	3
+64	Fundación Valle del Lili	4	4
+65	SASTRA University	4	13
+66	Universidad Manuela Beltrán	4	3
+67	Consejo Superior de Investigaciones Científicas	4	5
+68	Universidad de Granada	4	2
+69	Tomas Bata University in Zlín	4	3
+70	Colombian Association of Surgery	4	8
+71	Fundación Santa Fe de Bogotá	4	11
+72	Municipality of Medellín	4	11
+73	Universidad de Los Andes	4	11
+74	Imam Mohammad ibn Saud Islamic University	4	7
+75	Instituts Supérieurs des Professions Infirmières et Techniques de Santé	4	7
+76	Sidi Mohamed Ben Abdellah University	4	7
+77	Sapienza University of Rome	4	5
+78	Universidad de Huelva	3	11
+79	Universidade Federal do Rio Grande do Sul	3	7
+80	Catholic University of the Maule	3	8
+81	University of Valparaíso	3	2
+82	University of Cundinamarca	3	2
+83	University of the Basque Country	3	2
+84	Universidad Nacional Agraria La Molina	3	2
+85	Brazilian Agricultural Research Corporation	3	8
+86	Universidad de Buenos Aires	3	14
+87	Auburn University	3	6
+88	University of La Guajira	3	14
+89	Universidad EAN	3	13
+90	Fundación Universitaria Agraria de Colombia - UNIAGRARIA	3	2
+91	Hochschule für Angewandte Wissenschaften Kiel	3	8
+92	Christian-Albrechts-Universität zu Kiel	3	8
+93	University of Pittsburgh	3	11
+94	Institute of Cardiology	3	11
+95	McGowan Institute for Regenerative Medicine	3	11
+96	Universidad De Santander	3	5
+97	Yalova University	3	7
+98	Fundación Universitaria del Área Andina	3	11
+99	Fundación Ciencias Exactas y Naturales	3	14
+100	Universidad de la Amazonia	3	5
+101	Instituto de Tecnologia e Pesquisa	2	8
+102	Atitus Educação	2	7
+103	Université Moulay Ismail de Meknes	2	7
+104	Pontificia Universidad Católica de Chile	2	8
+105	Autonomous University of San Luis Potosí	2	11
+106	Austral University	2	10
+107	University of Palermo	2	10
+108	SIU Medicine	2	4
+109	King Saud University	2	7
+110	Instituto de Ciencias de La Construcción Eduardo Torroja	2	2
+111	Universidad Bernardo O'Higgins	2	2
+112	Universidad Andrés Bello	2	2
+113	Universidad Santo Tomás	2	2
+114	Instituto de Química y Fisicoquímica Biológicas	2	2
+115	University of Chile	2	2
+116	Qingdao University	2	7
+117	University of Monastir	2	7
+118	Universidad Tecnológica de Aguascalientes	2	7
+119	Instituto Tecnológico de Aguascalientes	2	7
+120	Institución Universitaria Colegio Mayor de Antioquia	2	2
+121	Foscal Hospital	2	16
+122	Universidad de Oviedo	2	2
+123	Corporación para Investigaciones Biológicas	2	6
+124	Université Ibn Zohr	2	7
+125	Hospital Universitario del Valle ESE	2	8
+126	Instituto de Investigaciones en Ciencia y Tecnología de Materiales	2	14
+127	Brazilian Center for Research in Energy and Materials	2	2
+128	University of Bío-Bío	2	11
 129	Université de Lorraine	2	1
-130	University of Waterloo	2	8
-131	Laboratoire de Génie Chimique	2	11
-132	Afyonkarahisar Sağlık Bilimleri Üniversitesi	2	7
-133	Universidad Católica de Temuco	2	14
-134	University Hospital Schleswig-Holstein	2	14
-135	Clinical Research Center Kiel	2	14
-136	University of Lübeck	2	14
-137	Texas Tech University	2	3
-138	Corporación Universitaria Rafael Nuñez	2	3
-139	Centro de Investigación Científica y de Educación Superior de Ensenada	2	3
-140	Universidad San Francisco de Quito	2	3
+130	University of Waterloo	2	13
+131	Laboratoire de Génie Chimique	2	12
+132	Afyonkarahisar Sağlık Bilimleri Üniversitesi	2	10
+133	Universidad Católica de Temuco	2	8
+134	University Hospital Schleswig-Holstein	2	8
+135	Clinical Research Center Kiel	2	8
+136	University of Lübeck	2	8
+137	Texas Tech University	2	6
+138	Corporación Universitaria Rafael Nuñez	2	6
+139	Centro de Investigación Científica y de Educación Superior de Ensenada	2	6
+140	Universidad San Francisco de Quito	2	6
 141	Institut Pascal	2	1
 142	Institut Universitaire de France	2	1
 143	Medical University Plovdiv	2	1
@@ -146,9 +146,9 @@ id	label	weight<Documents>	cluster
 145	University of Belgrade	2	1
 146	University of Clermont Auvergne	2	1
 147	The University of Osaka	2	1
-148	Northern Border University	2	5
-149	University of Magdalena	2	16
-150	Universidad Popular Autónoma del Estado de Puebla	2	2
-151	Northumbria University	2	10
-152	University of Córdoba	2	14
-153	Cordoba University	2	14
+148	Northern Border University	2	7
+149	University of Magdalena	2	9
+150	Universidad Popular Autónoma del Estado de Puebla	2	15
+151	Northumbria University	2	5
+152	University of Córdoba	2	8
+153	Cordoba University	2	8

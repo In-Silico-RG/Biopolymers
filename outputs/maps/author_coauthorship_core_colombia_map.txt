@@ -1,254 +1,254 @@
 id	label	weight<Documents>	cluster
-1	Manuel Palencia	25	53
-2	Carlos David Grande‐Tovar	17	38
-3	Tulio A. Lerma	16	53
-4	Viviana Garcés	15	53
-5	Álvaro Arrieta	14	53
-6	Sixta L. Palencia	14	53
-7	Mayra A. Mora	14	53
-8	Jina M. Martínez	13	53
-9	Carolina Caicedo	13	32
-10	Rodrigo Ortega‐Toro	13	15
-11	Carlos Humberto Valencia-Llano	12	38
-12	Diana Paola Navia Porras	11	38
-13	Jair de Jesús Arrieta Baldovino	10	49
-14	Guilherme Luiz Dotto	8	14
-15	Robín Zuluaga	8	42
-16	Rocio Yaneli Aguirre–Loredo	8	32
-17	José Hermínsul Mina Hernández	8	38
-18	Jairo E. Perilla	8	21
-19	José Fernando Solanilla‐Duque	8	50
-20	Ángel Darío González-Delgado	8	15
-21	Jorge Iván Castro	8	38
-22	Piedad F. Gañán	7	42
-23	Héctor Samuel Villada Castillo	7	50
-24	Yamid E. Núñez de la Rosa	7	49
-25	Joaquín Hernández‐Fernández	7	15
-26	Juan C. Cruz	7	44
-27	Carlos Ariel Cardona Álzate	6	45
-28	Paula Judith Pérez Espitia	6	28
-29	Heidy L. Calambás Pulgarín	6	32
-30	Janaína Oliveira Gonçalves	6	14
-31	Carlos E. Orrego	6	45
-32	Adriana Restrepo‐Osorio	6	17
-33	Mayra Eliana Valencia Zapata	6	38
-34	Manuel N. Chaur	6	38
-35	Paula Andrea Zapata	6	38
-36	Carolina Muñoz-Camargo	6	44
-37	Abril Fonseca García	5	32
-38	Jordana Georgin	5	55
-39	Dison S.P. Franco	5	55
-40	Alicia Porras	5	44
-41	Oriana Palma Calabokis	5	53
-42	Andrea Wilches‐Torres	5	26
-43	María Carolina Otálora	5	26
-44	Jovanny A. Gómez Castaño	5	26
-45	Enrique M Combatt	5	53
-46	Edwin Flórez‐López	5	38
-47	Cristina Isabel Castro	5	42
-48	Enrique Javier Jiménez‐Regalado	5	32
-49	Amanda Lucía Mora Martínez	5	12
-50	Candelaria Tejada-Tovar	5	15
-51	Ángel Villabona-Ortíz	5	15
-52	Marlon Osorio	5	42
-53	Oscar Moscoso Londoño	5	43
-54	Gustavo Buitrago Hurtado	4	56
-55	Óscar Giraldo	4	8
+1	Manuel Palencia	25	55
+2	Carlos David Grande‐Tovar	17	23
+3	Tulio A. Lerma	16	55
+4	Viviana Garcés	15	55
+5	Álvaro Arrieta	14	55
+6	Sixta L. Palencia	14	55
+7	Mayra A. Mora	14	55
+8	Jina M. Martínez	13	55
+9	Carolina Caicedo	13	39
+10	Rodrigo Ortega‐Toro	13	5
+11	Carlos Humberto Valencia-Llano	12	23
+12	Diana Paola Navia Porras	11	23
+13	Jair de Jesús Arrieta Baldovino	10	47
+14	Guilherme Luiz Dotto	8	45
+15	Robín Zuluaga	8	40
+16	Rocio Yaneli Aguirre–Loredo	8	39
+17	José Hermínsul Mina Hernández	8	23
+18	Jairo E. Perilla	8	27
+19	José Fernando Solanilla‐Duque	8	52
+20	Ángel Darío González-Delgado	8	5
+21	Jorge Iván Castro	8	23
+22	Piedad F. Gañán	7	40
+23	Héctor Samuel Villada Castillo	7	52
+24	Yamid E. Núñez de la Rosa	7	47
+25	Joaquín Hernández‐Fernández	7	5
+26	Juan C. Cruz	7	35
+27	Carlos Ariel Cardona Álzate	6	37
+28	Paula Judith Pérez Espitia	6	2
+29	Heidy L. Calambás Pulgarín	6	39
+30	Janaína Oliveira Gonçalves	6	45
+31	Carlos E. Orrego	6	37
+32	Adriana Restrepo‐Osorio	6	9
+33	Mayra Eliana Valencia Zapata	6	23
+34	Manuel N. Chaur	6	23
+35	Paula Andrea Zapata	6	23
+36	Carolina Muñoz-Camargo	6	35
+37	Abril Fonseca García	5	39
+38	Jordana Georgin	5	30
+39	Dison S.P. Franco	5	30
+40	Alicia Porras	5	35
+41	Oriana Palma Calabokis	5	55
+42	Andrea Wilches‐Torres	5	15
+43	María Carolina Otálora	5	15
+44	Jovanny A. Gómez Castaño	5	15
+45	Enrique M Combatt	5	55
+46	Edwin Flórez‐López	5	23
+47	Cristina Isabel Castro	5	40
+48	Enrique Javier Jiménez‐Regalado	5	39
+49	Amanda Lucía Mora Martínez	5	53
+50	Candelaria Tejada-Tovar	5	5
+51	Ángel Villabona-Ortíz	5	5
+52	Marlon Osorio	5	40
+53	Oscar Moscoso Londoño	5	29
+54	Gustavo Buitrago Hurtado	4	38
+55	Óscar Giraldo	4	46
 56	Oscar J. Medina	4	48
-57	K L Roa	4	35
-58	Diego A. Castellanos	4	13
-59	Luís F.O. Silva	4	14
-60	Evangelin Ramani Sujatha	4	49
-61	Luiz Antônio de Almeida Pinto	4	14
-62	Carlos Alberto Fuenmayor	4	28
-63	Catalina Álvarez‐López	4	22
-64	Yuliet Montoya	4	16
-65	John Bustamante	4	16
-66	Marianny Yajaira Combariza	4	33
-67	Henderson Quintero	4	25
-68	Natalia Jaramillo‐Quiceno	4	22
-69	Ruben Hernan Castro	4	25
-70	Luz Marina Flórez Pardo	4	41
-71	Antonio D’Amore	4	44
-72	María A. Rodríguez-Soto	4	44
-73	Seungil Kim	4	44
-74	Juan C. Briceño	4	44
-75	Jorge Enrique López Galán	4	41
-76	Roberto Lavecchia	4	40
-77	Javier M. Naranjo	3	45
-78	Juan Carlos Higuita	3	45
-79	Constaín H. Salamanca	3	30
-80	Howard Ramírez-Malule	3	3
-81	Rodrigo Andler	3	3
-82	Adriana Rojas‐Villarraga	3	1
-83	Nayda Patricia Arias Duque	3	8
-84	Maria C. Arango	3	22
-85	Roberto Paredes	3	35
-86	Heizir Ferreira Castro	3	35
-87	Débora Pez Jaeschke	3	14
-88	H I Farfán	3	35
-89	Bibiana Margarita Vallejo Díaz	3	21
-90	Manuel Guillermo Rojas Cortés	3	21
-91	L. Joana Rodríguez	3	45
-92	Jorge A. Ducuara	3	53
-93	David A. Aguirre-Valencia	3	5
-94	Franciele da Silva Bruckmann	3	14
-95	Rafael Santiago Parra-Medina	3	1
-96	Catalina Gómez Hoyos	3	42
-97	Caio G. Otoni	3	28
-98	María Soledad Peresin	3	17
-99	Walter Murillo Arango	3	18
-100	Jonh Jairo Méndez Arteaga	3	18
-101	Andrés Bernal-Ballén	3	47
-102	Tito Roberto Sant’Anna Cadaval	3	14
-103	Sebastián Llanos	3	25
-104	Daniel Insuasty	3	38
-105	Silvia Ochoa	3	19
-106	Jairo Salcedo Mendoza	3	8
-107	Noureddine El Messaoudi	3	55
-108	Mauricio Cruz‐Barrera	3	11
-109	Adriana Marcela Santos Díaz	3	11
-110	Yamil Liscano	3	36
-111	Edwin Yesid Gómez-Pachón	3	51
-112	Johannes Delgado‐Ospina	3	38
-113	Marcela Saavedra	3	38
-114	Jhon Jairo Palechor‐Trochez	3	50
-115	César Leandro Londoño Calderón	3	43
-116	C. Ostos	3	44
-117	William R. Wagner	3	44
-118	Natalia Suárez Vargas	3	44
-119	Maite Rada‐Mendoza	3	52
-120	Youssef Miyah	3	55
-121	Diana María Chito Trujillo	3	52
-122	Janet B. García-Martínez	3	40
-123	Alberto Romero	2	27
-124	Carlos Bengoechea	2	27
-125	L.S. Zárate-Ramírez	2	27
-126	Antonio F. Guerrero	2	27
-127	P. Partal	2	27
-128	Rejane Andrade Batista	2	28
-129	Eder Claudio Lima	2	14
-130	Marcos L.S. Oliveira	2	14
-131	Glaydson S. dos Reis	2	14
-132	Dayana Adames	2	32
-133	Maribel Mamani	2	3
-134	Eric Pérez	2	3
-135	Younes Dehmani	2	55
-136	Oscar Vega‐Castro	2	34
-137	José Contreras‐Calderón	2	34
-138	Mario Arias	2	34
-139	Emilson León	2	34
-140	Almir Frank Segura	2	34
-141	Maria A. Morales	2	44
-142	Reynell Junior Pérez-Blanco	2	8
-143	Úrsula Reidel	2	4
-144	Sabine Kunze	2	4
-145	Fernando Bas	2	4
-146	Héctor Gonzalez-Calderon	2	4
-147	Claudia Burbano-Garcia	2	4
-148	Gerardo Araya-Letelier	2	4
-149	Cristián Sandoval	2	4
-150	J.D. Badía	2	22
-151	Amparo Cháfer	2	22
-152	Agobardo Cárdenas‐Chaparro	2	26
-153	Yhors Ciro	2	30
-154	N. Algecira	2	56
+57	K L Roa	4	49
+58	Diego A. Castellanos	4	20
+59	Luís F.O. Silva	4	45
+60	Evangelin Ramani Sujatha	4	47
+61	Luiz Antônio de Almeida Pinto	4	45
+62	Carlos Alberto Fuenmayor	4	2
+63	Catalina Álvarez‐López	4	33
+64	Yuliet Montoya	4	12
+65	John Bustamante	4	12
+66	Marianny Yajaira Combariza	4	44
+67	Henderson Quintero	4	51
+68	Natalia Jaramillo‐Quiceno	4	33
+69	Ruben Hernan Castro	4	51
+70	Luz Marina Flórez Pardo	4	50
+71	Antonio D’Amore	4	35
+72	María A. Rodríguez-Soto	4	35
+73	Seungil Kim	4	35
+74	Juan C. Briceño	4	35
+75	Jorge Enrique López Galán	4	50
+76	Roberto Lavecchia	4	28
+77	Javier M. Naranjo	3	37
+78	Juan Carlos Higuita	3	37
+79	Constaín H. Salamanca	3	7
+80	Howard Ramírez-Malule	3	11
+81	Rodrigo Andler	3	11
+82	Adriana Rojas‐Villarraga	3	8
+83	Nayda Patricia Arias Duque	3	46
+84	Maria C. Arango	3	33
+85	Roberto Paredes	3	49
+86	Heizir Ferreira Castro	3	49
+87	Débora Pez Jaeschke	3	45
+88	H I Farfán	3	49
+89	Bibiana Margarita Vallejo Díaz	3	27
+90	Manuel Guillermo Rojas Cortés	3	27
+91	L. Joana Rodríguez	3	37
+92	Jorge A. Ducuara	3	55
+93	David A. Aguirre-Valencia	3	4
+94	Franciele da Silva Bruckmann	3	45
+95	Rafael Santiago Parra-Medina	3	8
+96	Catalina Gómez Hoyos	3	40
+97	Caio G. Otoni	3	2
+98	María Soledad Peresin	3	9
+99	Walter Murillo Arango	3	54
+100	Jonh Jairo Méndez Arteaga	3	54
+101	Andrés Bernal-Ballén	3	32
+102	Tito Roberto Sant’Anna Cadaval	3	45
+103	Sebastián Llanos	3	51
+104	Daniel Insuasty	3	23
+105	Silvia Ochoa	3	25
+106	Jairo Salcedo Mendoza	3	46
+107	Noureddine El Messaoudi	3	30
+108	Mauricio Cruz‐Barrera	3	17
+109	Adriana Marcela Santos Díaz	3	17
+110	Yamil Liscano	3	22
+111	Edwin Yesid Gómez-Pachón	3	6
+112	Johannes Delgado‐Ospina	3	23
+113	Marcela Saavedra	3	23
+114	Jhon Jairo Palechor‐Trochez	3	52
+115	César Leandro Londoño Calderón	3	29
+116	C. Ostos	3	35
+117	William R. Wagner	3	35
+118	Natalia Suárez Vargas	3	35
+119	Maite Rada‐Mendoza	3	14
+120	Youssef Miyah	3	30
+121	Diana María Chito Trujillo	3	14
+122	Janet B. García-Martínez	3	28
+123	Alberto Romero	2	36
+124	Carlos Bengoechea	2	36
+125	L.S. Zárate-Ramírez	2	36
+126	Antonio F. Guerrero	2	36
+127	P. Partal	2	36
+128	Rejane Andrade Batista	2	2
+129	Eder Claudio Lima	2	45
+130	Marcos L.S. Oliveira	2	45
+131	Glaydson S. dos Reis	2	45
+132	Dayana Adames	2	39
+133	Maribel Mamani	2	11
+134	Eric Pérez	2	11
+135	Younes Dehmani	2	30
+136	Oscar Vega‐Castro	2	24
+137	José Contreras‐Calderón	2	24
+138	Mario Arias	2	24
+139	Emilson León	2	24
+140	Almir Frank Segura	2	24
+141	Maria A. Morales	2	35
+142	Reynell Junior Pérez-Blanco	2	46
+143	Úrsula Reidel	2	19
+144	Sabine Kunze	2	19
+145	Fernando Bas	2	19
+146	Héctor Gonzalez-Calderon	2	19
+147	Claudia Burbano-Garcia	2	19
+148	Gerardo Araya-Letelier	2	19
+149	Cristián Sandoval	2	19
+150	J.D. Badía	2	33
+151	Amparo Cháfer	2	33
+152	Agobardo Cárdenas‐Chaparro	2	15
+153	Yhors Ciro	2	7
+154	N. Algecira	2	38
 155	Paola Andrea Vargas Moreno	2	48
-156	Durán Quintana	2	35
-157	Damelys Sanabria	2	35
-158	I V Abril	2	35
-159	Diego A. Bonilla	2	23
-160	Andres F. Bonilla	2	23
-161	Frank A. Stabile	2	39
-162	Sebastian Jaramillo	2	39
-163	Vinicius Bittar de Pontes	2	39
-164	Milly J. Vecino-Moreno	2	5
-165	Álvaro J. Vivas	2	5
-166	Gabriel Jaime Tobón	2	5
-167	Indira Milagros Betalleluz-Pallardel	2	13
-168	Marianela Inga	2	13
-169	Gustavo Puma-Isuiza	2	13
-170	Denis Rodriguez-Cumpa	2	13
-171	Eloy Asensio	2	21
-172	Paulo César Narváez Rincón	2	21
-173	Albeiro Cadavid	2	21
-174	Sandra Arroyave	2	21
-175	Ana María Guerrero	2	21
-176	Andrés Hormaza-Jaramillo	2	6
-177	Sara Alejandra Benavides-Ibarra	2	6
-178	Ignacio Díaz-Franulic	2	7
-179	Oscar Forero‐Doria	2	7
-180	Christopher Sbarbaro	2	7
-181	Matías S. Leal	2	7
-182	Plinio Cantero-López	2	7
-183	Yorley Duarte	2	7
-184	Diego Durango	2	7
-185	Franco Galdames	2	7
-186	Francisco Salgado	2	7
-187	Mary Judith Arias Tapia	2	2
-188	Keydis Martinez Villadiego	2	2
-189	J. Useche	2	2
-190	Jorge Andrés Velásquez-Cock	2	42
-191	A. Serpa	2	42
-192	Claudio Alonso Díaz–Cruz	2	32
-193	Zichao Li	2	14
-194	Adrián Bonilla‐Petriciolet	2	14
-195	Lotfi Sellaoui	2	14
-196	Caroline Joy Steel	2	29
-197	J. Felipe Osorio-Tobón	2	29
-198	Ádina L. Santana	2	29
-199	María Yepes-Pérez	2	12
-200	Karent Alexandra Carrero Contreras	2	12
-201	José Luís Pedraz	2	37
-202	Jaiver Eduardo Rosas	2	37
-203	Yadir Torres	2	46
-204	José Antonio Rodríguez-Ortiz	2	46
-205	Iván Cabeza	2	31
-206	Nubia C. Moreno-Sarmiento	2	31
-207	Armando Espinosa	2	31
-208	Pedro Álvarez‐Lloret	2	20
-209	Adriana Torres-Mansilla	2	20
-210	Giovanni Montealegre-Gómez	2	1
-211	Édgar Garavito	2	1
-212	Arley Gómez-López	2	1
-213	Kadir Özaltın	2	47
-214	Claudia Cecilia Rivera Vallejo	2	32
-215	Camilo A. Franco	2	24
-216	Laura Milena Corredor	2	25
-217	Farid B. Cortés	2	24
-218	Tonny Williams Naranjo	2	42
-219	Luis Carlos Suárez López	2	49
-220	Jesús Alberto Alcalá Vergara	2	49
-221	Wilman Alcaraz Zapata	2	19
-222	César A. García	2	19
-223	Estefany Paola Mejía Therán	2	8
-224	Anelise Christ-Ribeiro	2	14
-225	Bruna Silva de Farias	2	14
-226	Luisa F. Ardila	2	54
-227	Hugo Armando Estupiñán	2	54
-228	Darío Yesid Peña Ballesteros	2	54
-229	Custodio Vásquez	2	54
-230	Eduardo Jose Manrique	2	25
-231	M. Knobel	2	43
-232	Diego Muraca	2	43
-233	Magda Gómez-Marroquín	2	11
-234	Luisa Fernanda Izquierdo-García	2	11
-235	Carlos Andrés Moreno-Velandia	2	11
-236	Liz Alejandra Uribe Gutiérrez	2	11
-237	Paula Gómez‐Contreras	2	15
-238	María A. Moreno-Ricardo	2	15
-239	José Oñate-Garzón	2	36
-240	José L. Concha	2	9
-241	José Norambuena-Contreras	2	9
-242	Silvia Caro	2	9
-243	Angélica Viana-Sepúlveda	2	9
-244	Margarita del Rosario Salazar‐Sánchez	2	50
-245	Cristian Blanco‐Tirado	2	33
-246	Rafael González-Cuello	2	15
-247	Ricardo Vera‐Graziano	2	51
-248	Moisés A. Solano	2	38
-249	Christine Francès	2	10
-250	Ana María Castañeda-Cifuentes	2	10
-251	Mallorie Tourbin	2	10
-252	Ana María Sepúlveda	2	10
-253	Johanna Pedroza-Díaz	2	10
+156	Durán Quintana	2	49
+157	Damelys Sanabria	2	49
+158	I V Abril	2	49
+159	Diego A. Bonilla	2	41
+160	Andres F. Bonilla	2	41
+161	Frank A. Stabile	2	1
+162	Sebastian Jaramillo	2	1
+163	Vinicius Bittar de Pontes	2	1
+164	Milly J. Vecino-Moreno	2	4
+165	Álvaro J. Vivas	2	4
+166	Gabriel Jaime Tobón	2	4
+167	Indira Milagros Betalleluz-Pallardel	2	20
+168	Marianela Inga	2	20
+169	Gustavo Puma-Isuiza	2	20
+170	Denis Rodriguez-Cumpa	2	20
+171	Eloy Asensio	2	27
+172	Paulo César Narváez Rincón	2	27
+173	Albeiro Cadavid	2	27
+174	Sandra Arroyave	2	27
+175	Ana María Guerrero	2	27
+176	Andrés Hormaza-Jaramillo	2	16
+177	Sara Alejandra Benavides-Ibarra	2	16
+178	Ignacio Díaz-Franulic	2	3
+179	Oscar Forero‐Doria	2	3
+180	Christopher Sbarbaro	2	3
+181	Matías S. Leal	2	3
+182	Plinio Cantero-López	2	3
+183	Yorley Duarte	2	3
+184	Diego Durango	2	3
+185	Franco Galdames	2	3
+186	Francisco Salgado	2	3
+187	Mary Judith Arias Tapia	2	34
+188	Keydis Martinez Villadiego	2	34
+189	J. Useche	2	34
+190	Jorge Andrés Velásquez-Cock	2	40
+191	A. Serpa	2	40
+192	Claudio Alonso Díaz–Cruz	2	39
+193	Zichao Li	2	45
+194	Adrián Bonilla‐Petriciolet	2	45
+195	Lotfi Sellaoui	2	45
+196	Caroline Joy Steel	2	10
+197	J. Felipe Osorio-Tobón	2	10
+198	Ádina L. Santana	2	10
+199	María Yepes-Pérez	2	53
+200	Karent Alexandra Carrero Contreras	2	53
+201	José Luís Pedraz	2	26
+202	Jaiver Eduardo Rosas	2	26
+203	Yadir Torres	2	56
+204	José Antonio Rodríguez-Ortiz	2	56
+205	Iván Cabeza	2	42
+206	Nubia C. Moreno-Sarmiento	2	42
+207	Armando Espinosa	2	42
+208	Pedro Álvarez‐Lloret	2	31
+209	Adriana Torres-Mansilla	2	31
+210	Giovanni Montealegre-Gómez	2	8
+211	Édgar Garavito	2	8
+212	Arley Gómez-López	2	8
+213	Kadir Özaltın	2	32
+214	Claudia Cecilia Rivera Vallejo	2	39
+215	Camilo A. Franco	2	21
+216	Laura Milena Corredor	2	51
+217	Farid B. Cortés	2	21
+218	Tonny Williams Naranjo	2	40
+219	Luis Carlos Suárez López	2	47
+220	Jesús Alberto Alcalá Vergara	2	47
+221	Wilman Alcaraz Zapata	2	25
+222	César A. García	2	25
+223	Estefany Paola Mejía Therán	2	46
+224	Anelise Christ-Ribeiro	2	45
+225	Bruna Silva de Farias	2	45
+226	Luisa F. Ardila	2	18
+227	Hugo Armando Estupiñán	2	18
+228	Darío Yesid Peña Ballesteros	2	18
+229	Custodio Vásquez	2	18
+230	Eduardo Jose Manrique	2	51
+231	M. Knobel	2	29
+232	Diego Muraca	2	29
+233	Magda Gómez-Marroquín	2	17
+234	Luisa Fernanda Izquierdo-García	2	17
+235	Carlos Andrés Moreno-Velandia	2	17
+236	Liz Alejandra Uribe Gutiérrez	2	17
+237	Paula Gómez‐Contreras	2	5
+238	María A. Moreno-Ricardo	2	5
+239	José Oñate-Garzón	2	22
+240	José L. Concha	2	43
+241	José Norambuena-Contreras	2	43
+242	Silvia Caro	2	43
+243	Angélica Viana-Sepúlveda	2	43
+244	Margarita del Rosario Salazar‐Sánchez	2	52
+245	Cristian Blanco‐Tirado	2	44
+246	Rafael González-Cuello	2	5
+247	Ricardo Vera‐Graziano	2	6
+248	Moisés A. Solano	2	23
+249	Christine Francès	2	13
+250	Ana María Castañeda-Cifuentes	2	13
+251	Mallorie Tourbin	2	13
+252	Ana María Sepúlveda	2	13
+253	Johanna Pedroza-Díaz	2	13

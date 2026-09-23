@@ -2,9 +2,11 @@ method,all_works,materials_only,materials_pct
 md,1191,589,33.0
 ml,588,442,24.8
 qc,467,295,16.5
-none,386,215,12.1
+none,429,239,13.4
 docking,264,102,5.7
 solubility,63,63,3.5
-other_computational,112,43,2.4
 qsar,54,25,1.4
+molecular_modelling,57,12,0.7
 generative,25,10,0.6
+statistical_doe,6,4,0.2
+informatics,6,3,0.2
