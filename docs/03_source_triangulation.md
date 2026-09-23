@@ -1,14 +1,16 @@
-# 03 — Source triangulation: Lens, Scopus and Web of Science
+# 03 — Source triangulation: Lens, Semantic Scholar and Europe PMC
 
 *Started 2026-09-23. Serves every phase of `00_plan.md`.*
 
 **Objective.** Get the three remaining sources into the project, so the counts reported so
 far from OpenAlex alone can be triangulated rather than trusted.
 
-**Status.** in progress — 2026-09-23. Search equations written in native syntax for all
-three platforms and frozen in `queries/platform_*_v1.txt`, and a Lens API harvester written
-and its parsing tested. Nothing downloaded: Lens needs an API token and Scopus and Web of
-Science need institutional access. This document is the instruction sheet for both.
+**Status.** in progress — 2026-09-23. **Scopus and Web of Science are out: UNISUCRE has no
+access (AC, 2026-09-23), and this is not to be revisited.** Lens is harvested, 179,860
+records across 11 corpora. Triangulation therefore runs on OpenAlex against Lens, with
+Semantic Scholar and Europe PMC as the third and fourth sources for abstracts. The Scopus
+and Web of Science query files are kept for the day someone else runs them, not as a
+pending task.
 
 ---
 
@@ -74,7 +76,21 @@ changed more than once, so read the number the platform shows rather than trusti
 figure written here. If the cap bites, segment by year, which is cleaner than segmenting by
 subtopic because year slices cannot overlap.
 
-## 3. Scopus
+## 3. Scopus — not available
+
+**UNISUCRE has no Scopus or Web of Science subscription (AC, 2026-09-23).** Both are closed
+as sources for this thesis. `queries/platform_scopus_v1.txt` and
+`queries/platform_wos_v1.txt` stay in the repository so the study can be reproduced by
+someone who does have access, and because a thesis that states its search strings for the
+two conventional databases and explains why it could not run them is stronger than one that
+does not mention them.
+
+What replaces them is not nothing. OpenAlex and Lens disagree by a third on Latin American
+counts, which is itself a triangulation result and a more interesting one than agreement
+between two commercial indexes would have been. Semantic Scholar and Europe PMC contributed
+4,070 abstracts that OpenAlex lacks, which is a form of coverage check on the same corpus.
+
+### Archived: what Scopus would have needed
 
 **What is needed, and this is the list to check with the library:**
 
@@ -92,7 +108,7 @@ subtopic because year slices cannot overlap.
 per-export cap is much lower when abstracts are included than when they are not, so plan on
 segmenting by publication year. Name each file for the block and the year range it holds.
 
-## 4. Web of Science
+### Archived: what Web of Science would have needed
 
 **What is needed:**
 
@@ -157,16 +173,12 @@ nothing should be.
 
 ## Open questions
 
-- Request a Lens API token at https://www.lens.org/lens/user/subscriptions, Trial or Custom
-  Access. It is the only one of the three that needs no institutional subscription, so it is
-  the fastest path to a second source. Note the trial is 14 days from approval, so do not
-  request it until there is a fortnight in which the harvest can actually be run and
-  checked. — AC.
-- Does UNISUCRE have active Scopus and Web of Science subscriptions, and does Camila have
-  credentials and off-campus access? — AC.
-- Which Web of Science indexes does the subscription cover, ESCI in particular? — AC.
-- Is a Scopus API key obtainable through the institution? It would replace the manual
-  exports with a scripted harvest. — AC.
+- ~~Request a Lens API token.~~ **Done 2026-09-23.** Token issued, subscription runs to
+  2026-09-29, 179,860 records harvested.
+- Whether to renew the Lens subscription past 2026-09-29, which would be needed only to
+  re-harvest. The records are already on disk. — AC.
+- ~~Scopus and Web of Science access.~~ **Closed 2026-09-23 (AC): there is none.** Not to
+  be raised again.
 - Should Spanish and Portuguese term variants be added for the regional slices? They matter
   more on Scopus and Lens than on Web of Science. — AC.
 

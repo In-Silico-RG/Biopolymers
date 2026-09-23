@@ -25,12 +25,17 @@ exercise, because that slice is thin in the existing bibliometric literature.
 
 Research collaborations that anchor the topic:
 
-- **GIFTEX** — joint research line with UNISUCRE. [PENDIENTE: full name of the group, host
-  institution, and the specific biopolymers worked on jointly.]
-- **UNF** — joint research line. [PENDIENTE: confirm full name and country, and the shared
-  line.]
-- **Wilson Castro** — collaborating researcher. [PENDIENTE: affiliation and the topic of
-  the joint work.]
+- **GIFTEX** — Grupo de Investigación GIFTEX, Universidad Industrial de Santander,
+  Bucaramanga, Colombia. Identified 2026-09-23 from the acknowledgement in
+  `../Lignin_Project/Testing_Lignin_Structure_Generators/manuscript/`, not assumed.
+- **UNF** — Universidad Nacional de Frontera, Sullana, Piura, Perú; the joint line runs
+  through its Instituto de Investigación and its Facultad de Ingeniería de Industrias
+  Alimentarias y Biotecnología.
+- **Wilson Castro** — Universidad Nacional de Frontera, Sullana, and also publishing with
+  Universidad Nacional de Cañete, Perú. His work sits exactly on the intersection this
+  thesis studies: terahertz spectroscopy combined with machine learning to predict starch
+  concentration and to estimate bioplastic thickness, both 2025. Those works are already
+  inside the harvested corpus.
 
 These anchors matter for two reasons. They justify the thematic emphasis on cellulose,
 PHA/PHB, lignins and nanocellulose, and they give Phase 3 a concrete set of authors and
@@ -88,10 +93,12 @@ because no single source is adequate for a question that ends in Latin America.
 
 | Source | Role | Access |
 |---|---|---|
-| Scopus | Core corpus; best commercial coverage of regional journals | [PENDIENTE: confirm UNISUCRE subscription] |
-| Web of Science | Second commercial corpus; the bibliometric standard for comparison | [PENDIENTE: confirm access] |
-| OpenAlex | Open corpus via API; full reproducibility, wide regional coverage | Open, no subscription |
-| Lens.org | Cross-check and patent linkage | Free tier |
+| OpenAlex | Base corpus via API; full reproducibility, widest regional coverage | Key held |
+| Lens.org | Second corpus via API; independent index, patent linkage | Token held to 2026-09-29 |
+| Semantic Scholar | Abstract recovery where OpenAlex has none | Open, no key needed |
+| Europe PMC | Abstract recovery, biomedical-adjacent remainder | Open, no key needed |
+| ~~Scopus~~ | ~~Commercial index~~ | **No access at UNISUCRE (AC, 2026-09-23)** |
+| ~~Web of Science~~ | ~~Commercial index~~ | **No access at UNISUCRE (AC, 2026-09-23)** |
 
 Records are deduplicated by DOI first, then by normalised title and year. Every source keeps
 its raw export untouched under `data/raw/<source>/`; nothing is edited in place. Overlap and
@@ -136,6 +143,9 @@ Versiones/     dated copies of important PDFs before overwriting
 - Route is three phases: broad bibliometrics → computational/chemoinformatics/AI sweep →
   Latin American and Colombian narrowing (AC, 2026-09-22).
 - All four data sources are used and triangulated, not one chosen (AC, 2026-09-22).
+  **Amended 2026-09-23 (AC): Scopus and Web of Science are unavailable at UNISUCRE.** The
+  four sources are OpenAlex, Lens, Semantic Scholar and Europe PMC. The principle stands,
+  the roster changed.
 - All three tool stacks are used: bibliometrix/biblioshiny, VOSviewer and Python
   (AC, 2026-09-22).
 - Thematic scope is broad, covering every biopolymer recognised as a subject of scientific
@@ -145,11 +155,10 @@ Versiones/     dated copies of important PDFs before overwriting
 
 ## Open questions
 
-- GIFTEX: full name, host institution, and the biopolymers of the joint line. — AC.
-- UNF: full name and country; the shared research line. — AC.
-- Wilson Castro: affiliation and topic of the joint work. — AC.
-- Scopus and Web of Science: does UNISUCRE have active access, and does Camila have
-  credentials? Determines whether Phase 1 starts on OpenAlex alone. — AC.
+- ~~GIFTEX, UNF and Wilson Castro: names and affiliations.~~ **Resolved 2026-09-23** from
+  the lignin manuscript acknowledgements and the harvested records. See section 1.
+- ~~Scopus and Web of Science access.~~ **Closed 2026-09-23 (AC): there is none.**
+  Triangulation runs on OpenAlex, Lens, Semantic Scholar and Europe PMC. Do not reopen.
 - Camila's academic programme, thesis deadline, and the document format her programme
   requires. — AC.
 - Whether the thesis targets a journal article as a secondary output, which would change how
@@ -162,6 +171,11 @@ Versiones/     dated copies of important PDFs before overwriting
 - **r1, 2026-09-23.** Status moved to in progress. No change to the phases. Phase 1 ran on
   OpenAlex alone because the other three sources need credentials or a key; the
   triangulation decision stands and is simply not yet executed.
+- **r2, 2026-09-23.** Source roster amended: Scopus and Web of Science are unavailable and
+  are replaced by Lens, Semantic Scholar and Europe PMC. Collaborators identified from the
+  record rather than guessed: GIFTEX at Universidad Industrial de Santander, UNF as
+  Universidad Nacional de Frontera in Sullana, and Wilson Castro at UNF. 2026 restored to
+  the corpus after AC questioned its exclusion.
 
 ## References
 
