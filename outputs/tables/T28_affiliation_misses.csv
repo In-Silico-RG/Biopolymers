@@ -1,0 +1,4 @@
+corpus,works,matched_latam,raw_text_names_latam,missed_works,undercount_pct_of_matched,authorships,authorships_unmatched_pct,authorships_unmatched_with_text_pct,missed_by_country,example
+methods_world,3951,212,210,15,7.1,18402,12.7,3.2,"{""MX"": 12, ""BR"": 2, ""CU"": 1}",Machine Learning for Melting Temperature Predictions and Design in Pol
+core_latam,8175,8175,7351,0,0.0,46194,5.0,2.8,{},
+core_colombia,598,598,545,0,0.0,2958,5.9,2.1,{},
