@@ -12,8 +12,15 @@ ROOT = Path(__file__).resolve().parents[2]
 AGG = ROOT / "data/raw/openalex/aggregates"
 TAB = ROOT / "outputs/tables"
 
-Y0, Y1 = 1990, 2025          # 2026 is incomplete and is excluded from every curve
-WIN0, WIN1 = 2015, 2025      # window for the comparative indicators
+# 2026 is INCLUDED in the corpus and in every curve, flagged as partial, never dropped.
+# Excluding it was the original decision and it was wrong: by 2026-09-23 the world method
+# layer already held 722 works against 610 for the whole of 2025, so the year carrying the
+# strongest signal in the data was the one being thrown away. Growth rates are still
+# computed on complete years only, because a partial year cannot enter a CAGR.
+Y0, Y1 = 1990, 2026          # corpus and curves
+LAST_COMPLETE = 2025         # last year with twelve months of data
+PARTIAL = 2026               # flagged everywhere it appears
+WIN0, WIN1 = 2015, 2025      # window for growth rates: complete years only
 
 
 def facet(corpus, name):
@@ -60,13 +67,32 @@ def main():
             "methods_world", "methods_ibero", "methods_latam", "methods_colombia"]
     t1 = pd.DataFrame({c: years(c) for c in cols}).fillna(0).astype(int)
     t1.index.name = "year"
+    t1["year_is_partial"] = [y == PARTIAL for y in t1.index]
     t1.to_csv(TAB / "T1_annual_production.csv")
+    t1 = t1.drop(columns=["year_is_partial"])
+
+    # --- T1b: the partial year, stated rather than hidden ---
+    if PARTIAL in t1.index and LAST_COMPLETE in t1.index:
+        rows = []
+        for ctx, label in [("world", "World"), ("ibero", "Ibero-America"),
+                           ("latam", "Latin America"), ("colombia", "Colombia")]:
+            c25, c26 = int(t1.loc[LAST_COMPLETE, f"core_{ctx}"]), int(t1.loc[PARTIAL, f"core_{ctx}"])
+            m25, m26 = int(t1.loc[LAST_COMPLETE, f"methods_{ctx}"]), int(t1.loc[PARTIAL, f"methods_{ctx}"])
+            rows.append({
+                "context": label,
+                f"core_{LAST_COMPLETE}": c25, f"core_{PARTIAL}_ytd": c26,
+                "core_ytd_vs_last_full_pct": round(c26 / c25 * 100, 1) if c25 else None,
+                f"methods_{LAST_COMPLETE}": m25, f"methods_{PARTIAL}_ytd": m26,
+                "methods_ytd_vs_last_full_pct": round(m26 / m25 * 100, 1) if m25 else None,
+            })
+        pd.DataFrame(rows).to_csv(TAB / "T25_partial_year_2026.csv", index=False)
 
     # --- T2: methods share of the field, by year and context ---
     t2 = pd.DataFrame(index=t1.index)
     for ctx in ["world", "ibero", "latam", "colombia"]:
         den = t1[f"core_{ctx}"].astype(float).replace(0.0, float("nan"))
         t2[f"{ctx}_pct"] = (t1[f"methods_{ctx}"] / den * 100).round(2)
+    t2["year_is_partial"] = [y == PARTIAL for y in t2.index]
     t2.to_csv(TAB / "T2_methods_share_by_year.csv")
 
     # --- T3: comparative indicator table across the four contexts ---
@@ -74,8 +100,12 @@ def main():
     for ctx, label in [("world", "World"), ("ibero", "Ibero-America"),
                        ("latam", "Latin America"), ("colombia", "Colombia")]:
         core_s, meth_s = years(f"core_{ctx}"), years(f"methods_{ctx}")
-        core_w = int(core_s[(core_s.index >= WIN0)].sum())
-        meth_w = int(meth_s[(meth_s.index >= WIN0)].sum())
+        # Bounded at both ends on purpose. years() now runs to 2026, and summing from
+        # WIN0 with no upper bound would fold the partial year into a window labelled
+        # 2015-2025. The partial year is reported on its own in T25.
+        def win(sr):
+            return int(sr[(sr.index >= WIN0) & (sr.index <= WIN1)].sum())
+        core_w, meth_w = win(core_s), win(meth_s)
         oa = facet(f"core_{ctx}", "open_access_is_oa")
         oa_true = oa.loc[oa["key_display_name"].astype(str).str.lower() == "true", "count"].sum()
         oa_all = oa["count"].sum()

@@ -6,7 +6,8 @@
 made about it, and measure how much of that field uses computational, chemoinformatic or
 AI methods.
 
-**Status.** in progress — 2026-09-23. Keyword-based pass complete on OpenAlex aggregates.
+**Status.** in progress — 2026-09-23. Keyword-based pass complete on OpenAlex aggregates,
+rebuilt to include 2026 as a flagged partial year.
 The record-level work that was blocked here is done in `02_networks_and_screening.md`, and
 **section 4 of this document is superseded by section 3.3 there**: reading the abstracts
 shows the keyword counts both overstate the world share and understate the regional one.
@@ -155,8 +156,13 @@ the blocked work described below.
 - The core corpus is defined by self-identification as biopolymers, after probing showed
   family-plus-framing blocks to be subsets of it (2026-09-23).
 - Bare acronyms are excluded from every query, on measured precision (2026-09-23).
-- 2026 is excluded from every curve as incomplete; long curves run 1990–2025 and
-  comparative indicators 2015–2025 (2026-09-23).
+- ~~2026 is excluded from every curve as incomplete.~~ **Reversed 2026-09-23 (AC).**
+  2026 is in the corpus and in every curve, flagged as partial and drawn with a hollow
+  marker, never dropped. The original decision was wrong: by 2026-09-23 the world method
+  layer already held 722 works against 610 for all of 2025, so the year carrying the
+  strongest signal was the one being discarded. Growth rates are still computed on complete
+  years only, 2015–2025, because a partial year cannot enter a compound annual rate, and
+  the partial year is reported separately in `outputs/tables/T25_partial_year_2026.csv`.
 - Ibero-America is reported as a context distinct from Latin America (2026-09-23).
 - Ratios on small denominators are computed on three-year rolling sums and suppressed below
   50 works in the window. Colombia publishes 0–3 method papers a year, and a raw annual

@@ -185,6 +185,29 @@ world share of 9.3%, and on lignin (11.1%) against 4.7%.
 Just over half of the world's computational biopolymer work is coupled to experiments
 (52.7%), falling to 44.9% in Latin America. This is not an isolated modelling community.
 
+## 4. The partial year, and why it is not dropped
+
+2026 was originally excluded from the curves as incomplete. AC questioned that on
+2026-09-23 and the exclusion was wrong. The OpenAlex harvest never filtered by year, so the
+records were always present; only the analysis discarded them.
+
+| Context | Method works, all of 2025 | Method works, 2026 to date | 2026 as a share of 2025 |
+|---|---|---|---|
+| World | 610 | 722 | 118% |
+| Ibero-America | 57 | 67 | 118% |
+| Latin America | 39 | 44 | 113% |
+| Colombia | 2 | 7 | 350% |
+
+The whole field sits at 63–84% of its 2025 volume at the same date, so the method layer is
+not merely keeping pace, it is pulling away. On the screened, materials-only, strictly
+computational subset the same shape holds: 156 works in 2024, 221 in 2025, and 248 by late
+2026. Dropping the year would have hidden the acceleration the thesis is about.
+
+2026 is therefore in every corpus and every curve, drawn with a hollow marker so it cannot
+be mistaken for a complete year. Compound growth rates still use 2015–2025 only, because a
+partial year cannot enter a compound rate. `outputs/tables/T25_partial_year_2026.csv` holds
+the year on its own.
+
 ## Decisions
 
 - Statistical design of experiments, response-surface methodology and curve fitting are not
@@ -193,6 +216,8 @@ Just over half of the world's computational biopolymer work is coupled to experi
   VOSviewer receives the graphs (2026-09-23).
 - The keyword-based ordering of contexts by method share in `01_bibliometric_mapping.md`
   section 4 is superseded by section 3.3 here (2026-09-23).
+- 2026 is kept in the corpus and in every curve, flagged as partial, and excluded only from
+  compound growth rates (AC, 2026-09-23, reversing the earlier exclusion).
 
 ## Open questions
 

@@ -32,7 +32,8 @@ author.affiliation.address.country_code:(AR OR BO OR BR OR CL OR CO OR CR OR CU 
 author.affiliation.address.country_code:(CO)
 
 ## DATE FILTER
-year_published:[1990 TO 2025]
+year_published:[1990 TO 2026]
+# 2026 is included deliberately and flagged as partial in the analysis, never dropped.
 
 ## NOTE ON FIELD NAMES — CONFIRMED 2026-09-23
 # Checked against the Lens Scholar API reference: title, abstract,

@@ -107,7 +107,11 @@ def post(body, tok, tries=5):
 
 def harvest(code, query, geo_name, tok):
     q = query if GEO[geo_name] is None else f"({query}) AND {GEO[geo_name]}"
-    q = f"({q}) AND year_published:[1990 TO 2025]"
+    # 2026 is INCLUDED. It is incomplete, and it is flagged as such in every curve,
+    # but it must be in the corpus: by 2026-09-23 the world method layer already held
+    # 722 works against 610 for all of 2025, so excluding it would hide the
+    # acceleration that the thesis is about.
+    q = f"({q}) AND year_published:[1990 TO 2026]"
     path = OUT / f"{code}_{geo_name}.jsonl"
     body = {"query": {"query_string": {"query": q, "default_operator": "AND"}},
             "include": INCLUDE, "size": 500, "scroll": "1m"}

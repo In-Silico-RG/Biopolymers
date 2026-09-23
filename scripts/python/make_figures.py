@@ -34,27 +34,40 @@ plt.rcParams.update({
 CTX = [("world", "World", S1), ("ibero", "Ibero-America", S2),
        ("latam", "Latin America", S3), ("colombia", "Colombia", S4)]
 
+# 2026 is in the data and in every figure, drawn so it cannot be mistaken for a complete
+# year. Hiding it would hide the fastest-moving part of the signal.
+PARTIAL, LAST_FULL = 2026, 2025
+
 
 def fig1_production():
     """Small multiples. The four contexts differ by three orders of magnitude, so they
     get one panel each with its own scale rather than a second y-axis."""
     t1 = pd.read_csv(TAB / "T1_annual_production.csv").set_index("year")
     t1 = t1[t1.index >= 1995]
-    fig, axes = plt.subplots(1, 4, figsize=(11, 2.9))
+    full = t1[t1.index <= LAST_FULL]
+    fig, axes = plt.subplots(1, 4, figsize=(11, 3.1))
     for ax, (key, label, col) in zip(axes, CTX):
-        s = t1[f"core_{key}"]
+        s = full[f"core_{key}"]
         ax.fill_between(s.index, s.values, color=col, alpha=0.18, linewidth=0)
         ax.plot(s.index, s.values, color=col, linewidth=2)
+        if PARTIAL in t1.index:
+            v = t1.loc[PARTIAL, f"core_{key}"]
+            ax.plot([LAST_FULL, PARTIAL], [s.loc[LAST_FULL], v], color=col,
+                    linewidth=2, linestyle=(0, (2, 2)))
+            ax.plot([PARTIAL], [v], marker="o", markersize=5, color=SURFACE,
+                    markeredgecolor=col, markeredgewidth=2, zorder=5)
         ax.set_title(label, color=INK, fontsize=10, pad=8, loc="left")
         ax.grid(axis="y"); ax.set_axisbelow(True)
-        ax.set_xlim(1995, 2025)
+        ax.set_xlim(1995, 2028)
         ax.set_xticks([1995, 2005, 2015, 2025])
         peak = int(s.max()); pyear = int(s.idxmax())
         ax.annotate(f"{peak:,} in {pyear}", xy=(pyear, peak),
                     xytext=(-4, -12), textcoords="offset points",
                     ha="right", fontsize=8, color=INK2)
     axes[0].set_ylabel("works per year")
-    fig.suptitle("Annual production of the biopolymers field, 1995-2025",
+    axes[3].text(0.02, -0.34, "hollow marker and dashed segment: 2026, year to date",
+                 transform=axes[3].transAxes, fontsize=7.5, color=MUTED, ha="left")
+    fig.suptitle("Annual production of the biopolymers field, 1995-2026",
                  x=0.005, ha="left", fontsize=12, color=INK)
     fig.tight_layout(rect=[0, 0, 1, 0.93])
     fig.savefig(FIG / "F1_annual_production.png", dpi=220)
@@ -72,29 +85,57 @@ def fig2_methods_share():
     """
     MIN_DEN, WIN = 50, 3
     t1 = pd.read_csv(TAB / "T1_annual_production.csv").set_index("year")
-    fig, ax = plt.subplots(figsize=(7.6, 4.4))
+    fig, ax = plt.subplots(figsize=(8.0, 4.8))
+    endpoints = []
     for key, label, col in CTX:
         num = t1[f"methods_{key}"].rolling(WIN, min_periods=WIN).sum()
         den = t1[f"core_{key}"].rolling(WIN, min_periods=WIN).sum()
         s_ = (num / den * 100).where(den >= MIN_DEN)
-        s_ = s_[(s_.index >= 2000) & (s_.index <= 2025)].dropna()
+        s_ = s_[(s_.index >= 2000) & (s_.index <= LAST_FULL)].dropna()
         if s_.empty:
             continue
         ax.plot(s_.index, s_.values, color=col, linewidth=2, label=label)
-        ax.annotate(label, xy=(s_.index[-1], s_.values[-1]),
-                    xytext=(6, 0), textcoords="offset points",
-                    color=INK2, fontsize=8.5, va="center")
+        # 2026 year to date, shown as a single-year value anchored to the single-year
+        # 2025 value. Joining it to the rolling line would compare a rolling window with
+        # one year and exaggerate the jump, since an upward trend always puts the latest
+        # year above the window that ends on it.
+        c26, m26 = t1.loc[PARTIAL, f"core_{key}"], t1.loc[PARTIAL, f"methods_{key}"]
+        c25, m25 = t1.loc[LAST_FULL, f"core_{key}"], t1.loc[LAST_FULL, f"methods_{key}"]
+        if c26 >= MIN_DEN and c25 >= MIN_DEN:
+            v26, v25 = m26 / c26 * 100, m25 / c25 * 100
+            ax.plot([LAST_FULL, PARTIAL], [v25, v26], color=col, linewidth=2,
+                    linestyle=(0, (2, 2)))
+            for x, y, fill in ((LAST_FULL, v25, col), (PARTIAL, v26, SURFACE)):
+                ax.plot([x], [y], marker="o", markersize=5.5, color=fill,
+                        markeredgecolor=col, markeredgewidth=2, zorder=5)
+            endpoints.append((v26, label, col))
+        else:
+            endpoints.append((s_.values[-1], label, col))
+    # Nudge colliding end labels apart so no two overlap.
+    endpoints.sort(key=lambda e: -e[0])
+    ymax = max(e[0] for e in endpoints) if endpoints else 1
+    minsep = ymax * 0.075
+    placed = []
+    for y, label, col in endpoints:
+        while placed and abs(y - placed[-1]) < minsep:
+            y = placed[-1] - minsep
+        placed.append(y)
+        ax.annotate(label, xy=(PARTIAL + 0.4, y), xytext=(0, 0),
+                    textcoords="offset points", color=INK2, fontsize=8.5, va="center")
     ax.set_ylabel("share of the field using computational or AI methods (%)")
-    ax.set_xlabel("year (3-year rolling window, ending)")
+    ax.set_xlabel("year")
     ax.grid(axis="y"); ax.set_axisbelow(True)
-    ax.set_xlim(2000, 2030); ax.set_ylim(bottom=0)
+    ax.set_xlim(2000, 2032); ax.set_ylim(bottom=0)
     ax.legend(frameon=False, loc="upper left", fontsize=8.5, labelcolor=INK2)
     ax.set_title("Uptake of computational chemistry, chemoinformatics and AI\n"
                  "inside the biopolymers field", loc="left", fontsize=12,
                  color=INK, pad=10)
-    ax.text(0.0, -0.20, f"3-year rolling sums. A point is shown only where the window holds "
-            f"at least {MIN_DEN} works.", transform=ax.transAxes, fontsize=7.5, color=MUTED)
-    fig.tight_layout()
+    ax.text(0.0, -0.24,
+            f"Solid line: 3-year rolling sums through {LAST_FULL}, shown only where the window "
+            f"holds at least {MIN_DEN} works.\nDashed segment: single-year {LAST_FULL} to "
+            f"single-year 2026, the latter a year to date. Filled marker complete, hollow partial.",
+            transform=ax.transAxes, fontsize=7.5, color=MUTED)
+    fig.tight_layout(rect=[0, 0.06, 1, 1])
     fig.savefig(FIG / "F2_methods_share.png", dpi=220)
     fig.savefig(FIG / "F2_methods_share.pdf")
     plt.close(fig)

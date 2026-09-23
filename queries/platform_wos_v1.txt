@@ -24,7 +24,7 @@ AND CU=(Argentina OR Bolivia OR Brazil OR Chile OR Colombia OR "Costa Rica" OR C
 AND CU=(Colombia)
 
 ## DATE AND TYPE FILTERS
-AND PY=(1990-2025)
+AND PY=(1990-2026)
 AND DT=(Article OR Review OR "Proceedings Paper")
 
 ## COMPARABILITY WARNING
