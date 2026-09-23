@@ -23,3 +23,6 @@ data/processed/recovered_abstracts.jsonl
 
 # Lens raw records are large and re-harvestable from the manifest
 data/raw/lens/*.jsonl
+
+# Full texts are not committed
+refs/pdfs/*.pdf

@@ -71,6 +71,7 @@ def build():
     t27 = rows("T27_source_overlap.csv")
     t28 = rows("T28_affiliation_misses.csv")
     t30 = rows("T30_language_variants.csv")
+    t31 = rows("T31_generative_works.csv")
     t32 = rows("T32_screening_validation.csv")
     t4 = rows("T4_country_ranking.csv")
     t5 = rows("T5_latam_country_ranking.csv")
@@ -540,6 +541,69 @@ region working from agro-industrial residues.
 \caption{Volume and method intensity of the three anchored lines.}
 \end{figure}
 
+\subsection{The generative frontier, read work by work}
+\label{sec:generative}
+
+The screening put ten works in the materials subset on generative or large-language-model
+methods. Ten is few enough to read every one, and a count cannot say what these works
+generate, what steers the generation, or whether anything is validated. Both coders read
+all ten independently. Three disagreements followed, and all three change the answer.
+
+\paragraph{Ten records are nine works.} A preprint on retrieval-augmented generation over
+polyhydroxyalkanoate literature is indexed twice, once with a DOI and once without. The
+automated pass counted both.
+
+\paragraph{The lignin paper is not a large-language-model paper.} It trains autoregressive
+\emph{molecular} language models on SMILES strings, which is a generative sequence model
+over chemical structure rather than a language model over natural language. The confusion
+is understandable and it moves the most methodologically serious work in the set into the
+wrong category.
+
+\paragraph{Three of the ten sit in venues that are not what they appear to be.} Two are
+published as \emph{Frontiers in Agriculture} and \emph{Frontiers in Chemistry Materials
+and Catalysis}, under DOI prefix 10.71465, which Crossref registers to \emph{International
+Study Counselor}. Frontiers Media SA is 10.3389. A third carries prefix 10.37591,
+registered to a different publisher again. All three abstracts share a pattern: dramatic
+headline numbers with no dataset, no baseline and no reproducible protocol. No automated
+screening asked about venue provenance, and none routinely does.
+
+""")
+    if t31:
+        A(r"""\begin{table}[htbp]
+\centering
+\caption{The generative works, as the two readers agreed them. ``Specific'' marks work
+genuinely about a biopolymer rather than about polymers in general.}
+\label{tab:generative}
+\small
+\begin{tabular}{rp{5.6cm}p{3.5cm}ll}
+\toprule
+Year & What it generates & Validated by & Specific \\
+\midrule""")
+        seen = set()
+        for r in t31:
+            g = (r.get("generates") or "").strip()
+            if not g or g in seen:
+                continue
+            seen.add(g)
+            v = (r.get("validated_how") or "").replace("_", " ")
+            sp = "yes" if str(r.get("is_biopolymer_specific")).lower() == "true" else "no"
+            A(f"{num(r.get('year'))} & {esc(g)} & {esc(v)} & {sp} \\\\")
+        A(r"""\bottomrule
+\end{tabular}
+\end{table}""")
+    A(r"""
+
+\paragraph{What survives.} Removing the works that are not about biopolymers and those
+whose venue cannot be trusted leaves \textbf{four credible biopolymer-specific generative
+works}, three of them from 2026. Two validated against the physical world, one by
+electrospinning and mechanical testing, one by measuring nanomolar binding affinities. The
+electrospun result was honestly negative: the fibre mat was weaker than commercial PET.
+
+That is emptier than a count of ten suggests, and it strengthens the argument of this
+report rather than weakening it. It also suggests that venue provenance deserves to be
+checked across the whole corpus, not only on a shortlist, which nothing in the bibliometric
+literature routinely does.
+
 \subsection{Collaboration and community structure}
 """)
     if t15:
@@ -638,7 +702,9 @@ third. That work is scattered, with no venue acting as a centre.
       that the other two need less of, but the Colombian denominator is small and this
       belongs in the discussion as a hypothesis rather than in the results as a finding.
 \item \textbf{Generative methods are essentially absent}, worldwide and entirely so in the
-      region. Of everything in this report, that is the clearest opening.
+      region. Reading all of them one by one (Section~\ref{sec:generative}) leaves four
+      credible biopolymer-specific works in the world literature. Of everything in this
+      report, that is the clearest opening.
 \item \textbf{There is no community and no venue.} Most authors in the computational layer
       publish there once, and the regional slice has no core journals. A thesis that wants
       to change something has a structural target, not only a topical one.
@@ -650,6 +716,12 @@ third. That work is scattered, with no venue acting as a centre.
 \item \textbf{Two sources, not four.} Scopus and Web of Science were unavailable. OpenAlex
       and Lens disagree by about a third on regional counts, which bounds how precise any
       regional figure here can be.
+\item \textbf{The screened shares are upper bounds.} The measured over-detection of
+      Section~\ref{sec:validation} is 8.2\%, and it is not corrected in the tables, only
+      stated. Read every screened percentage as a ceiling.
+\item \textbf{English-only counts understate the region} by between a seventh and a
+      third, measured in Section~\ref{sec:language}. The headline tables have not been
+      rebuilt on the combined vocabulary; that is the next harvest, not a completed one.
 \item \textbf{Affiliation matching loses regional work.} Quantified in
       Section~\ref{sec:layer}. The regional counts are a lower bound.
 \item \textbf{Abstract coverage.} Roughly 30\% of the method-layer records carry no abstract
@@ -667,10 +739,12 @@ third. That work is scattered, with no venue acting as a centre.
 \section{What to do next}
 
 \begin{enumerate}
-\item Hand-code a validation sample against the screening and report the agreement.
-\item Add Spanish and Portuguese term variants and measure what they add.
-\item Read the generative and large-language-model works one by one. There are few enough
-      to read them all, and they are the frontier this thesis is pointing at.
+\item A third coding of a few dozen items by a domain expert, as a check on two automatic
+      coders that may share a bias neither detects.
+\item Rebuild the headline corpus on the combined English, Spanish and Portuguese
+      vocabulary, now that the addition has been measured.
+\item Apply the venue-provenance check of Section~\ref{sec:generative} to the whole
+      corpus. It is a measurable, publishable statement and nothing in the field does it.
 \item Take the affiliation-matching loss seriously as a result in its own right. It is a
       measurable, publishable statement about how invisible small Latin American
       institutions are to the infrastructure that counts science.
