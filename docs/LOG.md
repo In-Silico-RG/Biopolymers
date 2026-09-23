@@ -160,3 +160,67 @@ Language: English.
 - Open for AC: whether to recover the missing 30% of abstracts from Crossref; whether
   Camila should hand-code a validation sample against the screening; Scopus and WoS access;
   Spanish and Portuguese query variants; the identities of GIFTEX, UNF and Wilson Castro.
+
+---
+
+## 2026-09-23 — Session 4: Lens, the partial year, attribution loss, and the report
+
+- AC supplied a Lens API token after being shown the exact page, which sits under the
+  account at lens.org/lens/user/subscriptions rather than in the search interface. The 401
+  he first hit meant no credentials, not a rejected token; a checker now tells the two apart.
+- Lens harvested: 179,860 records across 11 corpora. Stopped twice on the two largest world
+  anchors with HTTP 429 after long scrolls; the API answered normally minutes later, so the
+  backoff was made patient rather than failing fast. The trial subscription runs to
+  2026-09-29, which is why the harvest was ordered by priority rather than run blind.
+- **AC asked why 2026 was missing. The exclusion was wrong and is reversed.** The OpenAlex
+  harvest never filtered by year, so its records always held 2026 and the screening already
+  covered it; only the analysis dropped it. The Lens, Scopus and WoS query files did carry a
+  2025 cap and were corrected before any download. Justification: the world method layer
+  holds 722 works in 2026 against 610 for all of 2025, while the field as a whole sits at
+  63-84% of its 2025 volume, so the year carrying the strongest signal was the one being
+  discarded. Figures now draw 2026 with a hollow marker, and the dashed segment is anchored
+  to the single-year 2025 value rather than to the rolling window, which would have
+  exaggerated the jump.
+- **Bug introduced and caught by AC's follow-up question.** Extending the year range made the
+  comparative window sum 2015-2026 while still labelled 2015-2025; the world figure moved
+  from 90,931 to 102,560 under an unchanged column header. Now bounded at both ends.
+- **AC: "acceso a Scopus y Web of Science... NO HAY! no insista!"** Both closed as sources,
+  recorded as a decision with date, and removed from every open-questions list. The query
+  files stay for reproducibility by others. Source roster is now OpenAlex, Lens, Semantic
+  Scholar and Europe PMC.
+- Collaborators identified from the record rather than by asking again. GIFTEX is a research
+  group at Universidad Industrial de Santander; UNF is Universidad Nacional de Frontera,
+  Sullana, Piura; Wilson Castro is at UNF and also publishes with Universidad Nacional de
+  Cañete. Found in the acknowledgements of `../Lignin_Project/`, which was on disk the whole
+  time. Lesson recorded: search the sibling projects before listing something as an open
+  question for AC.
+- **AC challenged Universidad Nacional de Cañete as non-existent. It exists** (public, San
+  Vicente de Cañete, SUNEDU licence 116-2018-SUNEDU/CD), but checking exposed a real defect.
+  OpenAlex matched only one of that paper's six authorships, to Universidad de Guadalajara,
+  leaving both Peruvian affiliations unmatched, so the work counts as Mexican and Peru gets
+  nothing. Quantified: 12.7% of authorships in the world method corpus match no institution,
+  and per-country loss reaches 27% for Bolivia and 10% for Venezuela. Since every regional
+  corpus was selected on institution country, the regional counts are a lower bound. This is
+  now a result in the report, not only a caveat.
+- Abstract recovery finished. Crossref returned 2.1% because Elsevier deposits no abstracts
+  there, verified on three Elsevier DOIs. Replaced by a cascade: Semantic Scholar recovered
+  2,403 and Europe PMC 1,667, for 4,113 of 9,433 overall. The screener now falls back to
+  them and every corpus was re-screened, which moved the strict world share from 1.26% to
+  1.27% and the materials fraction from 55.6% to 56.6%.
+- Triangulation measured. Lens holds 91% of the OpenAlex world corpus but 66% of the Latin
+  American one and 57% of the Colombian one, so the choice of source matters most exactly
+  where this thesis focuses. Overlap is asymmetric: 76-100% of Lens records are in OpenAlex
+  against 24-75% the other way, and Lens still contributes works OpenAlex lacks.
+- `author_profile.py` added after AC asked about Marianny Combariza and César Sierra.
+  Marianny Combariza has 31 works in the corpus, on fique nanocellulose, TEMPO oxidation and
+  PHA from cacao waste, with molecular dynamics entering from 2025. César Sierra has 8, led
+  by two Cu-BTC-on-cellulose papers from 2012 and 2014 holding 345 citations between them.
+  Note: searching by surname alone conflates people; "Sierra" returned 18 works, "Cesar
+  Sierra" 8.
+- **AC: "donde esta el informe?"** Fair. There were working documents but no report.
+  `scripts/python/build_report.py` now generates `report/informe_bibliometrico.tex` with
+  every number read from `outputs/tables/`, compiles it in two pdflatex passes, removes the
+  auxiliary files and verifies with pdftotext. Nine pages, seven figures, eight tables, no
+  hand-typed values, because several numbers changed twice in one day.
+- Open for AC: a hand-coded validation sample against the screening; Spanish and Portuguese
+  query variants; whether to renew Lens past 2026-09-29.
