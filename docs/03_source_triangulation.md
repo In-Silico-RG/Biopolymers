@@ -33,11 +33,28 @@ an unauthenticated probe returns 401, which is how we know the endpoint is right
 accepts Lucene-style `query_string` with explicit AND/OR/NOT, so the same strings serve the
 web interface and the API unchanged.
 
-**How to get a token.** Sign in at lens.org, open the **API & Data** tab, choose Trial or
-Custom Access, and complete the service request form. Approval arrives by email with
-instructions for generating the token. The academic trial is the usual route for
-non-commercial research. Once issued, write it to `~/.lens_token` or set `LENS_API_TOKEN`,
-and never commit it.
+**How to get a token, precisely.** The page is not obvious from the front page; it lives
+under the account, not under the search interface.
+
+1. Sign in at lens.org.
+2. Go to **https://www.lens.org/lens/user/subscriptions** directly, or navigate there through
+   the **Our Apps** menu, then **API and Data**. The same page is reachable from the user
+   profile as the **API and Data** tab.
+3. Click **Select This Plan** on the plan you want. That opens the service request form.
+4. Fill it in with real detail: who you are, the institution, what the data is for, how long
+   the project runs, and how you will comply with the attribution terms. The review is
+   manual and a thin answer is what gets it delayed.
+5. On approval, generate the token from the **Your Active Access** tab. An account may hold
+   at most five tokens and each expires after a year.
+
+**The trial lasts 14 days from approval, and that changes the plan.** The free
+non-commercial trial is a fortnight, not an open-ended academic tier. Continued or
+automated access is the paid Member / Custom Access plan. So the harvest must be ready to
+run the day the token arrives rather than started then. It is: `harvest_lens.py` is written
+and its parsing tested, so the whole Lens corpus can be pulled in one sitting and kept.
+
+Once issued, write the token to `~/.lens_token` or set `LENS_API_TOKEN`, verify it with
+`scripts/python/check_lens_token.py`, and never commit it.
 
 **What to run.** `scripts/python/harvest_lens.py`, which reads the blocks straight out of
 `queries/platform_lens_v1.txt` and writes one JSONL file per block and region into
@@ -140,9 +157,11 @@ nothing should be.
 
 ## Open questions
 
-- Request a Lens API token at lens.org under API & Data, Trial or Custom Access. It is the
-  only one of the three that needs no institutional subscription, so it is the fastest path
-  to a second source. — AC.
+- Request a Lens API token at https://www.lens.org/lens/user/subscriptions, Trial or Custom
+  Access. It is the only one of the three that needs no institutional subscription, so it is
+  the fastest path to a second source. Note the trial is 14 days from approval, so do not
+  request it until there is a fortnight in which the harvest can actually be run and
+  checked. — AC.
 - Does UNISUCRE have active Scopus and Web of Science subscriptions, and does Camila have
   credentials and off-campus access? — AC.
 - Which Web of Science indexes does the subscription cover, ESCI in particular? — AC.
