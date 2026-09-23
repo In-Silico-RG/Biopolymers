@@ -20,3 +20,6 @@ data/processed/recovered_abstracts.jsonl
 .lens_token
 .openalex_key
 *.token
+
+# Lens raw records are large and re-harvestable from the manifest
+data/raw/lens/*.jsonl

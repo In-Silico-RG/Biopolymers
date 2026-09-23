@@ -88,7 +88,7 @@ def load_blocks():
     return blocks
 
 
-def post(body, tok, tries=5):
+def post(body, tok, tries=8):
     for a in range(tries):
         try:
             r = requests.post(API, json=body, timeout=120,
@@ -97,11 +97,14 @@ def post(body, tok, tries=5):
             if r.status_code in (200, 204):
                 return r
             if r.status_code in (429, 500, 502, 503, 504):
-                time.sleep(4 * (a + 1))
+                # Lens throttles hard on long scrolls. The first run died here after
+                # 180,000 records and the API answered normally minutes later, so the
+                # backoff is generous and the retry count high rather than failing fast.
+                time.sleep(min(90, 8 * (a + 1) ** 2))
                 continue
             sys.exit(f"Lens API {r.status_code}: {r.text[:300]}")
         except requests.RequestException:
-            time.sleep(4 * (a + 1))
+            time.sleep(min(90, 8 * (a + 1) ** 2))
     sys.exit("Lens API: exhausted retries")
 
 

@@ -1,0 +1,11 @@
+block,geo,lens_with_doi,openalex_with_doi,in_both,lens_only,openalex_only,jaccard_pct,pct_of_openalex_found_in_lens,pct_of_lens_found_in_openalex
+L1,latam,5168,7983,4564,604,3419,53.2,57.2,88.3
+L1,colombia,284,553,215,69,338,34.6,38.9,75.7
+L3,world,3129,3700,2773,356,927,68.4,74.9,88.6
+L3,latam,102,209,92,10,117,42.0,44.0,90.2
+L3,colombia,4,17,4,0,13,23.5,23.5,100.0
+L4,colombia,466,839,410,56,429,45.8,48.9,88.0
+L5,latam,1000,1421,963,37,458,66.0,67.8,96.3
+L5,colombia,53,81,44,9,37,48.9,54.3,83.0
+L6,latam,7795,11134,6504,1291,4630,52.3,58.4,83.4
+L6,colombia,478,753,361,117,392,41.5,47.9,75.5

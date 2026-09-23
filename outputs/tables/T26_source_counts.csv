@@ -1,0 +1,14 @@
+block,geo,openalex_corpus,openalex,lens,lens_vs_openalex_pct
+L1,world,core_world,142254,129729,91.2
+L1,latam,core_latam,8147,5412,66.4
+L1,colombia,core_colombia,598,342,57.2
+L3,world,methods_world,3912,3323,84.9
+L3,latam,methods_latam,211,104,49.3
+L3,colombia,methods_colombia,17,4,23.5
+L4,latam,anchor_cellulose_latam,14222,9813,69.0
+L4,colombia,anchor_cellulose_colombia,897,558,62.2
+L5,world,anchor_pha_world,22225,20241,91.1
+L5,latam,anchor_pha_latam,1444,1037,71.8
+L5,colombia,anchor_pha_colombia,88,64,72.7
+L6,latam,anchor_lignin_latam,11464,8598,75.0
+L6,colombia,anchor_lignin_colombia,810,635,78.4

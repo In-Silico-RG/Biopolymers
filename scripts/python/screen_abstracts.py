@@ -47,6 +47,35 @@ If the abstract is missing or unusable, return every field as null except confid
 which is "low"."""
 
 
+_RECOVERED = None
+
+
+def recovered():
+    """Abstracts pulled from Semantic Scholar, Europe PMC and Crossref for records where
+    OpenAlex carries none. 4,113 of 9,433 such works were recovered on 2026-09-23, which
+    is why the screening is re-run: every share in docs/02 rests on the works that could
+    actually be read."""
+    global _RECOVERED
+    if _RECOVERED is None:
+        _RECOVERED = {}
+        p = ROOT / "data/processed/recovered_abstracts.jsonl"
+        if p.exists():
+            for line in p.open(encoding="utf-8"):
+                try:
+                    r = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if r.get("abstract"):
+                    _RECOVERED[r["id"]] = r["abstract"]
+    return _RECOVERED
+
+
+def abstract_of(rec):
+    """The record's own abstract, or a recovered one, or empty."""
+    a = deabbrev(rec.get("abstract_inverted_index"))
+    return a or recovered().get(rec.get("id"), "")
+
+
 def deabbrev(inv):
     """OpenAlex stores abstracts as an inverted index; rebuild the text."""
     if not inv:
@@ -124,7 +153,7 @@ def main():
 
     def work(rec):
         title = rec.get("display_name") or rec.get("title") or ""
-        abstract = deabbrev(rec.get("abstract_inverted_index"))
+        abstract = abstract_of(rec)
         res, cached = ask(title, abstract, api_key)
         done[0] += 1
         if done[0] % 50 == 0:
