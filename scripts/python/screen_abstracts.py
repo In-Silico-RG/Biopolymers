@@ -15,7 +15,7 @@ schema are read, and anything else in the reply is discarded.
 Usage:
     screen_abstracts.py <records.jsonl> [--limit N] [--out screened.csv]
 """
-import argparse, hashlib, json, os, sys, time
+import argparse, hashlib, json, os, sys, threading, time
 from pathlib import Path
 import requests
 
@@ -95,8 +95,10 @@ def ask(title, abstract, api_key, retries=4):
     if cached.exists():
         try:
             return json.loads(cached.read_text()), True
-        except json.JSONDecodeError:
-            cached.unlink()
+        except (json.JSONDecodeError, OSError):
+            # Two threads can reach a corrupt entry at once; the second must not die
+            # because the first already removed it.
+            cached.unlink(missing_ok=True)
     body = {"model": MODEL,
             "messages": [{"role": "system", "content": SYSTEM},
                          {"role": "user", "content": prompt}],
@@ -108,7 +110,12 @@ def ask(title, abstract, api_key, retries=4):
             if r.status_code == 200:
                 txt = r.json()["choices"][0]["message"]["content"]
                 out = json.loads(txt)
-                cached.write_text(json.dumps(out), encoding="utf-8")
+                # Write through a temp file and rename, so a reader never sees a
+                # half-written entry. The corrupt entries that crashed the first run came
+                # from concurrent partial writes.
+                tmp = cached.with_suffix(f".{os.getpid()}.{threading.get_ident()}.tmp")
+                tmp.write_text(json.dumps(out), encoding="utf-8")
+                tmp.replace(cached)
                 return out, False
             if r.status_code in (429, 500, 502, 503):
                 time.sleep(3 * (a + 1)); continue
