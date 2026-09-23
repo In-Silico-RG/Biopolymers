@@ -1,0 +1,13 @@
+block,geo,english,spanish_portuguese,overlap,added_by_es_pt,added_pct_of_english
+core,latam,8159,1364,112,1252,15.35
+core,colombia,598,183,26,157,26.25
+cellulose,latam,14669,4218,266,3952,26.94
+cellulose,colombia,902,303,22,281,31.15
+pha,latam,1444,221,22,199,13.78
+pha,colombia,88,36,6,30,34.09
+lignin,latam,11527,1815,129,1686,14.63
+lignin,colombia,811,158,13,145,17.88
+core,world,145743,4849,,,
+cellulose,world,378840,14752,,,
+pha,world,22378,976,,,
+lignin,world,181260,5650,,,

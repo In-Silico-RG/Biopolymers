@@ -70,6 +70,8 @@ def build():
     t26 = rows("T26_source_counts.csv")
     t27 = rows("T27_source_overlap.csv")
     t28 = rows("T28_affiliation_misses.csv")
+    t30 = rows("T30_language_variants.csv")
+    t32 = rows("T32_screening_validation.csv")
     t4 = rows("T4_country_ranking.csv")
     t5 = rows("T5_latam_country_ranking.csv")
     t19 = rows("T19_institution_centrality_core_colombia.csv")
@@ -213,6 +215,50 @@ inflated the Colombian computational share to 12.5\% against a defensible 3\%. T
 bucket alone was re-asked with a question naming the distinction, and statistical design of
 experiments is now excluded from every computational count. The first-pass classifications
 are kept on disk so the correction is auditable.
+
+\subsection{Validating the screening}
+\label{sec:validation}
+
+A classification produced by a language model is worth nothing without an agreement figure.
+125 abstracts were double-coded by a second, independent reader on a different model,
+blind to the first coder's labels. Asking the same model to check its own work would have
+it repeat its own mistakes and report high agreement with itself.
+
+Agreement is reported as Cohen's kappa rather than percent agreement, because percent
+agreement flatters any classification with a dominant class.
+
+""")
+    if t32:
+        rnd = [r for r in t32 if r["stratum"] == "random"]
+        A(r"""\begin{table}[htbp]
+\centering
+\caption{Agreement between the two independent coders on the random sample.}
+\label{tab:validation}
+\small
+\begin{tabular}{lrr}
+\toprule
+Dimension & Agreement & Cohen's $\kappa$ \\
+\midrule""")
+        for r in rnd:
+            A(f"{esc(r['dimension'])} & {num(r['percent_agreement'],1)}\\% & "
+              f"{num(r['cohens_kappa'],3)} \\\\")
+        A(r"""\bottomrule
+\end{tabular}
+\end{table}""")
+    A(r"""
+
+The distinction the whole correction depends on, materials research against biological
+function, reaches the highest agreement of the four. On the conventional reading, 0.61--0.80
+is substantial and above 0.80 almost perfect.
+
+The two coders also disagree in a consistent direction. On the random sample of 100, the
+first coder called 79 works computational against the second coder's 73, a relative
+over-detection of 8.2\%. Five of the seven disputed works were labelled machine learning,
+and reading them shows why: they are reviews and experimental papers that mention artificial
+intelligence as a closing perspective without performing any computation. **Every screened
+share in this report is therefore an upper bound**, and the strict world figure of 1.28\%
+is closer to 1.18\% once the bias is applied. This runs the same way as every other
+correction found here.
 
 \section{Results}
 
@@ -419,6 +465,45 @@ Method & """ + " & ".join(esc(c) for c in ctxs) + r""" \\
 Generative methods and QSAR are absent from the region entirely, and worldwide the
 generative slice is a handful of works. That is the emptiest part of the map and the most
 obvious opening.
+
+\subsection{The regional deficit is partly linguistic}
+\label{sec:language}
+
+Every count so far came from English queries. Spanish and Portuguese term variants were run
+against the same regional slices and the set difference taken, so what is reported is not
+how many records the Spanish and Portuguese strings return but how many they return that
+the English string does \emph{not}.
+
+""")
+    if t30:
+        reg = [r for r in t30 if r["geo"] in ("latam", "colombia")]
+        A(r"""\begin{table}[htbp]
+\centering
+\caption{What Spanish and Portuguese terms add. The last column is the set difference:
+records the Spanish and Portuguese strings return that the English string does not.}
+\label{tab:language}
+\small
+\begin{tabular}{llrrr}
+\toprule
+Block & Region & English & Spanish/Portuguese & Added \\
+\midrule""")
+        bn = {"core": "Core field", "cellulose": "Cellulose", "pha": "PHA/PHB",
+              "lignin": "Lignin"}
+        gn = {"latam": "Latin America", "colombia": "Colombia"}
+        for r in reg:
+            A(f"{esc(bn.get(r['block'], r['block']))} & {gn.get(r['geo'], r['geo'])} & "
+              f"{num(r['english'])} & {num(r['spanish_portuguese'])} & "
+              f"{num(r['added_by_es_pt'])} (+{num(r['added_pct_of_english'],1)}\\%) \\\\")
+        A(r"""\bottomrule
+\end{tabular}
+\end{table}""")
+    A(r"""
+
+The addition is substantial and it is largest for Colombia. A bibliometric count of Latin
+American biopolymer research built on English terms alone misses between a seventh and a
+third of the corpus, depending on the slice. Taken with the affiliation-matching loss of
+Section~\ref{sec:layer}, the regional figures in this report understate the region twice
+over, for two independent and separately measurable reasons.
 
 \subsection{The three anchored lines}
 """)

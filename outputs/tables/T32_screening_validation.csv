@@ -1,0 +1,13 @@
+stratum,n,dimension,percent_agreement,cohens_kappa
+random,100,materials vs biological,94.0,0.878
+random,100,computational at all,92.0,0.782
+random,100,method family,88.0,0.816
+random,100,polymer family,80.0,0.767
+rare,25,materials vs biological,88.0,0.762
+rare,25,computational at all,100.0,
+rare,25,method family,92.0,0.844
+rare,25,polymer family,80.0,0.765
+all,125,materials vs biological,92.8,0.855
+all,125,computational at all,93.6,0.794
+all,125,method family,88.8,0.844
+all,125,polymer family,80.0,0.767

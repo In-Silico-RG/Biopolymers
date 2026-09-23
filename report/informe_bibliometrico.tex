@@ -129,6 +129,49 @@ bucket alone was re-asked with a question naming the distinction, and statistica
 experiments is now excluded from every computational count. The first-pass classifications
 are kept on disk so the correction is auditable.
 
+\subsection{Validating the screening}
+\label{sec:validation}
+
+A classification produced by a language model is worth nothing without an agreement figure.
+125 abstracts were double-coded by a second, independent reader on a different model,
+blind to the first coder's labels. Asking the same model to check its own work would have
+it repeat its own mistakes and report high agreement with itself.
+
+Agreement is reported as Cohen's kappa rather than percent agreement, because percent
+agreement flatters any classification with a dominant class.
+
+
+\begin{table}[htbp]
+\centering
+\caption{Agreement between the two independent coders on the random sample.}
+\label{tab:validation}
+\small
+\begin{tabular}{lrr}
+\toprule
+Dimension & Agreement & Cohen's $\kappa$ \\
+\midrule
+materials vs biological & 94.0\% & 0.878 \\
+computational at all & 92.0\% & 0.782 \\
+method family & 88.0\% & 0.816 \\
+polymer family & 80.0\% & 0.767 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+The distinction the whole correction depends on, materials research against biological
+function, reaches the highest agreement of the four. On the conventional reading, 0.61--0.80
+is substantial and above 0.80 almost perfect.
+
+The two coders also disagree in a consistent direction. On the random sample of 100, the
+first coder called 79 works computational against the second coder's 73, a relative
+over-detection of 8.2\%. Five of the seven disputed works were labelled machine learning,
+and reading them shows why: they are reviews and experimental papers that mention artificial
+intelligence as a closing perspective without performing any computation. **Every screened
+share in this report is therefore an upper bound**, and the strict world figure of 1.28\%
+is closer to 1.18\% once the bias is applied. This runs the same way as every other
+correction found here.
+
 \section{Results}
 
 \subsection{Size, growth and geography}
@@ -291,6 +334,44 @@ None detected & 13.4 & 12.1 & 14.1 & 11.1 \\
 Generative methods and QSAR are absent from the region entirely, and worldwide the
 generative slice is a handful of works. That is the emptiest part of the map and the most
 obvious opening.
+
+\subsection{The regional deficit is partly linguistic}
+\label{sec:language}
+
+Every count so far came from English queries. Spanish and Portuguese term variants were run
+against the same regional slices and the set difference taken, so what is reported is not
+how many records the Spanish and Portuguese strings return but how many they return that
+the English string does \emph{not}.
+
+
+\begin{table}[htbp]
+\centering
+\caption{What Spanish and Portuguese terms add. The last column is the set difference:
+records the Spanish and Portuguese strings return that the English string does not.}
+\label{tab:language}
+\small
+\begin{tabular}{llrrr}
+\toprule
+Block & Region & English & Spanish/Portuguese & Added \\
+\midrule
+Core field & Latin America & 8,159 & 1,364 & 1,252 (+15.3\%) \\
+Core field & Colombia & 598 & 183 & 157 (+26.2\%) \\
+Cellulose & Latin America & 14,669 & 4,218 & 3,952 (+26.9\%) \\
+Cellulose & Colombia & 902 & 303 & 281 (+31.1\%) \\
+PHA/PHB & Latin America & 1,444 & 221 & 199 (+13.8\%) \\
+PHA/PHB & Colombia & 88 & 36 & 30 (+34.1\%) \\
+Lignin & Latin America & 11,527 & 1,815 & 1,686 (+14.6\%) \\
+Lignin & Colombia & 811 & 158 & 145 (+17.9\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+The addition is substantial and it is largest for Colombia. A bibliometric count of Latin
+American biopolymer research built on English terms alone misses between a seventh and a
+third of the corpus, depending on the slice. Taken with the affiliation-matching loss of
+Section~\ref{sec:layer}, the regional figures in this report understate the region twice
+over, for two independent and separately measurable reasons.
 
 \subsection{The three anchored lines}
 
