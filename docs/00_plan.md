@@ -9,10 +9,11 @@ chemoinformatics and artificial intelligence applied to biomaterials and biopoly
 narrows at the end to the Latin American and Colombian setting. The route is the backbone
 of Camila Argel's undergraduate thesis (proyecto de grado).
 
-**Status.** in progress — 2026-09-24. Phase 1 complete and Phase 2 substantially done, both
-written up and validated. Phase 3 is computed in every table but not yet written as an
-argument. The report is `report/informe_bibliometrico.pdf`. What remains is listed under
-*Where this stands* below.
+**Status.** in progress — 2026-09-24. All three phases written. Phase 1 complete, Phase 2
+substantially done and validated, Phase 3 written as an argument on the corpus rebuilt in
+three languages. The report is `report/informe_bibliometrico.pdf`, 14 pages. Three items
+remain, listed under *Where this stands* below; the largest is re-running the screening on
+the combined corpus.
 
 ---
 
