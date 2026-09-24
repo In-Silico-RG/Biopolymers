@@ -176,15 +176,16 @@ Spanish and Portuguese undercount and the affiliation-matching loss both quantif
 
 **Not done, in the order it is worth doing.**
 
-1. **Write Phase 3 as an argument.** The regional numbers exist in every table; the text
-   that says what they mean for Colombia does not.
-2. **Rebuild the headline corpus on the combined English, Spanish and Portuguese
-   vocabulary.** The addition has been measured at +15% to +34% depending on the slice, but
-   the main tables still rest on English alone.
-3. **A third coding by Camila** of a few dozen items, as a domain-expert check on two
+1. ~~Write Phase 3 as an argument.~~ **Done 2026-09-24**, `06_latam_colombia.md`.
+2. ~~Rebuild the headline corpus on the combined vocabulary.~~ **Done 2026-09-24.** It
+   inverted the expectation: the recovered literature is almost entirely non-computational,
+   so the regional method share falls rather than rises.
+3. **Re-run the abstract screening on the combined corpus.** The screened shares still rest
+   on the English-only denominator, which is now known to be too small.
+4. **A third coding by Camila** of a few dozen items, as a domain-expert check on two
    automatic coders that may share a bias neither detects. Now a confirmation, not the only
    evidence.
-4. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
+5. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
    in a shortlist of ten and nothing in the field does it routinely.
 
 **Decisions that are closed and should not be reopened.** Scopus and Web of Science are
@@ -198,6 +199,8 @@ Statistical design of experiments is not computational chemistry (2026-09-23).
 - **r1, 2026-09-23.** Status moved to in progress. No change to the phases. Phase 1 ran on
   OpenAlex alone because the other three sources need credentials or a key; the
   triangulation decision stands and is simply not yet executed.
+- **r4, 2026-09-24.** Phase 3 written and the corpus rebuilt in three languages. The
+  rebuild inverted the expected direction and conclusion 2 of the report was rewritten.
 - **r3, 2026-09-24.** Status section *Where this stands* added, listing what is done and
   the four things that remain. No change to the phases or to any decision.
 - **r2, 2026-09-23.** Source roster amended: Scopus and Web of Science are unavailable and

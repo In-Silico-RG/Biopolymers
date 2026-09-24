@@ -72,6 +72,8 @@ def build():
     t28 = rows("T28_affiliation_misses.csv")
     t30 = rows("T30_language_variants.csv")
     t31 = rows("T31_generative_works.csv")
+    t33 = rows("T33_combined_vs_english.csv")
+    t34 = rows("T34_combined_context_comparison.csv")
     t32 = rows("T32_screening_validation.csv")
     t4 = rows("T4_country_ranking.csv")
     t5 = rows("T5_latam_country_ranking.csv")
@@ -669,20 +671,153 @@ third. That work is scattered, with no venue acting as a centre.
 """)
 
     A(r"""
-\subsection{Colombia}
+\section{Latin America and Colombia}
+\label{sec:region}
+
+\subsection{The claim}
+
+Latin America is not behind in computational practice. It is small, invisible and
+unorganised, and those are three different problems with three different remedies. The
+region's difficulty is not access to molecular dynamics or machine learning. It is that its
+output is thin in absolute terms, that a large part of what exists is not seen by the
+instruments that count science, and that the part which does use computational methods has
+neither a community nor a venue.
+
+\subsection{Rebuilding the corpus in three languages}
+\label{sec:combined}
+
+Section~\ref{sec:language} measured what Spanish and Portuguese terms add. The corpus was
+then rebuilt on the combined vocabulary, and the English-only corpus kept beside it, because
+the gap between the two is the result.
+
 """)
-    if t19:
-        A("The Colombian institutional ranking is led by "
-          + ", ".join(f"{esc(r['label'])} ({num(r['documents'])})" for r in t19[:4])
-          + r""". Universidad de Sucre appears with """
-          + (num(get(t19, "label", "University of Sucre", "documents")) or "--")
-          + r""" works.
-""")
-    A(r"""\begin{figure}[htbp]
+    if t33:
+        A(r"""\begin{table}[htbp]
 \centering
-\includegraphics[width=0.8\textwidth]{../outputs/figures/F7_colombia_partners.pdf}
+\caption{What the combined English, Spanish and Portuguese vocabulary adds. The core
+corpora gain substantially; the method corpora gain almost nothing.}
+\label{tab:combined}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Corpus & English only & Combined & Added \\
+\midrule""")
+        nm = {"core_world": "Core field, world", "core_ibero": "Core field, Ibero-America",
+              "core_latam": "Core field, Latin America", "core_colombia": "Core field, Colombia",
+              "methods_world": "Method layer, world",
+              "methods_ibero": "Method layer, Ibero-America",
+              "methods_latam": "Method layer, Latin America",
+              "methods_colombia": "Method layer, Colombia"}
+        for r in t33:
+            if r["corpus"] not in nm:
+                continue
+            A(f"{esc(nm[r['corpus']])} & {num(r['english_only'])} & {num(r['combined'])} & "
+              f"{num(r['added'])} (+{num(r['added_pct'],1)}\\%) \\\\")
+        A(r"""\bottomrule
+\end{tabular}
+\end{table}""")
+    A(r"""
+
+\paragraph{The result is the opposite of the one expected, and it is the most useful finding
+of this section.} Adding Spanish and Portuguese recovered 7,106 works to the core corpora
+and \textbf{19} to the method corpora. Colombia gains 26.3\% of core output and 0.0\% of
+method output.
+
+The literature that English-language queries miss is almost entirely non-computational. Two
+readings follow and they are not exclusive: regional computational work is already
+internationalised, published in English and never invisible; and the Spanish- and
+Portuguese-language regional literature is overwhelmingly experimental and applied.
+
+The consequence is arithmetic and it cuts against the region. With a complete corpus,
+Colombia's keyword method share falls from 1.94\% to 1.59\% and Latin America's from
+2.20\% to 1.96\%, because the denominator grew and the numerator did not. The growth rate
+falls too, Colombia from 27.0\% to 18.9\%, as older Spanish-language work fills in the early
+years. \textbf{The language correction does not excuse the thin computational layer; it
+sharpens it.}
+
+""")
+    if t34:
+        A(r"""\begin{table}[htbp]
+\centering
+\caption{The field by context, rebuilt on the combined vocabulary. Compare with
+Table~\ref{tab:contexts}, the English-only version.}
+\label{tab:contexts-combined}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Context & Works, all years & 2015--2025 & Share of world & Growth/yr & Method share \\
+\midrule""")
+        for r in t34:
+            A(f"{esc(r['context'])} & {num(r['total_all_years'])} & "
+              f"{num(r['core_2015_2025'])} & {num(r['share_of_world_pct'],2)}\\% & "
+              f"{num(r['cagr_2015_2025_pct'],1)}\\% & "
+              f"{num(r['methods_share_pct'],2)}\\% \\\\")
+        A(r"""\bottomrule
+\end{tabular}
+\end{table}""")
+    A(r"""
+
+\subsection{Three separate causes of invisibility}
+
+A count of Latin American research in this field understates it, and the understatement has
+three independent sources, each measured rather than assumed. \emph{Language}, worth 15.4\%
+for Latin America and 26.3\% for Colombia. \emph{Affiliation matching}, which leaves 12.7\%
+of authorships attached to no institution at all, worst for the smallest producers at 27\%
+for Bolivia and 10\% for Venezuela. And \emph{choice of source}, since Lens holds 91\% of
+the OpenAlex world corpus but 57\% of the Colombian one. None of these is a statement about
+the quality of the research. They are statements about the infrastructure that counts it.
+
+\subsection{Colombia is the most connected corpus measured}
+
+Nearly a quarter of Colombian biopolymer works involve a second Latin American country, four
+times the regional average, and 44\% involve any international partner. Its strongest
+partners are Mexico, Brazil and Spain in almost equal measure.
+
+Brazil is the contrast. Its strongest ties run outward, to the United States, Portugal and
+Spain, and dwarf its ties to Argentina or Colombia. The largest producer in the region is the
+least regionally integrated one. Colombia does not need to be taught to collaborate; it
+already collaborates more, and more regionally, than the countries above it.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{../outputs/figures/F7_colombia_partners.pdf}
 \caption{Colombia's co-authorship partners, split between the region and outside it.}
 \end{figure}
+
+\subsection{What the region works on}
+
+Latin America holds a larger share of world output in lignin and polyhydroxyalkanoates, both
+7.1\%, than in cellulose at 4.8\%. That fits a research base working from agro-industrial
+residues rather than purified feedstocks, and it is a comparative position rather than a
+deficiency. On the screened subset Colombia concentrates on chitosan, 22\% of its
+computational work against a world 9\%, and on lignin, 11\% against 4.7\%.
+
+Its institutional base is real but shallow: Universidad Nacional de Colombia, Universidad del
+Valle, Universidad de Cartagena and Universidad de Antioquia lead, with Universidad de Sucre
+present at 25 works.
+
+\subsection{Three problems, three remedies}
+
+Conflating them is how this kind of study usually goes wrong.
+
+\begin{enumerate}
+\item \textbf{Scale is a funding and continuity problem}, not a training one. The region
+      publishes competently and openly; it publishes little, and the people who do
+      computational work mostly do it once.
+\item \textbf{Invisibility is an infrastructure problem with identified causes.} Language,
+      affiliation matching and choice of source are each measurable and each fixable, two of
+      them by the databases rather than by the researchers. Depositing with complete,
+      matchable affiliations is the part authors control.
+\item \textbf{The absence of a community and a venue is an organisational problem}, and it
+      is the one a research group can actually move. A recurring regional venue for
+      computational work on biopolymers would address a gap this study measured rather than
+      assumed.
+\end{enumerate}
+
+The clearest opening remains the generative frontier. Reading every generative work in the
+field leaves four credible biopolymer-specific studies worldwide and none from Latin America
+(Section~\ref{sec:generative}). One of them, on population-aware generation of lignin
+ensembles, addresses the same problem as this group's existing lignin line.
 
 \section{What the map shows}
 
@@ -691,11 +826,13 @@ third. That work is scattered, with no venue acting as a centre.
       eighty in the biopolymers field uses a genuine computational method on a material.
       That share roughly doubled over a decade and 2026 is running ahead of 2025 in every
       context measured.
-\item \textbf{The regional deficit is volume, not method.} Latin America and Colombia adopt
-      computational methods at rates comparable to, and by the screened measure above, the
-      world. What the region lacks is scale and continuity of output, not access to
-      computational practice. This reverses the usual framing and it changes what a
-      recommendation should say.
+\item \textbf{The regional deficit is mostly volume, and the language correction sharpened
+      rather than excused the rest.} On English-only counts Latin America matched the world
+      on method uptake. Rebuilding the corpus in three languages recovered 7{,}106 works and
+      only 19 of them computational, so the complete-corpus method share is about four
+      fifths of the world's rather than equal to it (Section~\ref{sec:combined}). The
+      region's computational work was never invisible; its experimental work was. What the
+      region lacks is scale and continuity, and the gap in method uptake is real but modest.
 \item \textbf{The method mix differs by region.} The world leans on molecular dynamics;
       Latin America leans on machine learning; Colombia leans on quantum chemistry. An
       infrastructural reading is available, since sustained dynamics needs computing time
@@ -715,13 +852,15 @@ third. That work is scattered, with no venue acting as a centre.
 \begin{itemize}
 \item \textbf{Two sources, not four.} Scopus and Web of Science were unavailable. OpenAlex
       and Lens disagree by about a third on regional counts, which bounds how precise any
-      regional figure here can be.
+      regional figure here can be and is itself reported as a result
+      (Section~\ref{sec:region}).
 \item \textbf{The screened shares are upper bounds.} The measured over-detection of
       Section~\ref{sec:validation} is 8.2\%, and it is not corrected in the tables, only
       stated. Read every screened percentage as a ceiling.
-\item \textbf{English-only counts understate the region} by between a seventh and a
-      third, measured in Section~\ref{sec:language}. The headline tables have not been
-      rebuilt on the combined vocabulary; that is the next harvest, not a completed one.
+\item \textbf{The screened shares rest on the English-only corpus.} Sections~\ref{sec:layer}
+      and the screening of Section~\ref{sec:validation} were run before the corpus was
+      rebuilt in three languages. The denominator is now known to be larger, so those shares
+      are upper bounds on that count as well as on the over-detection count.
 \item \textbf{Affiliation matching loses regional work.} Quantified in
       Section~\ref{sec:layer}. The regional counts are a lower bound.
 \item \textbf{Abstract coverage.} Roughly 30\% of the method-layer records carry no abstract
@@ -741,8 +880,8 @@ third. That work is scattered, with no venue acting as a centre.
 \begin{enumerate}
 \item A third coding of a few dozen items by a domain expert, as a check on two automatic
       coders that may share a bias neither detects.
-\item Rebuild the headline corpus on the combined English, Spanish and Portuguese
-      vocabulary, now that the addition has been measured.
+\item Re-run the abstract screening on the combined corpus, so the screened shares rest on
+      the same denominator as the keyword ones.
 \item Apply the venue-provenance check of Section~\ref{sec:generative} to the whole
       corpus. It is a measurable, publishable statement and nothing in the field does it.
 \item Take the affiliation-matching loss seriously as a result in its own right. It is a

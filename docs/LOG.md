@@ -304,3 +304,36 @@ Language: English.
   the whole corpus.
 - Not obtained: the Camposano lignin preprint PDF, blocked by Cloudflare with no mirror.
   Reference and reason recorded in `refs/`.
+
+---
+
+## 2026-09-24 — Session 6: Phase 3 written, corpus rebuilt in three languages
+
+- AC: "escribe la Fase 3 como argumento, rehacer el corpus". Both done, corpus first because
+  its numbers feed the argument.
+- Four combined query files frozen (`*_combined_v1.txt`) and 23 corpora harvested beside the
+  English-only ones. The English-only corpora are kept: the gap between the two is the
+  result, and replacing them silently would make docs 01 and 02 unverifiable.
+- **The result inverted the expectation, and it is the finding of the session.** Spanish and
+  Portuguese added 7,106 works to the core corpora and **19** to the method corpora.
+  Colombia gains 26.3% of core output and 0.0% of method output. The literature English
+  queries miss is almost entirely non-computational.
+- Consequence: with a complete corpus Colombia's keyword method share *falls* from 1.94% to
+  1.59% and Latin America's from 2.20% to 1.96%, because the denominator grew and the
+  numerator did not. Growth falls too, Colombia 27.0% to 18.9%, as older Spanish-language
+  work fills the early years. The language correction sharpens the thin computational layer
+  rather than excusing it.
+- Conclusion 2 of the report was rewritten accordingly. It previously said the regional
+  deficit is volume and not method; it now says the deficit is mostly volume and that the
+  complete-corpus method share is about four fifths of the world's rather than equal.
+- `docs/06_latam_colombia.md` written: the claim, size, the three measured causes of
+  invisibility, the language finding, what the region works on, the collaboration contrast
+  with Brazil, the structural diagnosis, and three problems with three distinct remedies.
+- Report now 13 pages with a full Latin America and Colombia section.
+- **Bug, with its cause.** The first insertion attempt used placeholders where one contained
+  the other as a substring, so replacing the first corrupted the second and pdflatex died on
+  the fragment. Restored from git and redone with disjoint names. Caught by the compiler,
+  not by a test.
+- Open for AC: whether to re-run the abstract screening on the combined corpus, since the
+  screened shares still rest on the English-only denominator and are therefore upper bounds
+  on that count too.
