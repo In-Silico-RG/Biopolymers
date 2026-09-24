@@ -289,3 +289,18 @@ Language: English.
 - Open for AC: a third coding of a few dozen items by Camila as a domain-expert check on
   two automatic coders that may share a bias; whether to apply the venue-provenance check
   to the whole corpus rather than to the generative shortlist.
+
+---
+
+## 2026-09-24 — Session 5 closed
+
+- AC: "OK, let's wrap it up". No work in flight, nothing running, 26 commits, clean tree.
+- Deliverable is `report/informe_bibliometrico.pdf`, 12 pages, regenerated from
+  `outputs/tables/` by `scripts/python/build_report.py`. No number in it is typed by hand,
+  which is the reason it survived three days in which several of them changed twice.
+- Plan moved to r3 with a *Where this stands* section naming the four things left: write
+  Phase 3 as an argument, rebuild the corpus on the combined English, Spanish and Portuguese
+  vocabulary, have Camila supply a third coding, and extend the venue-provenance check to
+  the whole corpus.
+- Not obtained: the Camposano lignin preprint PDF, blocked by Cloudflare with no mirror.
+  Reference and reason recorded in `refs/`.

@@ -9,9 +9,10 @@ chemoinformatics and artificial intelligence applied to biomaterials and biopoly
 narrows at the end to the Latin American and Colombian setting. The route is the backbone
 of Camila Argel's undergraduate thesis (proyecto de grado).
 
-**Status.** in progress — 2026-09-23. Phase 1 executed on OpenAlex and written up in
-`01_bibliometric_mapping.md`. Record-level work is blocked on an OpenAlex API key. Phases 2
-and 3 not started. Blocking items are listed in *Open questions*.
+**Status.** in progress — 2026-09-24. Phase 1 complete and Phase 2 substantially done, both
+written up and validated. Phase 3 is computed in every table but not yet written as an
+argument. The report is `report/informe_bibliometrico.pdf`. What remains is listed under
+*Where this stands* below.
 
 ---
 
@@ -164,6 +165,32 @@ Versiones/     dated copies of important PDFs before overwriting
 - Whether the thesis targets a journal article as a secondary output, which would change how
   Phase 3 is written. — AC.
 
+## Where this stands, 2026-09-24
+
+**Done.** The field mapped in time and space, with co-authorship networks, Lotka and
+Bradford. The computational layer measured by reading abstracts rather than matching
+keywords, and that reading validated against an independent second coder at Cohen's kappa
+0.878 on the distinction that matters, with a directional bias of +8.2% measured and
+stated. The generative frontier read work by work. Triangulation against Lens. The
+Spanish and Portuguese undercount and the affiliation-matching loss both quantified.
+
+**Not done, in the order it is worth doing.**
+
+1. **Write Phase 3 as an argument.** The regional numbers exist in every table; the text
+   that says what they mean for Colombia does not.
+2. **Rebuild the headline corpus on the combined English, Spanish and Portuguese
+   vocabulary.** The addition has been measured at +15% to +34% depending on the slice, but
+   the main tables still rest on English alone.
+3. **A third coding by Camila** of a few dozen items, as a domain-expert check on two
+   automatic coders that may share a bias neither detects. Now a confirmation, not the only
+   evidence.
+4. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
+   in a shortlist of ten and nothing in the field does it routinely.
+
+**Decisions that are closed and should not be reopened.** Scopus and Web of Science are
+unavailable (AC, 2026-09-23). 2026 stays in the corpus, flagged as partial (AC, 2026-09-23).
+Statistical design of experiments is not computational chemistry (2026-09-23).
+
 ## Revision log
 
 - **r0, 2026-09-22.** First version. Phases, sources, tools and scope set from the session
@@ -171,6 +198,8 @@ Versiones/     dated copies of important PDFs before overwriting
 - **r1, 2026-09-23.** Status moved to in progress. No change to the phases. Phase 1 ran on
   OpenAlex alone because the other three sources need credentials or a key; the
   triangulation decision stands and is simply not yet executed.
+- **r3, 2026-09-24.** Status section *Where this stands* added, listing what is done and
+  the four things that remain. No change to the phases or to any decision.
 - **r2, 2026-09-23.** Source roster amended: Scopus and Web of Science are unavailable and
   are replaced by Lens, Semantic Scholar and Europe PMC. Collaborators identified from the
   record rather than guessed: GIFTEX at Universidad Industrial de Santander, UNF as
