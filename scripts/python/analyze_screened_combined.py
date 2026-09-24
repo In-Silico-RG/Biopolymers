@@ -87,15 +87,24 @@ def main():
     with pd.option_context("display.width", 220, "display.max_colwidth", 30):
         print(df[show].to_string(index=False))
 
-    if "added_materials" in df.columns:
-        am = df["added_materials"].fillna(0).sum()
-        ac = df["added_computational"].fillna(0).sum()
-        print(f"\nAcross these corpora the combined vocabulary adds {int(am)} materials works "
-              f"and {int(ac)} computational ones.")
+    # Only the whole-field corpora are comparable here. The method-layer corpora were
+    # selected on a computational keyword, so ~87% of them are computational by
+    # construction and averaging the two kinds together would be meaningless.
+    whole = df[df["corpus"].str.startswith("Whole field")]
+    if len(whole) and "added_materials" in whole.columns:
+        am = whole["added_materials"].fillna(0).sum()
+        ac = whole["added_computational"].fillna(0).sum()
+        print(f"\nOn the whole-field corpora, the combined vocabulary adds {int(am)} "
+              f"materials works of which {int(ac)} are computational.")
         if am:
-            print(f"That is {ac / am * 100:.1f}% computational, against "
-                  f"{df['en_computational_pct_of_materials'].mean():.1f}% in the "
-                  f"English-only corpora on average.")
+            base = whole["en_computational_pct_of_materials"].mean()
+            print(f"The recovered literature is {ac / am * 100:.1f}% computational, against "
+                  f"{base:.1f}% in the English-only corpora it was added to: "
+                  f"about {(ac / am * 100) / base:.1f} times as computational.")
+        for _, r in whole.iterrows():
+            print(f"  {r['corpus']:<28} screened share "
+                  f"{r['en_computational_pct_of_materials']}% -> "
+                  f"{r['comb_computational_pct_of_materials']}%")
 
 
 if __name__ == "__main__":

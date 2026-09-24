@@ -337,3 +337,34 @@ Language: English.
 - Open for AC: whether to re-run the abstract screening on the combined corpus, since the
   screened shares still rest on the English-only denominator and are therefore upper bounds
   on that count too.
+
+---
+
+## 2026-09-24 — Session 7: screening re-run on the combined corpus
+
+- AC: "vuelve a correr el cribado sobre el corpus combinado". Done: records harvested for six
+  combined corpora, abstracts recovered, 14,709 abstracts screened, strict second pass rerun.
+- **The guard caught a repeat of an old bug.** Writing the record counts into the combined
+  query headers used a `sed` whose `|` delimiter collided with the `|` inside the header
+  text, stripping a leading `#` in all four files. `corpora.load()` refused to run and the
+  pipeline stopped at stage 1 instead of feeding header text into a search string. Repaired
+  with Python; `sed` is not used on these files again, and the lesson is in memory.
+- **Second fix.** The abstract cascade recorded only successes, so every failed lookup was
+  retried on each run, spending thousands of calls re-asking three sources for abstracts
+  they had already declined. Exhausted lookups are now written with `source: exhausted` and
+  skipped.
+- **Result, and it corrects my own overstatement.** The keyword measure said the recovered
+  Spanish and Portuguese literature was 0.0% computational for Colombia. Reading the
+  abstracts shows it is 1.5% computational against 4.0% in the corpora it joins, about four
+  tenths as computational rather than zero. The keyword figure was itself an artefact: the
+  English method vocabulary does not fire on Spanish abstracts, so such a paper was missed
+  twice over. The direction of the finding holds; its strength was overstated and is now
+  corrected in `06_latam_colombia.md` and in the report.
+- Screened shares on the combined corpus: Colombia 4.48% to 3.84%, Latin America 3.43% to
+  3.12%. These are the figures to quote.
+- Also corrected a misleading summary line in `analyze_screened_combined.py` that averaged
+  whole-field and method-layer corpora together; the method layers are ~87% computational by
+  construction, so the average meant nothing.
+- Closed two items AC declined and will not revisit: no third human coding of the screening
+  sample, and the Camposano preprint, which is in his hands and is not a project task.
+- Report rebuilt, 14 pages.

@@ -562,17 +562,46 @@ of this section.} Adding Spanish and Portuguese recovered 7,106 works to the cor
 and \textbf{19} to the method corpora. Colombia gains 26.3\% of core output and 0.0\% of
 method output.
 
-The literature that English-language queries miss is almost entirely non-computational. Two
-readings follow and they are not exclusive: regional computational work is already
-internationalised, published in English and never invisible; and the Spanish- and
-Portuguese-language regional literature is overwhelmingly experimental and applied.
+\paragraph{Confirmed by reading, not only by keyword.} A keyword result like this one could
+be an artefact: English method terms do not fire on Spanish abstracts, so a Spanish-language
+computational paper would be missed twice over. The screening was therefore re-run on the
+combined corpora, 14{,}709 abstracts in all. It confirms the finding and corrects its
+strength.
 
-The consequence is arithmetic and it cuts against the region. With a complete corpus,
-Colombia's keyword method share falls from 1.94\% to 1.59\% and Latin America's from
-2.20\% to 1.96\%, because the denominator grew and the numerator did not. The growth rate
-falls too, Colombia from 27.0\% to 18.9\%, as older Spanish-language work fills in the early
-years. \textbf{The language correction does not excuse the thin computational layer; it
-sharpens it.}
+
+\begin{table}[htbp]
+\centering
+\caption{The screening re-run on the combined corpus. The works recovered by Spanish and
+Portuguese are markedly less computational than the corpus they join.}
+\label{tab:screened-combined}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Corpus & Materials added & Of which computational & Screened share, English & Combined \\
+\midrule
+Whole field, Colombia & 127 & 2 & 4.48\% & 3.84\% \\
+Whole field, Latin America & 1,114 & 17 & 3.43\% & 3.12\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+The recovered literature is 1.5\% computational against 4.0\% in the corpora it joins:
+about four tenths as computational, not zero. The keyword match reported 0.0\% for Colombia
+because the English method vocabulary does not fire on Spanish abstracts; reading finds a
+little, and a little is the right answer.
+
+Two readings follow and they are not exclusive: regional computational work is largely
+internationalised already, published in English and mostly not invisible; and the Spanish-
+and Portuguese-language regional literature is predominantly experimental and applied.
+
+The consequence is arithmetic and it cuts against the region. With a complete corpus every
+measure of regional computational intensity falls, because the denominator grew much faster
+than the numerator. Colombia's keyword share goes from 1.94\% to 1.59\% and its screened
+share from 4.48\% to 3.84\%; Latin America's screened share from 3.43\% to 3.12\%. The
+growth rate falls too, Colombia from 27.0\% to 18.9\%, as older Spanish-language work fills
+in the early years. \textbf{The language correction does not excuse the thin computational
+layer; it sharpens it.}
 
 
 \begin{table}[htbp]
@@ -666,10 +695,12 @@ ensembles, addresses the same problem as this group's existing lignin line.
 \item \textbf{The regional deficit is mostly volume, and the language correction sharpened
       rather than excused the rest.} On English-only counts Latin America matched the world
       on method uptake. Rebuilding the corpus in three languages recovered 7{,}106 works and
-      only 19 of them computational, so the complete-corpus method share is about four
-      fifths of the world's rather than equal to it (Section~\ref{sec:combined}). The
-      region's computational work was never invisible; its experimental work was. What the
-      region lacks is scale and continuity, and the gap in method uptake is real but modest.
+      only 19 of them computational on a reading of their abstracts, so every measure of
+      regional computational intensity falls once the corpus is complete
+      (Section~\ref{sec:combined}). Colombia's screened share goes from 4.48\% to 3.84\%.
+      The region's computational work was largely not invisible; its experimental work was.
+      What the region lacks is scale and continuity, and the gap in method uptake is real
+      but modest.
 \item \textbf{The method mix differs by region.} The world leans on molecular dynamics;
       Latin America leans on machine learning; Colombia leans on quantum chemistry. An
       infrastructural reading is available, since sustained dynamics needs computing time
@@ -694,10 +725,11 @@ ensembles, addresses the same problem as this group's existing lignin line.
 \item \textbf{The screened shares are upper bounds.} The measured over-detection of
       Section~\ref{sec:validation} is 8.2\%, and it is not corrected in the tables, only
       stated. Read every screened percentage as a ceiling.
-\item \textbf{The screened shares rest on the English-only corpus.} Sections~\ref{sec:layer}
-      and the screening of Section~\ref{sec:validation} were run before the corpus was
-      rebuilt in three languages. The denominator is now known to be larger, so those shares
-      are upper bounds on that count as well as on the over-detection count.
+\item \textbf{The world screened shares still rest on the English-only corpus.} The regional
+      corpora were re-screened on the combined vocabulary
+      (Section~\ref{sec:combined}); the world method layer gains only 12 works from it, so
+      the world figures move by less than a tenth of a percentage point, but they were not
+      rebuilt.
 \item \textbf{Affiliation matching loses regional work.} Quantified in
       Section~\ref{sec:layer}. The regional counts are a lower bound.
 \item \textbf{Abstract coverage.} Roughly 30\% of the method-layer records carry no abstract
@@ -717,8 +749,8 @@ ensembles, addresses the same problem as this group's existing lignin line.
 \begin{enumerate}
 \item A third coding of a few dozen items by a domain expert, as a check on two automatic
       coders that may share a bias neither detects.
-\item Re-run the abstract screening on the combined corpus, so the screened shares rest on
-      the same denominator as the keyword ones.
+\item Extend the combined-vocabulary rebuild to the anchored lines and the world method
+      layer, which still rest on English-only counts.
 \item Apply the venue-provenance check of Section~\ref{sec:generative} to the whole
       corpus. It is a measurable, publishable statement and nothing in the field does it.
 \item Take the affiliation-matching loss seriously as a result in its own right. It is a

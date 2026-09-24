@@ -7,7 +7,8 @@ and 05; this document says what they mean.*
 of Colombia in the biopolymers field and in the computational layer sitting on top of it.
 
 **Status.** closed 2026-09-24. Written on the combined English, Spanish and Portuguese
-corpus, with the English-only figures kept beside it wherever the two differ.
+corpus, screened as well as counted, with the English-only figures kept beside it wherever
+the two differ.
 
 ---
 
@@ -80,21 +81,43 @@ Colombia gains 26.3% of core output from the combined vocabulary and **0.0%** of
 output. Latin America gains 15.4% and 1.4%. The literature that English-language queries
 miss is almost entirely non-computational.
 
-Two readings are available and they are not exclusive. The regional computational work is
-already internationalised: researchers doing molecular dynamics or machine learning on
-biopolymers publish in English, in international journals, and were never invisible. And the
-Spanish- and Portuguese-language regional literature is overwhelmingly experimental and
-applied.
+### Confirmed by reading, not only by keyword
 
-The consequence is arithmetic and it cuts against the region. With a complete corpus,
-Colombia's keyword method share falls from 1.94% to **1.59%**, and Latin America's from 2.20%
-to 1.96%, because the denominator grew and the numerator did not. The growth rate falls too,
-Colombia from 27.0% to 18.9%, as older Spanish-language work fills in the early years.
+The keyword figures above could be an artefact of the English-language method vocabulary
+failing on Spanish-language abstracts. The screening was therefore re-run on the combined
+corpus, and it confirms the finding while correcting its strength.
+
+| Corpus | Materials works added | Of which computational |
+|---|---|---|
+| Colombia, whole field | 127 | 2 |
+| Latin America, whole field | 1,114 | 17 |
+
+The recovered literature is **1.5% computational**, against 4.0% in the English-only corpora
+it joins: about four tenths as computational, not zero. The keyword match said 0.0% for
+Colombia because the English method terms do not fire on Spanish abstracts; reading finds a
+little, and a little is the right answer.
+
+The screened shares therefore fall too, and these are the figures to quote:
+
+| Context | Screened share, English-only corpus | Screened share, combined corpus |
+|---|---|---|
+| Colombia, whole field | 4.48% | **3.84%** |
+| Latin America, whole field | 3.43% | **3.12%** |
+
+Two readings are available and they are not exclusive. The regional computational work is
+largely internationalised already: researchers doing molecular dynamics or machine learning
+on biopolymers publish in English and were mostly not invisible. And the Spanish- and
+Portuguese-language regional literature is predominantly experimental and applied.
+
+The consequence is arithmetic and it cuts against the region. With a complete corpus every
+measure of regional computational intensity falls, because the denominator grew much faster
+than the numerator: the keyword share for Colombia from 1.94% to 1.59%, the screened share
+from 4.48% to 3.84%, and the growth rate from 27.0% to 18.9% as older Spanish-language work
+fills in the early years.
 
 **The language correction therefore does not excuse the thin computational layer. It sharpens
-it.** The honest statement is that Latin America's computational share, measured on a corpus
-that finally includes its own languages, is about four fifths of the world's rather than
-roughly equal to it.
+it.** Measured on a corpus that finally includes the region's own languages, Latin America's
+computational intensity is below the world's rather than level with it.
 
 ## 5. What the region actually works on
 
@@ -185,9 +208,9 @@ ensembles, addresses the same problem as this group's existing lignin line.
 
 ## Open questions
 
-- Should the screening be re-run on the combined corpus? The screened shares in
-  `02_networks_and_screening.md` rest on the English-only corpus, and the denominator is now
-  known to be larger, so those shares are also upper bounds. — AC.
+- ~~Should the screening be re-run on the combined corpus?~~ **Done 2026-09-24.** 14,709
+  abstracts screened on the combined corpora; the results are in section 4 and in
+  `outputs/tables/T36_screened_combined.csv`.
 - A recurring regional venue is a recommendation this study supports. Whether the thesis
   should make it explicitly is an editorial choice. — AC.
 

@@ -1,0 +1,7 @@
+corpus,en_screened,en_readable,en_readable_pct,en_materials,en_materials_pct_of_readable,en_computational,en_computational_pct_of_materials,en_statistical_doe_only,comb_screened,comb_readable,comb_readable_pct,comb_materials,comb_materials_pct_of_readable,comb_computational,comb_computational_pct_of_materials,comb_statistical_doe_only,added_screened,added_materials,added_computational
+"Method layer, world",3951,3153,79.8,1784,56.6,1541,86.38,4,3963,3189,80.5,1803,56.5,1560,86.52,4,12,19,19
+"Method layer, Ibero-America",327,267,81.7,149,55.8,131,87.92,0,330,272,82.4,150,55.1,132,88.0,0,3,1,1
+"Method layer, Latin America",211,160,75.8,99,61.9,85,85.86,0,215,162,75.3,100,61.7,86,86.0,0,4,1,1
+"Method layer, Colombia",17,12,70.6,9,75.0,8,88.89,0,17,13,76.5,9,69.2,8,88.89,0,0,0,0
+"Whole field, Colombia",598,489,81.8,446,91.2,20,4.48,26,755,633,83.8,573,90.5,22,3.84,35,157,127,2
+"Whole field, Latin America",8175,6356,77.7,5751,90.5,197,3.43,243,9429,7556,80.1,6865,90.9,214,3.12,286,1254,1114,17
