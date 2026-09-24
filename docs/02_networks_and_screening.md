@@ -6,7 +6,10 @@
 harvested records, and replace the keyword-based method counts of
 `01_bibliometric_mapping.md` with counts obtained by reading abstracts.
 
-**Status.** in progress — 2026-09-23. Networks, productivity and concentration done on
+**Status.** in progress — 2026-09-23, screening superseded 2026-09-24. The screened
+shares here rest on the English-only corpus; `06_latam_colombia.md` section 4 carries the
+regional figures rebuilt on the combined vocabulary and those are the ones to quote.
+Networks, productivity and concentration done on
 OpenAlex records. Screening done for the world method layer and the regional corpora.
 Still OpenAlex-only; Scopus, Web of Science and Lens not added.
 

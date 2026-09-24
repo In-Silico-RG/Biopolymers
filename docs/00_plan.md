@@ -9,11 +9,10 @@ chemoinformatics and artificial intelligence applied to biomaterials and biopoly
 narrows at the end to the Latin American and Colombian setting. The route is the backbone
 of Camila Argel's undergraduate thesis (proyecto de grado).
 
-**Status.** in progress — 2026-09-24. All three phases written. Phase 1 complete, Phase 2
-substantially done and validated, Phase 3 written as an argument on the corpus rebuilt in
-three languages. The report is `report/informe_bibliometrico.pdf`, 14 pages. Three items
-remain, listed under *Where this stands* below; the largest is re-running the screening on
-the combined corpus.
+**Status.** in progress — 2026-09-24. All three phases written and the regional corpora
+screened on the combined vocabulary. Two items remain, both extensions rather than gaps. Phase 1 complete, Phase 2 done and validated, Phase 3
+written as an argument on the corpus rebuilt and re-screened in three languages. The report
+is `report/informe_bibliometrico.pdf`, 14 pages.
 
 ---
 
@@ -181,9 +180,13 @@ Spanish and Portuguese undercount and the affiliation-matching loss both quantif
 2. ~~Rebuild the headline corpus on the combined vocabulary.~~ **Done 2026-09-24.** It
    inverted the expectation: the recovered literature is almost entirely non-computational,
    so the regional method share falls rather than rises.
-3. **Re-run the abstract screening on the combined corpus.** The screened shares still rest
-   on the English-only denominator, which is now known to be too small.
-4. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
+3. ~~Re-run the abstract screening on the combined corpus.~~ **Done 2026-09-24.** 14,709
+   abstracts screened; regional screened shares fall, Colombia 4.48% to 3.84%.
+4. **Extend the combined-vocabulary rebuild to the anchored lines and the world method
+   layer**, which still rest on English-only counts. The world layer gains only 12 works
+   from the combined string, so this moves the world figures by less than a tenth of a
+   point; it matters for the anchors, not for the headline.
+5. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
    in a shortlist of ten and nothing in the field does it routinely.
 
 **Decisions that are closed and should not be reopened.** Scopus and Web of Science are
