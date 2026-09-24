@@ -1,0 +1,9 @@
+# Phase 1 — CORE, combined English + Spanish + Portuguese
+# Source: OpenAlex | Field: title_and_abstract.search
+ Count: ____| Count: ____
+# This is p1_core_biopolymer_field_v1 OR p1_core_es_pt_v1, written out in full so the
+# string that produced any count lives in one file. The English-only version is kept and
+# still reported, because every figure in docs 01 and 02 was produced with it and a silent
+# replacement would make those documents unverifiable.
+
+biopolymer OR biopolymers OR bioplastic OR bioplastics OR "bio-based polymer" OR "bio-based polymers" OR "biobased polymer" OR "biodegradable polymer" OR "biodegradable polymers" OR "renewable polymer" OR "natural polymer" OR "natural polymers" OR biomacromolecule OR biomacromolecules OR biopolímero OR biopolímeros OR biopolimero OR biopolimeros OR bioplástico OR bioplásticos OR bioplastico OR bioplasticos OR "polímero biodegradable" OR "polímeros biodegradables" OR "polímero biodegradável" OR "polímeros biodegradáveis" OR "polímero natural" OR "polímeros naturales" OR "polímeros naturais" OR "polímero de origen renovable" OR biomacromolécula OR biomacromoléculas

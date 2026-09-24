@@ -1,0 +1,41 @@
+country_code,country,core_count,methods_count,methods_share_pct
+US,United States,19395,838,4.32
+CN,China,16491,617,3.74
+IN,India,14936,440,2.95
+DE,Germany,6388,232,3.63
+GB,United Kingdom,5458,139,2.55
+BR,Brazil,5130,89,1.73
+IT,Italy,4747,127,2.68
+FR,France,4735,121,2.56
+JP,Japan,4621,137,2.96
+ES,Spain,4177,116,2.78
+KR,South Korea,3990,78,1.95
+IR,Iran,3894,133,3.42
+RU,Russia,3288,90,2.74
+MY,Malaysia,3255,46,1.41
+CA,Canada,3242,107,3.3
+AU,Australia,2794,53,1.9
+PL,Poland,2769,86,3.11
+ID,Indonesia,2531,23,0.91
+TR,Turkey,2298,51,2.22
+SA,Saudi Arabia,2184,102,4.67
+EG,Egypt,2010,64,3.18
+PT,Portugal,1875,31,1.65
+NL,Netherlands,1836,27,1.47
+MX,Mexico,1756,59,3.36
+TH,Thailand,1534,27,1.76
+CZ,Czechia,1432,56,3.91
+PK,Pakistan,1405,44,3.13
+SG,Singapore,1374,29,2.11
+CH,Switzerland,1345,47,3.49
+SE,Sweden,1254,47,3.75
+BE,Belgium,1122,28,2.5
+TW,Taiwan,1113,22,1.98
+FI,Finland,1098,26,2.37
+RO,Romania,1020,21,2.06
+NG,Nigeria,950,37,3.89
+ZA,South Africa,898,31,3.45
+HU,Hungary,851,20,2.35
+AR,Argentina,833,11,1.32
+IL,Israel,818,26,3.18
+AT,Austria,814,12,1.47

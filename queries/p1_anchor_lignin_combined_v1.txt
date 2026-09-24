@@ -1,0 +1,5 @@
+# Phase 1 — ANCHOR lignin, combined English + Spanish + Portuguese
+# Source: OpenAlex | Field: title_and_abstract.search
+ Count: ____| Count: ____
+
+lignin OR lignins OR lignosulfonate OR lignosulfonates OR "kraft lignin" OR "organosolv lignin" OR "lignin nanoparticle" OR lignocellulosic OR lignina OR ligninas OR lignosulfonato OR lignosulfonatos OR "lignina kraft" OR "lignina organosolv"
