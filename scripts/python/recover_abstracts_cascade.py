@@ -57,7 +57,13 @@ def targets():
 
 
 def load_done():
-    """Everything already recovered, from this run's output and the Crossref attempt."""
+    """Everything already *attempted*, not only everything recovered.
+
+    Recording only successes made every failed lookup be retried on the next run: a second
+    pass spent thousands of calls re-asking for abstracts that three sources had already
+    said they did not have. A work that has been through the full cascade is done, whatever
+    the outcome.
+    """
     done = {}
     for path, default in ((CROSSREF, "crossref"), (OUT, "?")):
         if not path.exists():
@@ -69,6 +75,8 @@ def load_done():
                 continue
             if r.get("abstract"):
                 done[r["id"]] = (r.get("source", default), r["abstract"])
+            elif r.get("source") == "exhausted":
+                done[r["id"]] = ("exhausted", "")
     return done
 
 
@@ -144,6 +152,10 @@ def main():
                     fh.write(json.dumps({"id": wid, "doi": doi, "abstract": ab,
                                          "source": "europe_pmc"}, ensure_ascii=False) + "\n")
                     got2 += 1
+                else:
+                    # Mark the cascade as exhausted for this work so it is not retried.
+                    fh.write(json.dumps({"id": wid, "doi": doi, "abstract": "",
+                                         "source": "exhausted"}, ensure_ascii=False) + "\n")
                 if n % 200 == 0:
                     fh.flush()
                     print(f"\rEPMC {n}/{len(left)}  recovered {got2}", end="")

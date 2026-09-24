@@ -19,7 +19,10 @@ Authors are at Linköping, in Zozoulenko's group. Same problem as
 `../../Lignin_Project/Testing_Lignin_Structure_Generators/`, approached from the generative
 side.
 
-### Why it is not here
+**AC holds this PDF (2026-09-24). Not a project task; do not raise it again.** What follows
+is kept only to explain why an automated fetch will not work if anyone tries.
+
+### Why an automated fetch fails
 
 Unpaywall and OpenAlex both confirm it is open access and both give the same URL:
 `https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15008225/v1`. That URL sits behind a
@@ -27,13 +30,5 @@ Cloudflare browser challenge, which returns an HTML interstitial to curl, to req
 the ChemRxiv public API alike (HTTP 403). There is no mirror: the preprint is three weeks
 old, so Semantic Scholar has no record of it and no repository has picked it up.
 
-### How to get it
-
-Open the URL in a browser and save the PDF here, or from this session:
-
-```
-! xdg-open https://chemrxiv.org/doi/full/10.26434/chemrxiv.15008225/v1
-```
-
-Name it `2026_Camposano_Population-aware_Generative_Modeling_of_Lignin_Ensemble.pdf`.
-The abstract is already captured in `data/processed/validation/generative_read.md`.
+The abstract is captured in `data/processed/validation/generative_read.md` and the full
+reference in `refs/references.bib`, so the project record does not depend on the file.

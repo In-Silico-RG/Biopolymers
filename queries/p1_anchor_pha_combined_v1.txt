@@ -1,6 +1,6 @@
 # Phase 1 — ANCHOR polyhydroxyalkanoates, combined English + Spanish + Portuguese
 # Source: OpenAlex | Field: title_and_abstract.search
- Count: ____| Count: ____
+# Run: 2026-09-24 | Count: 23,213
 # Bare PHA and PHB remain excluded in every language.
 
 polyhydroxyalkanoate OR polyhydroxyalkanoates OR polyhydroxybutyrate OR "poly(3-hydroxybutyrate)" OR "poly-3-hydroxybutyrate" OR polyhydroxyvalerate OR "poly(hydroxybutyrate-co-hydroxyvalerate)" OR "polyhydroxyalkanoic acid" OR polihidroxialcanoato OR polihidroxialcanoatos OR poli-hidroxialcanoatos OR polihidroxibutirato OR poli-hidroxibutirato OR poliidroxialcanoatos OR poliidroxibutirato

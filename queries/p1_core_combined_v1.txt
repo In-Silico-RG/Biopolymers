@@ -1,6 +1,6 @@
 # Phase 1 — CORE, combined English + Spanish + Portuguese
 # Source: OpenAlex | Field: title_and_abstract.search
- Count: ____| Count: ____
+# Run: 2026-09-24 | Count: 150,122
 # This is p1_core_biopolymer_field_v1 OR p1_core_es_pt_v1, written out in full so the
 # string that produced any count lives in one file. The English-only version is kept and
 # still reported, because every figure in docs 01 and 02 was produced with it and a silent

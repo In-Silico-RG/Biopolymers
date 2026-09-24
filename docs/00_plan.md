@@ -183,15 +183,14 @@ Spanish and Portuguese undercount and the affiliation-matching loss both quantif
    so the regional method share falls rather than rises.
 3. **Re-run the abstract screening on the combined corpus.** The screened shares still rest
    on the English-only denominator, which is now known to be too small.
-4. **A third coding by Camila** of a few dozen items, as a domain-expert check on two
-   automatic coders that may share a bias neither detects. Now a confirmation, not the only
-   evidence.
-5. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
+4. **Apply the venue-provenance check to the whole corpus.** It found three impostor venues
    in a shortlist of ten and nothing in the field does it routinely.
 
 **Decisions that are closed and should not be reopened.** Scopus and Web of Science are
 unavailable (AC, 2026-09-23). 2026 stays in the corpus, flagged as partial (AC, 2026-09-23).
-Statistical design of experiments is not computational chemistry (2026-09-23).
+Statistical design of experiments is not computational chemistry (2026-09-23). **No third
+human coding of the screening sample: AC will not do it (AC, 2026-09-24).** The Camposano
+lignin preprint is in AC's hands and is not a project task (AC, 2026-09-24).
 
 ## Revision log
 

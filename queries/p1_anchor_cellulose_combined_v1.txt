@@ -1,5 +1,5 @@
 # Phase 1 — ANCHOR cellulose, combined English + Spanish + Portuguese
 # Source: OpenAlex | Field: title_and_abstract.search
- Count: ____| Count: ____
+# Run: 2026-09-24 | Count: 392,424
 
 cellulose OR nanocellulose OR "cellulose nanocrystal" OR "cellulose nanocrystals" OR "cellulose nanofiber" OR "cellulose nanofibers" OR "cellulose nanofibril" OR "bacterial cellulose" OR "microfibrillated cellulose" OR celulosa OR celulose OR nanocelulosa OR nanocelulose OR "celulosa bacteriana" OR "celulose bacteriana" OR "nanocristales de celulosa" OR "nanocristais de celulose" OR "nanofibras de celulosa" OR "nanofibras de celulose" OR lignocelulósico OR lignocelulósica OR lignocelulósicos

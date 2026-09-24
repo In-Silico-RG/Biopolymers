@@ -95,11 +95,12 @@ label. That is a stronger methodological position than most bibliometric studies
 kind occupy, and it is stronger than a hand-coded sample by one person would have been,
 because a single human coder produces no agreement figure at all.
 
-Its limits should be stated as plainly. Agreement was measured on the works that carry a
-readable abstract, so it says nothing about the 20% that do not. And two language models
-can share a bias that neither detects; kappa between two automatic coders is not the same
-as kappa against a domain expert. A third coding of a few dozen items by Camila would close
-that gap and is worth doing, now as a confirmation rather than as the only evidence.
+Its limits should be stated as plainly, and stated as limits rather than as pending work.
+Agreement was measured on the works that carry a readable abstract, so it says nothing about
+the 20% that do not. And two language models can share a bias that neither detects, so kappa
+between two automatic coders is not the same as kappa against a domain expert. No third
+human coding will be done (AC, 2026-09-24), so this belongs in the limitations section of
+the thesis as a stated boundary of the method, not as an outstanding task.
 
 ## Decisions
 
@@ -114,8 +115,8 @@ that gap and is worth doing, now as a confirmation rather than as the only evide
 
 ## Open questions
 
-- A third coding of a few dozen items by Camila, as a domain-expert check on two automatic
-  coders that may share a bias. — AC.
+None. A third human coding was considered and declined (AC, 2026-09-24); the resulting
+limitation is stated in section 4 rather than carried as pending work.
 
 ## References
 
