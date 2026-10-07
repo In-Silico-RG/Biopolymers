@@ -368,3 +368,40 @@ Language: English.
 - Closed two items AC declined and will not revisit: no third human coding of the screening
   sample, and the Camposano preprint, which is in his hands and is not a project task.
 - Report rebuilt, 14 pages.
+
+---
+
+## 2026-10-07 — Session 8: GitHub publication and a single consolidated record
+
+- AC: "crea el repo en GitHub", then "ponlo publico". Repo created at
+  `github.com:In-Silico-RG/Biopolymers.git`. First push rejected: `data/raw/` (2.7 GB of
+  harvested JSONL) carried files over GitHub's 100 MB limit across the whole history.
+- AC approved a history rewrite ("adelante, hazlo y no subas los archivos gigantes") after
+  the Claude Code auto mode classifier blocked the first attempt as a destructive action and
+  it was explained and re-confirmed. `git-filter-repo` installed into `.venv`, `data/raw`
+  stripped from every commit (`.git` 263M to 4.7M), `.gitignore` widened from narrow
+  zip/xlsx rules to a blanket `data/raw/` exclusion. Pushed clean.
+- Repo set to public (`gh repo edit --visibility public`), confirmed via `gh repo view`.
+- AC asked repeatedly where the methodology, search equations, raw counts, conclusions and
+  bibliography actually live, then: "crea un pinche archivo con eso, con la metodologia, la
+  motivacion la intro, las conclusiones, la biblio etc." `docs/07_full_record.md` written:
+  motivation, methodology (corpus definition, sources, screening, validation, three-language
+  rebuild), every search equation verbatim from `queries/*.txt`, raw count tables from
+  `outputs/tables/*.csv`, conclusions, references, and a file map of the whole repo.
+  Committed and pushed (`8d4fd30`).
+- Checked a document AC was comparing results against ("Camila's analysis, que da muy
+  diferente"): `camila_formativa.pdf` is an unrelated wet-lab project-proposal form (PHB via
+  *Bacillus megaterium* fermentation), not a bibliometric analysis. Not a real discrepancy;
+  flagged to AC rather than chased.
+- **Found and fixed a stale contradiction** while drafting the full record: the Limitations
+  section of `report/informe_bibliometrico.tex` still read "the screening is not yet
+  validated," left over from before the validation pass, while the Validation section two
+  pages earlier already reported $\kappa=0.878$. Rewrote the bullet to state the validation
+  result and its limit (two automatic coders, not a hand-coded ground truth). Also removed
+  "a third coding of a few dozen items" from "What to do next" — AC already closed that
+  question 2026-09-24 ("AC will not do it") and it was still listed as open. Backed up the
+  prior PDF to `Versiones/`, rebuilt (14 pages, 5,320 words, verified with `pdftotext`).
+- Cross-machine note: a second Claude Code session opening this repo on another machine
+  reported missing `OPENALEX_API_KEY`, `LENS_API_TOKEN` and `DEEPSEEK_API_KEY`. Confirmed
+  these are machine-local env vars / `.openalex_key`, never committed; the Lens token is
+  expired regardless (2026-09-29, per Session 6/7 log). No project-file action needed.

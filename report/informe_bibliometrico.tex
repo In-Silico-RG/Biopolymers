@@ -735,9 +735,11 @@ ensembles, addresses the same problem as this group's existing lignin line.
 \item \textbf{Abstract coverage.} Roughly 30\% of the method-layer records carry no abstract
       in OpenAlex. Semantic Scholar and Europe PMC recovered 4{,}070 of them; the rest could
       not be read and are excluded from every screened share.
-\item \textbf{The screening is not yet validated.} A hand-coded sample double-coded against
-      the automatic classification would give an agreement figure. Until that exists, the
-      screened shares should be reported as what they are, a machine reading.
+\item \textbf{The screening is validated, not exhaustively.} 125 abstracts were double-coded
+      by an independent second reader on a different model (Section~\ref{sec:validation}),
+      reaching Cohen's $\kappa=0.878$ on the dimension the correction depends on, with a
+      measured directional over-detection of 8.2\%. That is agreement between two automatic
+      coders, not a hand-coded ground truth; AC has declined a third, human coding pass.
 \item \textbf{English-language queries.} Regional work published in Spanish and Portuguese
       is undercounted.
 \item \textbf{Country attribution counts a work once per country present}, so country
@@ -747,8 +749,6 @@ ensembles, addresses the same problem as this group's existing lignin line.
 \section{What to do next}
 
 \begin{enumerate}
-\item A third coding of a few dozen items by a domain expert, as a check on two automatic
-      coders that may share a bias neither detects.
 \item Extend the combined-vocabulary rebuild to the anchored lines and the world method
       layer, which still rest on English-only counts.
 \item Apply the venue-provenance check of Section~\ref{sec:generative} to the whole
