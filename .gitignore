@@ -1,6 +1,5 @@
-# Raw exports can be large; keep them local unless small enough to version
-data/raw/**/*.zip
-data/raw/**/*.xlsx
+# Raw exports are large and re-harvestable from queries/; kept local only
+data/raw/
 *.aux
 *.log
 *.out
@@ -20,9 +19,6 @@ data/processed/recovered_abstracts.jsonl
 .lens_token
 .openalex_key
 *.token
-
-# Lens raw records are large and re-harvestable from the manifest
-data/raw/lens/*.jsonl
 
 # Full texts are not committed
 refs/pdfs/*.pdf
